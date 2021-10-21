@@ -1,0 +1,1824 @@
+[Message:   BepInEx] BepInEx 5.4.11.0 - valheim
+[Info   :   BepInEx] Running under Unity v2019.4.24.6137584
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [SlimVML.Loader 1.1.0.0]
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.MonoMod.HookGenPatcher 1.2.0.0]
+[Info   :   BepInEx] 3 patcher plugins loaded
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Info   :   SlimVML] Loading DLLs from C:\Program Files (x86)\Steam\steamapps\common\Valheim\InSlimVML\Mods
+[Warning:   SlimVML] Skipping 0Harmony.dll since it's in ignore list
+[Info   :   SlimVML] Invoking static void SlimAssist.SlimAssist::Main(string[] args)
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 21 plugins to load
+[Warning:   BepInEx] Plugin [PlantEverything 1.8.4] targets a wrong version of BepInEx (5.4.15.0) and might not work until you update
+[Warning:   BepInEx] Plugin [Jotunn 2.3.7] targets a wrong version of BepInEx (5.4.16.0) and might not work until you update
+[Warning:   BepInEx] Plugin [OreSupport 1.0.0.0] targets a wrong version of BepInEx (5.4.15.0) and might not work until you update
+[Warning:   BepInEx] Plugin [RuneMagic 1.1.0] targets a wrong version of BepInEx (5.4.15.0) and might not work until you update
+[Info   :   BepInEx] Loading [PlantEverything 1.8.4]
+[Info   :  HarmonyX] ### Harmony id=advize.PlantEverything, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.24.56
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-313e6d4a-7365-4e8f-b96c-4809b27ba0b5, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.24.56
+[Info   :  HarmonyX] Patching void Game::Start() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.Configuration.Config::RegisterSyncConfigRPC()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Game::Start()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ZNet::RPC_PeerInfo(ZRpc rpc, ZPackage pkg) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.Configuration.Config::RequestConfigFromServer()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZNet::RPC_PeerInfo(ZRpc rpc, ZPackage pkg)
+[Info   :  HarmonyX] Writing postfixes
+[Info   : PlantEverything] Initialized Server Authoritative Config Manager.
+[Info   :  HarmonyX] Patching void ObjectDB::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+ObjectDBAwake::Postfix(ObjectDB __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ObjectDB::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ObjectDB::CopyOtherDB(ObjectDB other) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+ObjectDBCopyOtherDB::Postfix(ObjectDB other)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ObjectDB::CopyOtherDB(ObjectDB other)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ZNetScene::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+ZNetSceneAwake::Postfix(ZNetScene __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZNetScene::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching UnityEngine.GameObject ObjectDB::GetItemPrefab(int hash) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+ObjectDBGetItemPrefab::Postfix(int hash, UnityEngine.GameObject& __result, ObjectDB __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on UnityEngine.GameObject ObjectDB::GetItemPrefab(int hash)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching UnityEngine.GameObject ZNetScene::GetPrefab(int hash) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+ZNetSceneGetPrefab::Postfix(int hash, UnityEngine.GameObject& __result, ZNetScene __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on UnityEngine.GameObject ZNetScene::GetPrefab(int hash)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool Player::RemovePiece() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool Advize_PlantEverything.PlantEverything+PlayerRemovePiece::Prefix(Player __instance, ZSyncAnimation ___m_zanim, Boolean& __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Player::RemovePiece()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void Piece::SetCreator(long uid) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+PieceSetCreator::Postfix(Piece __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Piece::SetCreator(long uid)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Piece::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+PieceAwake::Postfix(Piece __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Piece::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void TreeBase::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+TreeBaseAwake::Postfix(TreeBase __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TreeBase::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching virtual void Plant::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+PlantAwake::Postfix(Plant __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Plant::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool Plant::HaveRoof() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool Advize_PlantEverything.PlantEverything+PlantHaveRoof::Prefix(Plant __instance, Boolean& __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Plant::HaveRoof()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching bool Plant::HaveGrowSpace() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool Advize_PlantEverything.PlantEverything+PlantHaveGrowSpace::Prefix(Plant __instance, Boolean& __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Plant::HaveGrowSpace()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void Plant::Grow() with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> Advize_PlantEverything.PlantEverything+PlantGrow::Transpiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Plant::Grow()
+[Info   :  HarmonyX] Transpiling void Plant::Grow()
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> Advize_PlantEverything.PlantEverything+PlantGrow::Transpiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Patching virtual string Pickable::GetHoverText() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+PickableGetHoverText::Postfix(Pickable __instance, bool ___m_picked, ZNetView ___m_nview, int ___m_respawnTimeMinutes, String& __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual string Pickable::GetHoverText()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :   BepInEx] Loading [CartSupport 0.1.0]
+[Info   :  HarmonyX] Created Harmony instance id=aedenthorn.CartSupport, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+[Warning:  HarmonyX] AccessTools.DeclaredMethod: Could not find method for type Console and name InputText and parameters 
+[Warning:  HarmonyX] Unknown patch - Could not find method InputText with 0 parameters in type Console, but it was found in base class of this type Terminal
+[Info   :  HarmonyX] Patching aedenthorn.CartSupport...
+[Info   :  HarmonyX] Patching System.Void Vagon::SetMass(System.Single)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Vagon::SetMass(float mass) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void CartSupport.BepInExPlugin+SetMass_Patch::Prefix(Vagon __instance, ZNetView ___m_nview, Single& mass)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Vagon::SetMass(float mass)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.CartSupport took 10ms
+[Info   :  HarmonyX] Patching aedenthorn.CartSupport...
+[Info   :  HarmonyX] Patching System.Void Terminal::InputText()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool CartSupport.BepInExPlugin+InputText_Patch::Prefix(Console __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.CartSupport took 5ms
+[Info   :   BepInEx] Loading [Extended Player Inventory 0.3.1]
+[Info   :  HarmonyX] Created Harmony instance id=aedenthorn.ExtendedPlayerInventory, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Void Player::Awake()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching virtual void Player::Awake() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+Player_Awake_Patch::Prefix(Player __instance, Inventory ___m_inventory)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Player::Awake()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 11ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Void TombStone::Awake()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void TombStone::Awake() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+TombStone_Awake_Patch::Prefix(TombStone __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TombStone::Awake()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 6ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Boolean TombStone::Interact(Humanoid,System.Boolean,System.Boolean)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching virtual bool TombStone::Interact(Humanoid character, bool hold, bool alt) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+TombStone_Interact_Patch::Prefix(TombStone __instance, Container ___m_container)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual bool TombStone::Interact(Humanoid character, bool hold, bool alt)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 6ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Void Inventory::MoveInventoryToGrave(Inventory)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Inventory::MoveInventoryToGrave(Inventory original) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+MoveInventoryToGrave_Patch::Postfix(Inventory __instance, Inventory original)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Inventory::MoveInventoryToGrave(Inventory original)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 8ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Void Player::Update()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Player::Update() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+Player_Update_Patch::Postfix(Player __instance, Inventory ___m_inventory)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::Update()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 14ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Void InventoryGui::Update()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void InventoryGui::Update() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+InventoryGui_Update_Patch::Postfix(InventoryGui __instance, InventoryGrid ___m_playerGrid, UnityEngine.Animator ___m_animator)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::Update()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 12ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Void InventoryGui::UpdateInventory(Player)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void InventoryGui::UpdateInventory(Player player) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+UpdateInventory_Patch::Postfix(InventoryGrid ___m_playerGrid)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::UpdateInventory(Player player)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 5ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching Vector2i Inventory::FindEmptySlot(System.Boolean)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching Vector2i Inventory::FindEmptySlot(bool topFirst) with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+FindEmptySlot_Patch::Prefix(Inventory __instance, Int32& ___m_height)
+1 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+FindEmptySlot_Patch::Postfix(Inventory __instance, Int32& ___m_height)
+
+[Info   :  HarmonyX] Running ILHook manipulator on Vector2i Inventory::FindEmptySlot(bool topFirst)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 4ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Int32 Inventory::GetEmptySlots()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching int Inventory::GetEmptySlots() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ExtendedPlayerInventory.BepInExPlugin+GetEmptySlots_Patch::Prefix(Inventory __instance, Int32& __result, System.Collections.Generic.List<ItemDrop+ItemData> ___m_inventory, int ___m_width, int ___m_height)
+
+[Info   :  HarmonyX] Running ILHook manipulator on int Inventory::GetEmptySlots()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 4ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Boolean Inventory::HaveEmptySlot()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching bool Inventory::HaveEmptySlot() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ExtendedPlayerInventory.BepInExPlugin+HaveEmptySlot_Patch::Prefix(Inventory __instance, Boolean& __result, System.Collections.Generic.List<ItemDrop+ItemData> ___m_inventory, int ___m_width, int ___m_height)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Inventory::HaveEmptySlot()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 5ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Boolean Inventory::AddItem(ItemDrop+ItemData)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching bool Inventory::AddItem(ItemDrop+ItemData item) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ExtendedPlayerInventory.BepInExPlugin+Inventory_AddItem_Patch1::Prefix(Inventory __instance, Boolean& __result, System.Collections.Generic.List<ItemDrop+ItemData> ___m_inventory, ItemDrop+ItemData item)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Inventory::AddItem(ItemDrop+ItemData item)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 5ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Boolean Inventory::AddItem(ItemDrop+ItemData,System.Int32,System.Int32,System.Int32)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching bool Inventory::AddItem(ItemDrop+ItemData item, int amount, int x, int y) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+Inventory_AddItem_Patch2::Prefix(Inventory __instance, Int32& ___m_width, Int32& ___m_height, int x, int y)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Inventory::AddItem(ItemDrop+ItemData item, int amount, int x, int y)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 6ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Void Hud::Awake()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Hud::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+Hud_Awake_Patch::Postfix(Hud __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Hud::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 8ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Void Hud::Update()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Hud::Update() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+Hud_Update_Patch::Postfix(Hud __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Hud::Update()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 9ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
+[Info   :  HarmonyX] Patching System.Void Terminal::InputText()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ExtendedPlayerInventory.BepInExPlugin+InputText_Patch::Prefix(Terminal __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 4ms
+[Info   :   BepInEx] Loading [Hoe Radius 0.1.1]
+[Info   :  HarmonyX] Created Harmony instance id=harmony-auto-e4832043-6baa-404b-90f6-d9c2f590065d, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+[Warning:  HarmonyX] AccessTools.DeclaredMethod: Could not find method for type Console and name InputText and parameters 
+[Warning:  HarmonyX] Unknown patch - Could not find method InputText with 0 parameters in type Console, but it was found in base class of this type Terminal
+[Info   :  HarmonyX] Patching harmony-auto-e4832043-6baa-404b-90f6-d9c2f590065d...
+[Info   :  HarmonyX] Patching System.Void TerrainOp::Awake()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void TerrainOp::Awake() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void HoeRadius.BepInExPlugin+TerrainOp_Patch::Prefix(TerrainOp __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TerrainOp::Awake()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching harmony-auto-e4832043-6baa-404b-90f6-d9c2f590065d took 6ms
+[Info   :  HarmonyX] Patching harmony-auto-e4832043-6baa-404b-90f6-d9c2f590065d...
+[Info   :  HarmonyX] Patching System.Void Terminal::InputText()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 2 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+2 prefixes:
+* static bool CartSupport.BepInExPlugin+InputText_Patch::Prefix(Console __instance)
+* static bool HoeRadius.BepInExPlugin+InputText_Patch::Prefix(Console __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching harmony-auto-e4832043-6baa-404b-90f6-d9c2f590065d took 7ms
+[Info   :   BepInEx] Loading [Movable Chest Inventory 0.2.2]
+[Info   :  HarmonyX] Created Harmony instance id=aedenthorn.MovableChestInventory, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+[Warning:  HarmonyX] AccessTools.DeclaredMethod: Could not find method for type Console and name InputText and parameters 
+[Warning:  HarmonyX] Unknown patch - Could not find method InputText with 0 parameters in type Console, but it was found in base class of this type Terminal
+[Info   :  HarmonyX] Patching aedenthorn.MovableChestInventory...
+[Info   :  HarmonyX] Patching System.Void InventoryGui::Update()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void InventoryGui::Update() with 0 prefixes, 2 postfixes, 0 transpilers, 0 finalizers
+2 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+InventoryGui_Update_Patch::Postfix(InventoryGui __instance, InventoryGrid ___m_playerGrid, UnityEngine.Animator ___m_animator)
+* static void MovableChestInventory.BepInExPlugin+InventoryGui_Update_Patch::Postfix(InventoryGui __instance, Container ___m_currentContainer)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::Update()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching aedenthorn.MovableChestInventory took 11ms
+[Info   :  HarmonyX] Patching aedenthorn.MovableChestInventory...
+[Info   :  HarmonyX] Patching System.Void Terminal::InputText()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 3 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+3 prefixes:
+* static bool CartSupport.BepInExPlugin+InputText_Patch::Prefix(Console __instance)
+* static bool HoeRadius.BepInExPlugin+InputText_Patch::Prefix(Console __instance)
+* static bool MovableChestInventory.BepInExPlugin+InputText_Patch::Prefix(Console __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching aedenthorn.MovableChestInventory took 4ms
+[Info   :   BepInEx] Loading [Better Stamina 1.2.0.0]
+[Info   :  HarmonyX] ### Harmony id=bakaSpaceman.BetterStamina, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.24.57
+[Info   :  HarmonyX] Patching void Player::UpdateStats(float dt) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GeneralStaminaPatches::UpdateStats_Prefix(Player __instance, float dt, SEMan ___m_seman, bool ___m_wallRunning, float ___m_staminaRegen, float ___m_stamina, float ___m_staminaRegenTimer)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdateStats(float dt)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual void Player::UseStamina(float v) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ToolsPatches::HammerStamina_Prefix(Player __instance, Single& v)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Player::UseStamina(float v)
+[Info   :  HarmonyX] Writing prefixes
+[Warning:  HarmonyX] AccessTools.DeclaredMethod: Could not find method for type Attack and name GetStaminaUsage and parameters 
+[Info   :   BepInEx] Loading [FarmGrid 0.2.0]
+[Info   :  HarmonyX] ### Harmony id=Harmony.Sarcen.FarmGrid, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.24.57
+[Info   :  HarmonyX] Patching void Player::UpdatePlacementGhost(bool flashGuardStone) with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> FarmGrid.Patches.FarmGrid_Patch::UpdatePlacementGhost(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdatePlacementGhost(bool flashGuardStone)
+[Info   :  HarmonyX] Transpiling void Player::UpdatePlacementGhost(bool flashGuardStone)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> FarmGrid.Patches.FarmGrid_Patch::UpdatePlacementGhost(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Patching bool Player::PlacePiece(Piece piece) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool FarmGrid.Patches.FarmGrid_Patch::PlacePiece(Player& __instance, Boolean& __result, Piece piece)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Player::PlacePiece(Piece piece)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual void Humanoid::SetupVisEquipment(VisEquipment visEq, bool isRagdoll) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void FarmGrid.Patches.FarmGrid_Patch::SetupVisEquipment(Humanoid& __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Humanoid::SetupVisEquipment(VisEquipment visEq, bool isRagdoll)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :   BepInEx] Loading [Fog Of War Explore Radius 0.7.1]
+[Info   :  HarmonyX] Created Harmony instance id=harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db...
+[Info   :  HarmonyX] Patching System.Void EnvMan::Awake()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void EnvMan::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void FogOfWarExploreRadius.BepInExPlugin+EnvMan_Awake_Patch::Postfix(EnvMan __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void EnvMan::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db took 8ms
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db...
+[Info   :  HarmonyX] Patching System.Void EnvMan::SetEnv(EnvSetup,System.Single,System.Single,System.Single,System.Single,System.Single)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void EnvMan::SetEnv(EnvSetup env, float dayInt, float nightInt, float morningInt, float eveningInt, float dt) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void FogOfWarExploreRadius.BepInExPlugin+EnvMan_SetEnv_Patch::Postfix(EnvMan __instance, EnvSetup env, float dayInt, float nightInt, float morningInt, float eveningInt, float dt)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void EnvMan::SetEnv(EnvSetup env, float dayInt, float nightInt, float morningInt, float eveningInt, float dt)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db took 22ms
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db...
+[Info   :  HarmonyX] Patching System.Void Player::OnSkillLevelup(Skills+SkillType,System.Single)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Player::OnSkillLevelup(Skills+SkillType skill, float level) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void FogOfWarExploreRadius.BepInExPlugin+PlayerOnSkillLevelup_Patch::Postfix(Skills+SkillType skill, float level)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::OnSkillLevelup(Skills+SkillType skill, float level)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db took 7ms
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db...
+[Info   :  HarmonyX] Patching System.Void Ship::OnTriggerEnter(UnityEngine.Collider)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Ship::OnTriggerEnter(UnityEngine.Collider collider) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void FogOfWarExploreRadius.BepInExPlugin+ShipOnTriggerEnter::Postfix(Ship __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Ship::OnTriggerEnter(UnityEngine.Collider collider)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db took 6ms
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db...
+[Info   :  HarmonyX] Patching System.Void Ship::OnTriggerExit(UnityEngine.Collider)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Ship::OnTriggerExit(UnityEngine.Collider collider) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void FogOfWarExploreRadius.BepInExPlugin+ShipOnTriggerExit::Postfix(Ship __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Ship::OnTriggerExit(UnityEngine.Collider collider)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db took 4ms
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db...
+[Info   :  HarmonyX] Patching System.Void Skills::Load(ZPackage)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Skills::Load(ZPackage pkg) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void FogOfWarExploreRadius.BepInExPlugin+SkillsLoad_Patch::Postfix(Skills __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Skills::Load(ZPackage pkg)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db took 6ms
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db...
+[Info   :  HarmonyX] Patching System.Void Minimap::Explore(UnityEngine.Vector3,System.Single)
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Minimap::Explore(UnityEngine.Vector3 p, float radius) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool FogOfWarExploreRadius.BepInExPlugin+Minimap_Explore_Patch::Prefix(Minimap __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Minimap::Explore(UnityEngine.Vector3 p, float radius)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db took 5ms
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db...
+[Info   :  HarmonyX] Patching System.Void Minimap::Awake()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching void Minimap::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void FogOfWarExploreRadius.BepInExPlugin+MinimapCtor_Patch::Postfix(Minimap __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Minimap::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db took 4ms
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db...
+[Info   :  HarmonyX] Patching System.Void Terminal::InputText()
+[Info   :  HarmonyX] HarmonyPrepare result: True
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 2 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+2 prefixes:
+* static bool ExtendedPlayerInventory.BepInExPlugin+InputText_Patch::Prefix(Terminal __instance)
+* static bool FogOfWarExploreRadius.BepInExPlugin+InputText_Patch::Prefix(Terminal __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching harmony-auto-f8962ecc-3b20-4026-8a70-52c368a512db took 3ms
+[Info   :   BepInEx] Loading [Configuration Manager 16.3]
+[Info   :   BepInEx] Loading [Jotunn 2.3.7]
+[Info   :    Jotunn] Initializing LocalizationManager
+[Info   :    Jotunn] Initializing CommandManager
+[Info   :    Jotunn] Initializing InputManager
+[Info   :    Jotunn] Initializing SkillManager
+[Info   :    Jotunn] Initializing PrefabManager
+[Info   :    Jotunn] Initializing ItemManager
+[Info   :    Jotunn] Initializing PieceManager
+[Info   :    Jotunn] Initializing MockManager
+[Info   :    Jotunn] Initializing KitbashManager
+[Info   :    Jotunn] Initializing GUIManager
+[Info   :    Jotunn] Initializing SynchronizationManager
+[Debug  :Jotunn.Managers.SynchronizationManager] Trying to hook config manager
+[Debug  :Jotunn.Managers.SynchronizationManager] Configuration manager found, trying to hook DisplayingWindowChanged
+[Info   :    Jotunn] Jötunn v2.3.7 loaded successfully
+[Info   :   BepInEx] Loading [Use Equipment in Water 0.2.2.0]
+[Info   :   BepInEx] Loading [Clutter 0.1.0]
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_$PlumgaClutterTool created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_piece_workbench created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Wood created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_BronzeNails created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Honey created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Flint created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Coal created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Feathers created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_DeerHide created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_LoxPelt created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_WolfPelt created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_RawMeat created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Flax created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_MeadTasty created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Bronze created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Blueberries created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Raspberry created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Stone created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_BoneFragments created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_FineWood created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Tin created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_ElderBark created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Iron created
+[Debug  :Jotunn.Managers.MockManager] Mock JVLmock_Copper created
+[Info   :   BepInEx] Loading [Skills Give More Carry Weight 1.0.3]
+[Info   :Skills Give More Carry Weight] Trying to load configuration
+[Info   :Skills Give More Carry Weight] Succesfully loaded configuration
+[Info   :  HarmonyX] ### Harmony id=com.traktool.Skills_Give_More_Carry_Weight, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.02
+[Info   :  HarmonyX] Patching float Player::GetMaxCarryWeight() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void Skills_Give_More_Carry_Weight.PatchedPlayer::GetMaxCarryWeight(Player __instance, Single& __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on float Player::GetMaxCarryWeight()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :Skills Give More Carry Weight] Succesfully loaded Skills Give More Carry Weight 1.0.3
+[Info   :   BepInEx] Loading [RuneMagic 1.1.0]
+[Info   :  HarmonyX] ### Harmony id=hyleanlegend.RuneMagic, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.02
+[Info   :  HarmonyX] Patching void ZoneSystem::Start() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.ZoneSystem_Start_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZoneSystem::Start()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ZNetScene::Awake() with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.ZNetScene_Awake_Patch::Prefix(ZNetScene __instance)
+1 postfixes:
+* static void Advize_PlantEverything.PlantEverything+ZNetSceneAwake::Postfix(ZNetScene __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZNetScene::Awake()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ObjectDB::CopyOtherDB(ObjectDB other) with 0 prefixes, 2 postfixes, 0 transpilers, 0 finalizers
+2 postfixes:
+* static void Advize_PlantEverything.PlantEverything+ObjectDBCopyOtherDB::Postfix(ObjectDB other)
+* static void ValheimMod.ObjectDB_CopyOtherDB_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ObjectDB::CopyOtherDB(ObjectDB other)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ObjectDB::Awake() with 0 prefixes, 2 postfixes, 0 transpilers, 0 finalizers
+2 postfixes:
+* static void Advize_PlantEverything.PlantEverything+ObjectDBAwake::Postfix(ObjectDB __instance)
+* static void ValheimMod.ObjectDB_Awake_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ObjectDB::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Player::UpdatePlacementGhost(bool flashGuardStone) with 1 prefixes, 0 postfixes, 1 transpilers, 1 finalizers
+1 prefixes:
+* static void ValheimMod.PlayerPatch+UpdatePlacementGhost_Patch::Prefix(Player __instance)
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> FarmGrid.Patches.FarmGrid_Patch::UpdatePlacementGhost(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+1 finalizers:
+* static Exception ValheimMod.PlayerPatch+UpdatePlacementGhost_Patch::Finalizer(Player __instance, UnityEngine.GameObject ___m_placementGhost, int ___m_placeRotation, int ___m_placementStatus)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdatePlacementGhost(bool flashGuardStone)
+[Info   :  HarmonyX] Transpiling void Player::UpdatePlacementGhost(bool flashGuardStone)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> FarmGrid.Patches.FarmGrid_Patch::UpdatePlacementGhost(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing finalizers
+[Info   :  HarmonyX] Patching bool Player::CheckPlacementGhostVSPlayers() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static bool ValheimMod.PlayerPatch+CheckPlacementGhostVSPlayers_Patch::Postfix(bool __result, Player __instance, UnityEngine.GameObject ___m_placementGhost)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Player::CheckPlacementGhostVSPlayers()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Player::ConsumeResources(Piece+Requirement[] requirements, int qualityLevel) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.PlayerPatch+ConsumeResources_Patch::Postfix(Player __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::ConsumeResources(Piece+Requirement[] requirements, int qualityLevel)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Player::SetupPlacementGhost() with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.PlayerPatch+SetupPlacementGhost_Patch::Prefix()
+1 postfixes:
+* static void ValheimMod.PlayerPatch+SetupPlacementGhost_Patch::Postfix(Player __instance, UnityEngine.GameObject ___m_placementGhost)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::SetupPlacementGhost()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool Player::HaveRequirements(Piece piece, Player+RequirementMode mode) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static bool ValheimMod.PlayerPatch+HaveRequirements_Patch::Postfix(bool __result, Player __instance, System.Collections.Generic.HashSet<string> ___m_knownRecipes, Piece piece, Player+RequirementMode mode)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Player::HaveRequirements(Piece piece, Player+RequirementMode mode)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Player::UpdateAvailablePiecesList() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ValheimMod.PlayerPatch+UpdateAvailablePiecesList_Patch::Prefix(Player __instance, System.Collections.Generic.HashSet<string> ___m_knownRecipes, PieceTable ___m_buildPieces)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdateAvailablePiecesList()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual void Player::SetPlaceMode(PieceTable buildPieces) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.PlayerPatch+SetPlaceMode_Patch::Postfix(Player __instance, PieceTable buildPieces)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Player::SetPlaceMode(PieceTable buildPieces)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool Player::PlacePiece(Piece piece) with 2 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+2 prefixes:
+* static bool FarmGrid.Patches.FarmGrid_Patch::PlacePiece(Player& __instance, Boolean& __result, Piece piece)
+* static bool ValheimMod.PlayerPatch+PlacePiece_Patch::Prefix(Player __instance, Piece piece)
+1 postfixes:
+* static bool ValheimMod.PlayerPatch+PlacePiece_Patch::Postfix(bool __result, Player __instance, Piece piece)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Player::PlacePiece(Piece piece)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching virtual void Player::FixedUpdate() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.PlayerPatch+FixedUpdate_Patch::Postfix(Player __instance, PieceTable ___m_buildPieces)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Player::FixedUpdate()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Player::OnInventoryChanged() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.PlayerPatch+OnInventoryChanged_Patch::Postfix(Player __instance, bool ___m_isLoading, Inventory ___m_inventory)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::OnInventoryChanged()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool Player::CheckCanRemovePiece(Piece piece) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static bool ValheimMod.PlayerPatch+CheckCanRemovePiece_Patch::Postfix(bool __result, Player __instance, PieceTable ___m_buildPieces, Piece piece)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Player::CheckCanRemovePiece(Piece piece)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void TerrainModifier::Awake() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.TerrainModifierPatch+Awake_Patch::Prefix(TerrainModifier __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TerrainModifier::Awake()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching float TerrainModifier::GetRadius() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static float ValheimMod.TerrainModifierPatch+Get_Radius_Patch::Postfix(float __result, TerrainModifier __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on float TerrainModifier::GetRadius()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void TerrainModifier::OnPlaced() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.TerrainModifierPatch+OnPlaced_Patch::Postfix(TerrainModifier __instance, ZNetView ___m_nview)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TerrainModifier::OnPlaced()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Player::SetLocalPlayer() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.ValheimMod+SetupDebugState::Postfix(Player __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::SetLocalPlayer()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Player::Update() with 0 prefixes, 2 postfixes, 0 transpilers, 0 finalizers
+2 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+Player_Update_Patch::Postfix(Player __instance, Inventory ___m_inventory)
+* static void ValheimMod.ValheimMod+Update_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::Update()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Character::Jump() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ValheimMod.ValheimMod+Jump_Patch::Prefix(Single& ___m_jumpForce)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Character::Jump()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void BaseAI::SetTargetInfo(ZDOID targetID) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.BaseAIPatch+SetTargetInfo_Patch::Postfix(BaseAI __instance, ZNetView ___m_nview, ZDOID targetID)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void BaseAI::SetTargetInfo(ZDOID targetID)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void FejdStartup::ShowConnectError() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.FejdStartupPatch+ShowConnectError_Patch::Postfix(FejdStartup __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void FejdStartup::ShowConnectError()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching float ItemDrop+ItemData::GetMaxDurability(int quality) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.ItemDropPatch+GetMaxDurability_Patch::Postfix(ItemDrop+ItemData __instance, Int32& quality, Single& __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on float ItemDrop+ItemData::GetMaxDurability(int quality)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching static void Terminal::InitTerminal() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.TerminalPatch+InputText_Patch::Postfix(Terminal __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on static void Terminal::InitTerminal()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool Terminal::IsCheatsEnabled() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static bool ValheimMod.Patches.TerminalPatch+IsCheatsEnabled_Patch::Postfix(bool __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Terminal::IsCheatsEnabled()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool Terminal+ConsoleCommand::IsValid(Terminal context, bool skipAllowedCheck) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static bool ValheimMod.Patches.TerminalPatch+IsValid_Patch::Postfix(bool __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Terminal+ConsoleCommand::IsValid(Terminal context, bool skipAllowedCheck)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ZNet::OnNewConnection(ZNetPeer peer) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.ZNetPatch+OnNewConnection_Patch::Postfix(ZNet __instance, bool ___m_isServer, ZNetPeer peer)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZNet::OnNewConnection(ZNetPeer peer)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ZNet::RPC_PeerInfo(ZRpc rpc, ZPackage pkg) with 1 prefixes, 2 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ValheimMod.Patches.ZNetPatch+RPC_PeerInfo_Patch::Prefix(ZRpc rpc, ZPackage pkg, ZNet& __instance)
+2 postfixes:
+* static void Advize_PlantEverything.Configuration.Config::RequestConfigFromServer()
+* static void ValheimMod.Patches.ZNetPatch+RPC_PeerInfo_Patch::Postfix(ZNet& __instance, ZRpc rpc)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZNet::RPC_PeerInfo(ZRpc rpc, ZPackage pkg)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ZNet::Disconnect(ZNetPeer peer) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.ZNetPatch+Disconnect_Patch::Postfix(ZNet __instance, bool ___m_isServer, ZNetPeer peer)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZNet::Disconnect(ZNetPeer peer)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching static bool Cover::IsUnderRoof(UnityEngine.Vector3 startPos) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static bool ValheimMod.Patches.CoverPatch+IsUnderRoof_Patch::Postfix(bool __result, UnityEngine.Vector3 startPos)
+
+[Info   :  HarmonyX] Running ILHook manipulator on static bool Cover::IsUnderRoof(UnityEngine.Vector3 startPos)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Hud::SetupPieceInfo(Piece piece) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.HudPatch+SetupPieceInfo_Patch::Postfix(Hud __instance, Piece piece)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Hud::SetupPieceInfo(Piece piece)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Piece::SetInvalidPlacementHeightlight(bool enabled) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.PiecePatch+SetInvalidPlacementHeightlight_Patch::Postfix(Piece __instance, bool enabled)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Piece::SetInvalidPlacementHeightlight(bool enabled)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void TerrainComp::InternalDoOperation(UnityEngine.Vector3 pos, TerrainOp+Settings modifier) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.TerrainCompPatch+InternalDoOperation_Patch::Postfix(TerrainComp __instance, UnityEngine.Vector3 pos, TerrainOp+Settings modifier, Heightmap ___m_hmap, int ___m_width, float[] ___m_levelDelta, float[] ___m_smoothDelta, bool[] ___m_modifiedHeight, UnityEngine.Color[] ___m_paintMask, bool[] ___m_modifiedPaint)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TerrainComp::InternalDoOperation(UnityEngine.Vector3 pos, TerrainOp+Settings modifier)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching float TerrainOp+Settings::GetRadius() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static float ValheimMod.Patches.TerrainOpPatch+GetRadius_Patch::Postfix(float __result, TerrainOp+Settings __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on float TerrainOp+Settings::GetRadius()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void TerrainOp::OnPlaced() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.TerrainOpPatch+OnPlaced_Patch::Postfix(TerrainOp __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TerrainOp::OnPlaced()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching float WaterVolume::GetWaterSurface(UnityEngine.Vector3 point, float waveFactor) with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.Patches.WaterVolumePatch+GetWaterSurface_Patch::Prefix()
+1 postfixes:
+* static float ValheimMod.Patches.WaterVolumePatch+GetWaterSurface_Patch::Postfix(float __result, WaterVolume __instance, UnityEngine.Vector3 point)
+
+[Info   :  HarmonyX] Running ILHook manipulator on float WaterVolume::GetWaterSurface(UnityEngine.Vector3 point, float waveFactor)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void WearNTear::SetupColliders() with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.Patches.WearNTearPatch+SetupColliders_Patch::Prefix(WearNTear __instance, ValheimMod.Patches.WearNTearPatch+ParentChild[]& __state)
+1 postfixes:
+* static void ValheimMod.Patches.WearNTearPatch+SetupColliders_Patch::Postfix(WearNTear __instance, ValheimMod.Patches.WearNTearPatch+ParentChild[] __state)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void WearNTear::SetupColliders()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool WearNTear::HaveRoof() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static bool ValheimMod.Patches.WearNTearPatch+HaveRoof_Patch::Postfix(bool __result, WearNTear __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool WearNTear::HaveRoof()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void WearNTear::Remove() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.WearNTearPatch+Remove_Patch::Postfix(WearNTear __instance, ZNetView ___m_nview)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void WearNTear::Remove()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ZNetScene::CreateDestroyObjects() with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.Patches.ZNetScenePatch+CreateDestroyObjects_Patch::Prefix()
+1 postfixes:
+* static void ValheimMod.Patches.ZNetScenePatch+CreateDestroyObjects_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZNetScene::CreateDestroyObjects()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ZNetView::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Patches.ZNetViewPatch+Awake_Patch::Postfix(ZNetView __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZNetView::Awake()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool ZoneSystem::SpawnZone(Vector2i zoneID, ZoneSystem+SpawnMode mode, UnityEngine.GameObject& root) with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.Patches.ZoneSystemPatch+SpawnZone_Patch::Prefix()
+1 postfixes:
+* static void ValheimMod.Patches.ZoneSystemPatch+SpawnZone_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool ZoneSystem::SpawnZone(Vector2i zoneID, ZoneSystem+SpawnMode mode, UnityEngine.GameObject& root)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching bool ZSteamMatchmaking::VerifySessionTicket(byte[] ticket, Steamworks.CSteamID steamID) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static bool ValheimMod.Patches.ZSteamMatchmakingPatch+VerifySessionTicket_Patch::Postfix(bool __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool ZSteamMatchmaking::VerifySessionTicket(byte[] ticket, Steamworks.CSteamID steamID)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Humanoid::DrainEquipedItemDurability(ItemDrop+ItemData item, float dt) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.Patches.HumanoidPatch+DrainEquipedItemDurability_Patch::Prefix(Humanoid __instance, ItemDrop+ItemData item, float dt)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Humanoid::DrainEquipedItemDurability(ItemDrop+ItemData item, float dt)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void Humanoid::HideHandItems() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.Patches.HumanoidPatch+HideHandItems_Patch::Prefix(Humanoid __instance, ItemDrop+ItemData ___m_rightItem)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Humanoid::HideHandItems()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching bool Humanoid::EquipItem(ItemDrop+ItemData item, bool triggerEquipEffects) with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ValheimMod.Patches.HumanoidPatch+EquipItem_Patch::Prefix(Humanoid __instance, Single& ___m_swimTimer, ItemDrop+ItemData item, Single& __state)
+1 postfixes:
+* static void ValheimMod.Patches.HumanoidPatch+EquipItem_Patch::Postfix(Humanoid __instance, Single& ___m_swimTimer, float __state)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Humanoid::EquipItem(ItemDrop+ItemData item, bool triggerEquipEffects)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InventoryGui::UpdateRecipe(Player player, float dt) with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ValheimMod.Patches.InventoryGuiPatch+UpdateRecipe_Patch::Prefix(InventoryGui __instance, Player player)
+1 postfixes:
+* static void ValheimMod.Patches.InventoryGuiPatch+UpdateRecipe_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::UpdateRecipe(Player player, float dt)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InventoryGui::DoCrafting(Player player) with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.Patches.InventoryGuiPatch+DoCrafting_Patch::Prefix(InventoryGui __instance, Player player, ValheimMod.Patches.UpgradeState& __state, ItemDrop+ItemData ___m_craftUpgradeItem)
+1 postfixes:
+* static void ValheimMod.Patches.InventoryGuiPatch+DoCrafting_Patch::Postfix(InventoryGui __instance, Player player, ValheimMod.Patches.UpgradeState __state, ItemDrop+ItemData ___m_craftUpgradeItem)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::DoCrafting(Player player)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching ItemDrop+ItemData Inventory::AddItem(string name, int stack, int quality, int variant, long crafterID, string crafterName) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static ItemDrop+ItemData ValheimMod.Patches.InventoryPatch+AddItem_Patch::Postfix(ItemDrop+ItemData __result, Inventory __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on ItemDrop+ItemData Inventory::AddItem(string name, int stack, int quality, int variant, long crafterID, string crafterName)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching virtual bool RuneStone::UseItem(Humanoid user, ItemDrop+ItemData item) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static bool ValheimMod.Patches.RuneStonePatch+UseItem_Patch::Postfix(bool __result, RuneStone __instance, Humanoid user, ItemDrop+ItemData item)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual bool RuneStone::UseItem(Humanoid user, ItemDrop+ItemData item)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Player::SetMouseLook(UnityEngine.Vector2 mouseLook) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.Monobehaviours.MisdirectionRune+SetMouseLook_Patch::Prefix(Player __instance, UnityEngine.Vector2& mouseLook)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::SetMouseLook(UnityEngine.Vector2 mouseLook)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void Character::UpdateMotion(float dt) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.Monobehaviours.MisdirectionRune+UpdateMotion_Patch::Postfix(Character __instance, UnityEngine.Vector3 ___m_currentVel, float dt)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Character::UpdateMotion(float dt)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Minimap::UpdatePlayerMarker(Player player, UnityEngine.Quaternion playerRot) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimMod.Monobehaviours.MisdirectionRune+UpdatePlayerMarker_Patch::Prefix(Minimap __instance, Player player, UnityEngine.Quaternion& playerRot)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Minimap::UpdatePlayerMarker(Player player, UnityEngine.Quaternion playerRot)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :   BepInEx] Loading [Gizmo Reloaded 1.1.5]
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-b5117777-aa5c-42fb-bb02-1325ff5e4cbc, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.03
+[Info   :  HarmonyX] Patching void Player::UpdatePlacementGhost(bool flashGuardStone) with 1 prefixes, 0 postfixes, 2 transpilers, 1 finalizers
+1 prefixes:
+* static void ValheimMod.PlayerPatch+UpdatePlacementGhost_Patch::Prefix(Player __instance)
+2 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> FarmGrid.Patches.FarmGrid_Patch::UpdatePlacementGhost(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> GizmoReloaded.UpdatePlacementGhost_Patch::Transpiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+1 finalizers:
+* static Exception ValheimMod.PlayerPatch+UpdatePlacementGhost_Patch::Finalizer(Player __instance, UnityEngine.GameObject ___m_placementGhost, int ___m_placeRotation, int ___m_placementStatus)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdatePlacementGhost(bool flashGuardStone)
+[Info   :  HarmonyX] Transpiling void Player::UpdatePlacementGhost(bool flashGuardStone)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> FarmGrid.Patches.FarmGrid_Patch::UpdatePlacementGhost(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> GizmoReloaded.UpdatePlacementGhost_Patch::Transpiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing finalizers
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-1f2fb252-5016-4cff-aa9e-e69af216317e, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.03
+[Info   :  HarmonyX] Patching void Player::UpdatePlacement(bool takeInput, float dt) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void GizmoReloaded.UpdatePlacement_Patch::Player_UpdatePlacement(Player __instance, UnityEngine.GameObject ___m_placementGhost, bool takeInput, float dt)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdatePlacement(bool takeInput, float dt)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :   BepInEx] Loading [HeightmapUnlimited 1.2.0.0]
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-4b1a425b-bf36-46d7-b4ca-a8dcf029e2d4, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.03
+[Info   :  HarmonyX] Patching void Game::Start() with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void HeightmapUnlimited.Game_Patches::StartPrefix()
+1 postfixes:
+* static void Advize_PlantEverything.Configuration.Config::RegisterSyncConfigRPC()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Game::Start()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Heightmap::LevelTerrain(UnityEngine.Vector3 worldPos, float radius, bool square, float[] baseHeights, float[] levelOnly, bool playerModifiction) with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> HeightmapUnlimited.Heightmap_Patches::Transpiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Heightmap::LevelTerrain(UnityEngine.Vector3 worldPos, float radius, bool square, float[] baseHeights, float[] levelOnly, bool playerModifiction)
+[Info   :  HarmonyX] Transpiling void Heightmap::LevelTerrain(UnityEngine.Vector3 worldPos, float radius, bool square, float[] baseHeights, float[] levelOnly, bool playerModifiction)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> HeightmapUnlimited.Heightmap_Patches::Transpiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Patching void TerrainComp::LevelTerrain(UnityEngine.Vector3 worldPos, float radius, bool square) with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> HeightmapUnlimited.TerrainComp_Patches::LevelTerrainTranspiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TerrainComp::LevelTerrain(UnityEngine.Vector3 worldPos, float radius, bool square)
+[Info   :  HarmonyX] Transpiling void TerrainComp::LevelTerrain(UnityEngine.Vector3 worldPos, float radius, bool square)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> HeightmapUnlimited.TerrainComp_Patches::LevelTerrainTranspiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Patching void TerrainComp::ApplyToHeightmap(UnityEngine.Texture2D clearedMask, System.Collections.Generic.List<float> heights, float[] baseHeights, float[] levelOnlyHeights, Heightmap hm) with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> HeightmapUnlimited.TerrainComp_Patches::ApplyToHeightmapTranspiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TerrainComp::ApplyToHeightmap(UnityEngine.Texture2D clearedMask, System.Collections.Generic.List<float> heights, float[] baseHeights, float[] levelOnlyHeights, Heightmap hm)
+[Info   :  HarmonyX] Transpiling void TerrainComp::ApplyToHeightmap(UnityEngine.Texture2D clearedMask, System.Collections.Generic.List<float> heights, float[] baseHeights, float[] levelOnlyHeights, Heightmap hm)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> HeightmapUnlimited.TerrainComp_Patches::ApplyToHeightmapTranspiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Patching void TerrainComp::RaiseTerrain(UnityEngine.Vector3 worldPos, float radius, float delta, bool square, float power) with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> HeightmapUnlimited.TerrainComp_Patches::RaiseTerrainTranspiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TerrainComp::RaiseTerrain(UnityEngine.Vector3 worldPos, float radius, float delta, bool square, float power)
+[Info   :  HarmonyX] Transpiling void TerrainComp::RaiseTerrain(UnityEngine.Vector3 worldPos, float radius, float delta, bool square, float power)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> HeightmapUnlimited.TerrainComp_Patches::RaiseTerrainTranspiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Reverse patching static ZNetPeer HeightmapUnlimited.ZNet_Patches::GetPeerReversePatch(object instance, ZRpc rpc) with ZNetPeer ZNet::GetPeer(ZRpc rpc)
+
+[Info   :  HarmonyX] Patching void ZNet::RPC_PeerInfo(ZRpc rpc, ZPackage pkg) with 2 prefixes, 3 postfixes, 0 transpilers, 0 finalizers
+2 prefixes:
+* static void ValheimMod.Patches.ZNetPatch+RPC_PeerInfo_Patch::Prefix(ZRpc rpc, ZPackage pkg, ZNet& __instance)
+* static bool HeightmapUnlimited.ZNet_Patches::PeerInfoPrefix(ZNet __instance, ZRpc rpc, ZPackage& pkg, ZPackage& __state)
+3 postfixes:
+* static void Advize_PlantEverything.Configuration.Config::RequestConfigFromServer()
+* static void ValheimMod.Patches.ZNetPatch+RPC_PeerInfo_Patch::Postfix(ZNet& __instance, ZRpc rpc)
+* static void HeightmapUnlimited.ZNet_Patches::PeerInfoPostfix(ZNet __instance, ZRpc rpc, ZPackage __state)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZNet::RPC_PeerInfo(ZRpc rpc, ZPackage pkg)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void ZRpc::Invoke(string method, object[] parameters) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void HeightmapUnlimited.ZRpc_Patches::InvokePrefix(string method, object[] parameters)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void ZRpc::Invoke(string method, object[] parameters)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :   BepInEx] Loading [UsefulPaths 1.0.5.0]
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-1f88a53f-1758-4ab8-9b24-aac552f213dd, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.03
+[Info   :  HarmonyX] Patching void Character::UpdateWalking(float dt) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void UsefulPaths.CharacterUpdateWalking_Patch::Prefix(Character __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Character::UpdateWalking(float dt)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual float Player::GetJogSpeedFactor() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void UsefulPaths.PlayerGetJogSpeedFactor_Patch::Postfix(Single& __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual float Player::GetJogSpeedFactor()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching virtual float Player::GetRunSpeedFactor() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void UsefulPaths.PlayerGetRunSpeedFactor_Patch::Postfix(Single& __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual float Player::GetRunSpeedFactor()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching virtual void Player::UseStamina(float v) with 2 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+2 prefixes:
+* static bool ToolsPatches::HammerStamina_Prefix(Player __instance, Single& v)
+* static void UsefulPaths.PlayerUseStamina_Patch::Prefix(Single& v)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Player::UseStamina(float v)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :   BepInEx] Loading [ImmersivePortals 0.2.7.7]
+[Info   :  HarmonyX] ### Harmony id=Nekres_ImmersivePortals, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.03
+[Info   :   BepInEx] Loading [Valheim Recycle 2.0.0]
+[Info   :Valheim Recycle] AWAKE
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-32ebfadf-faaf-469a-af4e-27a7bdd9e670, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.03
+[Info   :  HarmonyX] Patching void InventoryGui::Update() with 0 prefixes, 3 postfixes, 0 transpilers, 0 finalizers
+3 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+InventoryGui_Update_Patch::Postfix(InventoryGui __instance, InventoryGrid ___m_playerGrid, UnityEngine.Animator ___m_animator)
+* static void MovableChestInventory.BepInExPlugin+InventoryGui_Update_Patch::Postfix(InventoryGui __instance, Container ___m_currentContainer)
+* static void ValheimRecycle.InventoryGuiPatch::PostfixUpdate(InventoryGui __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::Update()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InventoryGui::OnTabCraftPressed() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimRecycle.InventoryGuiPatch::PrefixOnTabCraftPressed(InventoryGui __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::OnTabCraftPressed()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void InventoryGui::OnTabUpgradePressed() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimRecycle.InventoryGuiPatch::PrefixOnTabUpgradePressed(InventoryGui __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::OnTabUpgradePressed()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching static bool InventoryGui::SetupRequirement(UnityEngine.Transform elementRoot, Piece+Requirement req, Player player, bool craft, int quality) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimRecycle.InventoryGuiPatch::PostfixSetupRequirement(UnityEngine.Transform elementRoot, Piece+Requirement req, int quality)
+
+[Info   :  HarmonyX] Running ILHook manipulator on static bool InventoryGui::SetupRequirement(UnityEngine.Transform elementRoot, Piece+Requirement req, Player player, bool craft, int quality)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InventoryGui::UpdateCraftingPanel(bool focusView) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool ValheimRecycle.InventoryGuiPatch::PrefixUpdateCraftingPanel(InventoryGui __instance, bool focusView)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::UpdateCraftingPanel(bool focusView)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void InventoryGui::UpdateRecipeList(System.Collections.Generic.List<Recipe> recipes) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimRecycle.InventoryGuiPatch::PostfixUpdateRecipeList(InventoryGui __instance, System.Collections.Generic.List<Recipe> recipes)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::UpdateRecipeList(System.Collections.Generic.List<Recipe> recipes)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InventoryGui::UpdateRecipe(Player player, float dt) with 2 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+2 prefixes:
+* static void ValheimMod.Patches.InventoryGuiPatch+UpdateRecipe_Patch::Prefix(InventoryGui __instance, Player player)
+* static bool ValheimRecycle.InventoryGuiPatch::PrefixUpdateRecipe(InventoryGui __instance, Player player, float dt)
+1 postfixes:
+* static void ValheimMod.Patches.InventoryGuiPatch+UpdateRecipe_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::UpdateRecipe(Player player, float dt)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :   BepInEx] Loading [OreSupport 1.0.0.0]
+[Info   :  HarmonyX] ### Harmony id=valheim.jerekuusela.ore_support, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.03
+[Info   :  HarmonyX] Patching void Player::UpdateHover() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void OreSupport.Player_AddHoverForVisuals::Postfix(UnityEngine.GameObject& ___m_hovering, UnityEngine.GameObject& ___m_hoveringCreature)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdateHover()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Reverse patching static bool OreSupport.Patch::MineRock5_GetSupport(MineRock5 instance, UnityEngine.Collider c) with bool MineRock5::GetSupport(UnityEngine.Collider c)
+
+[Info   :  HarmonyX] Patching void MineRock5::UpdateSupport() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void OreSupport.MineRock5_Support::Postfix(MineRock5 __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void MineRock5::UpdateSupport()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :   BepInEx] Loading [Vortex Worlds 1.0.1]
+[Message:   BepInEx] Chainloader startup complete
+[Debug  :Jotunn.Main] Applying patches in ModCompatibility.InitPatch
+[Debug  :Jotunn.Main] Applying patches in InGameConfig.HookOnSettings
+[Debug  :Jotunn.Main] Applying patches in ModCompatibility.InitPatchEarly
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-25f5b3f9-ca3a-4b3b-a683-f1177d7cbf95, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.04
+[Info   :  HarmonyX] Patching bool Character::IsSwiming() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool Use_Equipment_in_Water.UseEquipmentInWater::patchIsSwim(Boolean& __result, Humanoid __instance, float ___m_swimTimer)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Character::IsSwiming()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching bool Humanoid::EquipItem(ItemDrop+ItemData item, bool triggerEquipEffects) with 2 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+2 prefixes:
+* static void ValheimMod.Patches.HumanoidPatch+EquipItem_Patch::Prefix(Humanoid __instance, Single& ___m_swimTimer, ItemDrop+ItemData item, Single& __state)
+* static void Use_Equipment_in_Water.UseEquipmentInWater::patchEquipItem()
+1 postfixes:
+* static void ValheimMod.Patches.HumanoidPatch+EquipItem_Patch::Postfix(Humanoid __instance, Single& ___m_swimTimer, float __state)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Humanoid::EquipItem(ItemDrop+ItemData item, bool triggerEquipEffects)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void Humanoid::UpdateEquipment(float dt) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void Use_Equipment_in_Water.UseEquipmentInWater::patchUpdateEquipment()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Humanoid::UpdateEquipment(float dt)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void Character::ApplyDamage(HitData hit, bool showDamageText, bool triggerEffects, HitData+DamageModifier mod) with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> ImmersivePortals.Patches.CharacterPatch::PreventDamageWhileTeleporting(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Character::ApplyDamage(HitData hit, bool showDamageText, bool triggerEffects, HitData+DamageModifier mod)
+[Info   :  HarmonyX] Transpiling void Character::ApplyDamage(HitData hit, bool showDamageText, bool triggerEffects, HitData+DamageModifier mod)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> ImmersivePortals.Patches.CharacterPatch::PreventDamageWhileTeleporting(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Patching void Hud::UpdateBlackScreen(Player player, float dt) with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> ImmersivePortals.Patches.HudPatch::ApplyPortalBlackScreenConfig(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Hud::UpdateBlackScreen(Player player, float dt)
+[Info   :  HarmonyX] Transpiling void Hud::UpdateBlackScreen(Player player, float dt)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> ImmersivePortals.Patches.HudPatch::ApplyPortalBlackScreenConfig(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Patching void Player::UpdateTeleport(float dt) with 1 prefixes, 1 postfixes, 1 transpilers, 0 finalizers
+1 prefixes:
+* static void ImmersivePortals.Patches.PlayerPatch::DecreaseTeleportTime(Single& dt, Player& __instance, Single& ___m_teleportTimer)
+1 postfixes:
+* static void ImmersivePortals.Patches.PlayerPatch::LogTeleportTime(Boolean& ___m_teleporting)
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> ImmersivePortals.Patches.PlayerPatch::ApplyConsiderAreaLoadedConfig(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdateTeleport(float dt)
+[Info   :  HarmonyX] Transpiling void Player::UpdateTeleport(float dt)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> ImmersivePortals.Patches.PlayerPatch::ApplyConsiderAreaLoadedConfig(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching virtual bool Player::TeleportTo(UnityEngine.Vector3 pos, UnityEngine.Quaternion rot, bool distantTeleport) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ImmersivePortals.Patches.PlayerPatch::SetLastTeleportTime(bool __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual bool Player::TeleportTo(UnityEngine.Vector3 pos, UnityEngine.Quaternion rot, bool distantTeleport)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void TeleportWorld::Teleport(Player player) with 1 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 prefixes:
+* static bool ImmersivePortals.Patches.TeleportWorldPatch::IsFront(Player& player, TeleportWorld __instance, ZNetView& ___m_nview, Single& ___m_exitDistance)
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> ImmersivePortals.Patches.TeleportWorldPatch::ReplaceTeleportToWithImmersiveApproach(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TeleportWorld::Teleport(Player player)
+[Info   :  HarmonyX] Transpiling void TeleportWorld::Teleport(Player player)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> ImmersivePortals.Patches.TeleportWorldPatch::ReplaceTeleportToWithImmersiveApproach(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-efb65ed9-f21d-4bdf-9808-80bf90ec96d1, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.07
+[Info   :  HarmonyX] Patching void BepInEx.Configuration.ConfigEntryBase::SetSerializedValue(string value) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool Jotunn.Managers.SynchronizationManager+ConfigEntryBase_SetSerializedValue::Prefix(BepInEx.Configuration.ConfigEntryBase __instance, string value)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void BepInEx.Configuration.ConfigEntryBase::SetSerializedValue(string value)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-368f5f87-a0e2-4a5b-8301-88b6b46a8d7a, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+### At 2021-10-21 08.25.07
+[Info   :  HarmonyX] Patching string BepInEx.Configuration.ConfigEntryBase::GetSerializedValue() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool Jotunn.Managers.SynchronizationManager+ConfigEntryBase_GetSerializedValue::Prefix(BepInEx.Configuration.ConfigEntryBase __instance, String& __result)
+
+[Info   :  HarmonyX] Running ILHook manipulator on string BepInEx.Configuration.ConfigEntryBase::GetSerializedValue()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :Jotunn.Managers.CommandManager] Adding 1 commands to the Console
+[Debug  :Jotunn.Managers.SynchronizationManager] Gathering config values
+[Info   :Jotunn.Managers.LocalizationManager] Loading custom localizations
+[Debug  :Jotunn.Entities.CustomLocalization] Added Json language file: Clutter.json
+[Info   :Jotunn.Managers.LocalizationManager] Adding tokens for language 'English'
+[Debug  :Jotunn.Managers.LocalizationManager] Adding tokens for 'Localization (advize.PlantEverything)'
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: PlumgaClutterTool -> Clutter Bucket
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: PlumgaClutterTool_description -> A bucket full of clutter. Use this to clutter up your place!
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_itemstand_horizontal_reduced -> Item Stand - Horizontal
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_itemstand_horizontal_reduced_description -> A smaller, less visible item stand.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_itemstand_vertical_reduced -> Item Stand - Vertical
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_itemstand_vertical_reduced_description -> A smaller, less visible item stand.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_itemstand_spear -> Item Stand - Spear
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_itemstand_spear_description -> A great way to show off the severed heads of your enemies.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_itemstand_stake -> Item Stand - Stake
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_itemstand_stake_description -> A great way to show off the severed heads of your enemies.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_barnowl -> Owl Sculpture
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_brownpelican -> Pelican Sculpture
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_deer -> Deer Sculpture
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_elk -> Elk Sculpture
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_flyingcrow -> Flying Crow Sculpture
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_heron -> Heron Sculpture
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_wildhorse -> Horse Sculpture
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_wolf -> Wolf Sculpture
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_birdhouse -> Birdhouse
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_bucket -> Small Bucket
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_bucketbig -> Large Bucket
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_mortarandpestle -> Mortar and Pestle
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_pan -> Pan
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_picnicbasket -> Picnic Basket
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_picnicbasketchest -> Picnic Basket
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_pot -> Pot
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_rollingpin -> Rolling Pin
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_soap -> Soap
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_tub -> Empty Tub
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_tubfull -> Full Tub
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_weaponrack -> Weapon Rack
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_weaponrack_description -> Empty rack for displaying your weapons. Use with the small item stands for the best effect.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_weaponrack_full -> Weapon Rack - Full
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_weaponrack_full_description -> A pre-filled weapon rack. The weapons are just for show. They are attached to the rack and cannot be removed.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_winebottle -> Wine Bottle
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_winerack -> Wine Rack
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_rug_deer_tablecloth -> Deer Hide Tablecloth
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_rug_fur_tablecloth -> Lox Pelt Tablecloth
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_rug_wolf_tablecloth -> Wolf Pelt Tablecloth
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_altar -> Altar
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_altarwcandle -> Altar with Candle
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_bookblue -> Blue Book - Vertical
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_bookblue_horiz -> Blue Book - Horizontal
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_bookred -> Red Book - Vertical
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_bookred_horiz -> Red Book - Horizontal
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_bowl -> Wooden Bowl
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_bowlbig -> Large Wooden Bowl
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_candle -> Candle - Unlit
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_candlelit -> Candle
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_candlebottle -> Candle in a Bottle
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_candlelantern -> Candle Lantern
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_candlelit2 -> Candle
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_candlesnake -> Candle in a Snake Holder
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_comb -> Comb
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_mug1 -> Mug
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_mug2 -> Mug
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_plate -> Wooden Plate
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_platebig -> Large Wooden Plate
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_shelf -> Shelf
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_shelfwithbooks -> Bookshelf
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_spoon -> Wooden Spoon
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_basket -> Basket
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_bonepile -> Pile of Bones
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_bones1 -> Bones
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_bones2 -> Bones
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_bones3 -> Bones
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_bones4 -> Bones
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_skull -> Skull
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_gravestone -> Gravestone
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_gravestone_description -> Write a custom inscription by interacting with the gravestone.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_diary -> Diary
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_diary_description -> Like a book, but you can write in it!
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_diarypage -> Diary Page
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_diarypage_description -> A piece of paper that you can write on.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_fonduepot -> Fondue Pot
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_pictureframe1 -> Painting
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_pictureframe2 -> Painting
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_pictureframe3 -> Painting
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_pictureframe4 -> Painting
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_pipe -> Pipe
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_quillandink -> Quill and Ink
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_quillandparchment -> Quill and Parchment
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_cuckooclock -> Cuckoo Clock
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_roundtable -> Round Table
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_roundtablewithcloth -> Round Table with Tablecloth
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_scroll1 -> Scroll
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_scroll2 -> Scroll
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_scroll3 -> Scroll
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_scroll4 -> Scroll
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_scroll5 -> Scroll
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_fancychest -> Fancy Wood Chest
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_stonechest -> Stone Chest
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_straw -> Straw Bundle
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_coolchair -> Fancy Wood Chair
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_stool -> Round Stool
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_swing -> Swing
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_statuecorgi -> Corgi Statue
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_statuedeer -> Deer Statue
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_statueevil_large -> Evil Statue - Large
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_statueevil_small -> Evil Statue - Small
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_statuehare -> Hare Statue
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_statueseed -> Seed Statue
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_barberpole -> Barber Shop Pole
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_booksecretstorage -> Stash Book
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_booksecretstorage_description -> A book with a real secret.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_booksecretstoragechest -> Stash Book
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_booksecretstorage_public -> Stash Book - Public
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_booksecretstorage_public_description -> A book with a real secret. This version can be opened by anyone, even in a ward.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_booksecretstorage_publicchest -> Loot Book
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_fancychest_public -> Fancy Wood Chest - Public
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_fancychest_public_description -> This chest can be opened by anyone, even in a ward.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_fancychest_publicchest -> Loot Box
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_stonechest_public -> Stone Chest - Public
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_stonechest_public_description -> This chest can be opened by anyone, even in a ward.
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_stonechest_publicchest -> Loot Box
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_horizontalweb -> Horizontal Spider Web
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_tunnelweb -> Tunnel Spider Web
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_verticalweb -> Vertical Spider Web
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_journal -> Journal
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_journal_description -> Like a book, but you can write in it!
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_openbook -> Open Book
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_poetrybook1H -> Red Poetry Book - Horizontal
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_poetrybook1V -> Red Poetry Book - Vertical
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_poetrybook2H -> Green Poetry Book - Horizontal
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_poetrybook2V -> Green Poetry Book - Vertical
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_stackedpoetrybooks1 -> Stacked Poetry Books - Red
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_stackedpoetrybooks2 -> Stacked Poetry Books - Green
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_globe1 -> Globe
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_globe2 -> Globe
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_map1 -> Old Map
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_map2 -> Rolled Up Map
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_map3 -> Open Map
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dragonstatuesmall -> Golden Dragon Statue - Small
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dragonstatuelarge -> Golden Dragon Statue - Large
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_blackdragonstatuesmall -> Black Dragon Statue - Small
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_blackdragonstatuelarge -> Black Dragon Statue - Large
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_dunmr_shelfwithbooksdouble -> Double Bookshelf
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_swingingswing -> Swinging Swing
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_largesign -> Large Sign
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol1 -> Celtic Idol 1
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol1small -> Celtic Idol 1 - Small
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol2 -> Celtic Idol 2
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol3 -> Celtic Idol 3
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol4 -> Celtic Idol 4
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol5 -> Celtic Idol 5
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol6 -> Celtic Idol 6
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol7 -> Celtic Idol 7
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol8 -> Celtic Idol 8
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol9 -> Celtic Idol 9
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol10 -> Celtic Idol 10
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol11 -> Celtic Idol 11
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_celticidol12 -> Celtic Idol 12
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_lokistatue -> Loki Statue
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: custompiece_odinstatue -> Odin Statue
+[Debug  :Jotunn.Managers.LocalizationManager] Adding tokens for 'Localization (com.jotunn.jotunn)'
+[Debug  :Jotunn.Managers.LocalizationManager] Added translation: jotunn_modsettings -> Mod Settings
+[Info   :Jotunn.Managers.ItemManager] Adding 1 custom items to the ObjectDB
+[Debug  :Jotunn.Managers.ItemManager] Added item $PlumgaClutterTool | Token: $PlumgaClutterTool
+[Info   :Jotunn.Managers.CommandManager] Adding 1 commands to the Console
+[Info   :Jotunn.Managers.PrefabManager] Adding 137 custom prefabs to the ZNetScene
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab _ClutterPieceTable
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $PlumgaClutterTool
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_basket
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_bucket
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_bucketbig
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_candlebottle
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_candlelantern
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_candlelit2
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_candlesnake
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_candle
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_candlelit
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_diary
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_diarypage
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_bookblue
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_bookblue_horiz
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_bookred
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_bookred_horiz
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_quillandink
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_quillandparchment
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_scroll1
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_scroll2
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_scroll3
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_scroll4
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_scroll5
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_pictureframe1
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_pictureframe2
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_pictureframe3
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_pictureframe4
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_rug_deer_tablecloth
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_rug_fur_tablecloth
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_rug_wolf_tablecloth
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_soap
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_pipe
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_comb
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_straw
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_winebottle
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_barberpole
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_gravestone
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_bonepile
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_bones1
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_bones2
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_bones3
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_bones4
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_skull
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_itemstand_horizontal_reduced
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_itemstand_vertical_reduced
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_itemstand_spear
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_itemstand_stake
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_coolchair
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_stool
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_swing
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_swingingswing
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_roundtable
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_roundtablewithcloth
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_fancychest
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_stonechest
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_shelf
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_shelfwithbooks
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_shelfwithbooksdouble
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_weaponrack
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_weaponrack_full
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_altar
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_altarwcandle
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_tub
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_tubfull
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_winerack
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_cuckooclock
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_birdhouse
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_bowl
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_bowlbig
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_plate
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_platebig
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_mug1
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_mug2
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_pan
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_pot
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dunmr_spoon
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_mortarandpestle
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_rollingpin
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_fonduepot
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_picnicbasket
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_barnowl
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_brownpelican
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_deer
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_elk
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_flyingcrow
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_heron
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_wolf
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_wildhorse
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_statuecorgi
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_statuedeer
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_statueevil_large
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_statueevil_small
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_statuehare
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_statueseed
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_booksecretstorage
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_booksecretstorage_public
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_fancychest_public
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_stonechest_public
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_horizontalweb
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_tunnelweb
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_verticalweb
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_journal
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_openbook
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_poetrybook1H
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_poetrybook1V
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_poetrybook2H
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_poetrybook2V
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_stackedpoetrybooks1
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_stackedpoetrybooks2
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_globe1
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_globe2
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_map1
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_map2
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_map3
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dragonstatuesmall
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_dragonstatuelarge
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_blackdragonstatuesmall
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_blackdragonstatuelarge
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_largesign
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol1
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol1small
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol2
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol3
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol4
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol5
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol6
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol7
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol8
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol9
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol10
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol11
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_celticidol12
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_lokistatue
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab $custompiece_odinstatue
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab ColorPicker
+[Debug  :Jotunn.Managers.PrefabManager] Added prefab GradientPicker
+[Info   :Jotunn.Managers.ItemManager] Adding 1 custom items to the ObjectDB
+[Debug  :Jotunn.Managers.ItemManager] Added item $PlumgaClutterTool | Token: $PlumgaClutterTool
+[Info   :Jotunn.Managers.ItemManager] Adding 1 custom recipes to the ObjectDB
+[Debug  :Jotunn.Managers.ItemManager] Added recipe for $PlumgaClutterTool
+[Info   :Jotunn.Managers.PieceManager] Adding 4 custom piece table categories
+[Debug  :Jotunn.Managers.PieceManager] Added categories for table _ClutterPieceTable
+[Debug  :Jotunn.Managers.PieceManager] Added categories for table _HammerPieceTable
+[Debug  :Jotunn.Managers.PieceManager] Added categories for table _RuneFocusPieceTable
+[Info   :Jotunn.Managers.PieceManager] Adding 133 custom pieces to the PieceTables
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_basket | Token: $custompiece_basket
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_bucket | Token: $custompiece_bucket
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_bucketbig | Token: $custompiece_bucketbig
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_candlebottle | Token: $custompiece_candlebottle
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_candlelantern | Token: $custompiece_candlelantern
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_candlelit2 | Token: $custompiece_candlelit2
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_candlesnake | Token: $custompiece_candlesnake
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_candle | Token: $custompiece_dunmr_candle
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_candlelit | Token: $custompiece_dunmr_candlelit
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_diary | Token: $custompiece_diary
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_diarypage | Token: $custompiece_diarypage
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_bookblue | Token: $custompiece_dunmr_bookblue
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_bookblue_horiz | Token: $custompiece_dunmr_bookblue_horiz
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_bookred | Token: $custompiece_dunmr_bookred
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_bookred_horiz | Token: $custompiece_dunmr_bookred_horiz
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_quillandink | Token: $custompiece_quillandink
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_quillandparchment | Token: $custompiece_quillandparchment
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_scroll1 | Token: $custompiece_scroll1
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_scroll2 | Token: $custompiece_scroll2
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_scroll3 | Token: $custompiece_scroll3
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_scroll4 | Token: $custompiece_scroll4
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_scroll5 | Token: $custompiece_scroll5
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_pictureframe1 | Token: $custompiece_pictureframe1
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_pictureframe2 | Token: $custompiece_pictureframe2
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_pictureframe3 | Token: $custompiece_pictureframe3
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_pictureframe4 | Token: $custompiece_pictureframe4
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_rug_deer_tablecloth | Token: $custompiece_rug_deer_tablecloth
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_rug_fur_tablecloth | Token: $custompiece_rug_fur_tablecloth
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_rug_wolf_tablecloth | Token: $custompiece_rug_wolf_tablecloth
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_soap | Token: $custompiece_soap
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_pipe | Token: $custompiece_pipe
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_comb | Token: $custompiece_dunmr_comb
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_straw | Token: $custompiece_straw
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_winebottle | Token: $custompiece_winebottle
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_barberpole | Token: $custompiece_barberpole
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_gravestone | Token: $custompiece_gravestone
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_bonepile | Token: $custompiece_bonepile
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_bones1 | Token: $custompiece_bones1
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_bones2 | Token: $custompiece_bones2
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_bones3 | Token: $custompiece_bones3
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_bones4 | Token: $custompiece_bones4
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_skull | Token: $custompiece_skull
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_itemstand_horizontal_reduced | Token: $custompiece_itemstand_horizontal_reduced
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_itemstand_vertical_reduced | Token: $custompiece_itemstand_vertical_reduced
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_itemstand_spear | Token: $custompiece_itemstand_spear
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_itemstand_stake | Token: $custompiece_itemstand_stake
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_coolchair | Token: $custompiece_coolchair
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_stool | Token: $custompiece_stool
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_swing | Token: $custompiece_swing
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_swingingswing | Token: $custompiece_swingingswing
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_roundtable | Token: $custompiece_roundtable
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_roundtablewithcloth | Token: $custompiece_roundtablewithcloth
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_fancychest | Token: $custompiece_fancychest
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_stonechest | Token: $custompiece_stonechest
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_shelf | Token: $custompiece_dunmr_shelf
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_shelfwithbooks | Token: $custompiece_dunmr_shelfwithbooks
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_shelfwithbooksdouble | Token: $custompiece_dunmr_shelfwithbooksdouble
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_weaponrack | Token: $custompiece_weaponrack
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_weaponrack_full | Token: $custompiece_weaponrack_full
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_altar | Token: $custompiece_dunmr_altar
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_altarwcandle | Token: $custompiece_dunmr_altarwcandle
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_tub | Token: $custompiece_tub
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_tubfull | Token: $custompiece_tubfull
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_winerack | Token: $custompiece_winerack
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_cuckooclock | Token: $custompiece_cuckooclock
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_birdhouse | Token: $custompiece_birdhouse
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_bowl | Token: $custompiece_dunmr_bowl
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_bowlbig | Token: $custompiece_dunmr_bowlbig
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_plate | Token: $custompiece_dunmr_plate
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_platebig | Token: $custompiece_dunmr_platebig
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_mug1 | Token: $custompiece_dunmr_mug1
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_mug2 | Token: $custompiece_dunmr_mug2
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_pan | Token: $custompiece_pan
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_pot | Token: $custompiece_pot
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dunmr_spoon | Token: $custompiece_dunmr_spoon
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_mortarandpestle | Token: $custompiece_mortarandpestle
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_rollingpin | Token: $custompiece_rollingpin
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_fonduepot | Token: $custompiece_fonduepot
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_picnicbasket | Token: $custompiece_picnicbasket
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_barnowl | Token: $custompiece_barnowl
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_brownpelican | Token: $custompiece_brownpelican
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_deer | Token: $custompiece_deer
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_elk | Token: $custompiece_elk
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_flyingcrow | Token: $custompiece_flyingcrow
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_heron | Token: $custompiece_heron
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_wolf | Token: $custompiece_wolf
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_wildhorse | Token: $custompiece_wildhorse
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_statuecorgi | Token: $custompiece_statuecorgi
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_statuedeer | Token: $custompiece_statuedeer
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_statueevil_large | Token: $custompiece_statueevil_large
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_statueevil_small | Token: $custompiece_statueevil_small
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_statuehare | Token: $custompiece_statuehare
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_statueseed | Token: $custompiece_statueseed
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_booksecretstorage | Token: $custompiece_booksecretstorage
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_booksecretstorage_public | Token: $custompiece_booksecretstorage_public
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_fancychest_public | Token: $custompiece_fancychest_public
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_stonechest_public | Token: $custompiece_stonechest_public
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_horizontalweb | Token: $custompiece_horizontalweb
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_tunnelweb | Token: $custompiece_tunnelweb
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_verticalweb | Token: $custompiece_verticalweb
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_journal | Token: $custompiece_journal
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_openbook | Token: $custompiece_openbook
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_poetrybook1H | Token: $custompiece_poetrybook1H
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_poetrybook1V | Token: $custompiece_poetrybook1V
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_poetrybook2H | Token: $custompiece_poetrybook2H
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_poetrybook2V | Token: $custompiece_poetrybook2V
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_stackedpoetrybooks1 | Token: $custompiece_stackedpoetrybooks1
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_stackedpoetrybooks2 | Token: $custompiece_stackedpoetrybooks2
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_globe1 | Token: $custompiece_globe1
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_globe2 | Token: $custompiece_globe2
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_map1 | Token: $custompiece_map1
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_map2 | Token: $custompiece_map2
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_map3 | Token: $custompiece_map3
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dragonstatuesmall | Token: $custompiece_dragonstatuesmall
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_dragonstatuelarge | Token: $custompiece_dragonstatuelarge
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_blackdragonstatuesmall | Token: $custompiece_blackdragonstatuesmall
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_blackdragonstatuelarge | Token: $custompiece_blackdragonstatuelarge
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_largesign | Token: $custompiece_largesign
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol1 | Token: $custompiece_celticidol1
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol1small | Token: $custompiece_celticidol1small
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol2 | Token: $custompiece_celticidol2
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol3 | Token: $custompiece_celticidol3
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol4 | Token: $custompiece_celticidol4
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol5 | Token: $custompiece_celticidol5
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol6 | Token: $custompiece_celticidol6
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol7 | Token: $custompiece_celticidol7
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol8 | Token: $custompiece_celticidol8
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol9 | Token: $custompiece_celticidol9
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol10 | Token: $custompiece_celticidol10
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol11 | Token: $custompiece_celticidol11
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_celticidol12 | Token: $custompiece_celticidol12
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_lokistatue | Token: $custompiece_lokistatue
+[Debug  :Jotunn.Managers.PieceManager] Added piece $custompiece_odinstatue | Token: $custompiece_odinstatue
+[Info   :Jotunn.Managers.MockManager] Destroying Mock prefabs
+[Info   : PlantEverything] Authoritative Config Registered
+[Debug  :Jotunn.Managers.SynchronizationManager] Gathering config values
+[Info   :Valheim Recycle] CreateRecycleButton
+[Debug  :Jotunn.Utils.ModCompatibility] Received Version package from 76561199041578884
+[Info   :  HarmonyX] Patching void Vagon::SetMass(float mass) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Vagon::SetMass(float mass)
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 2 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+2 prefixes:
+* static bool HoeRadius.BepInExPlugin+InputText_Patch::Prefix(Console __instance)
+* static bool MovableChestInventory.BepInExPlugin+InputText_Patch::Prefix(Console __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool MovableChestInventory.BepInExPlugin+InputText_Patch::Prefix(Console __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Patching virtual void Player::Awake() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Player::Awake()
+[Info   :  HarmonyX] Patching void TombStone::Awake() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TombStone::Awake()
+[Info   :  HarmonyX] Patching virtual bool TombStone::Interact(Humanoid character, bool hold, bool alt) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual bool TombStone::Interact(Humanoid character, bool hold, bool alt)
+[Info   :  HarmonyX] Patching void Inventory::MoveInventoryToGrave(Inventory original) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Inventory::MoveInventoryToGrave(Inventory original)
+[Info   :  HarmonyX] Patching void Player::Update() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimMod.ValheimMod+Update_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::Update()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InventoryGui::Update() with 0 prefixes, 2 postfixes, 0 transpilers, 0 finalizers
+2 postfixes:
+* static void MovableChestInventory.BepInExPlugin+InventoryGui_Update_Patch::Postfix(InventoryGui __instance, Container ___m_currentContainer)
+* static void ValheimRecycle.InventoryGuiPatch::PostfixUpdate(InventoryGui __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::Update()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InventoryGui::Update() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ValheimRecycle.InventoryGuiPatch::PostfixUpdate(InventoryGui __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::Update()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InventoryGui::UpdateInventory(Player player) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::UpdateInventory(Player player)
+[Info   :  HarmonyX] Patching Vector2i Inventory::FindEmptySlot(bool topFirst) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void ExtendedPlayerInventory.BepInExPlugin+FindEmptySlot_Patch::Postfix(Inventory __instance, Int32& ___m_height)
+
+[Info   :  HarmonyX] Running ILHook manipulator on Vector2i Inventory::FindEmptySlot(bool topFirst)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching Vector2i Inventory::FindEmptySlot(bool topFirst) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on Vector2i Inventory::FindEmptySlot(bool topFirst)
+[Info   :  HarmonyX] Patching int Inventory::GetEmptySlots() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on int Inventory::GetEmptySlots()
+[Info   :  HarmonyX] Patching bool Inventory::HaveEmptySlot() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Inventory::HaveEmptySlot()
+[Info   :  HarmonyX] Patching bool Inventory::AddItem(ItemDrop+ItemData item) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Inventory::AddItem(ItemDrop+ItemData item)
+[Info   :  HarmonyX] Patching bool Inventory::AddItem(ItemDrop+ItemData item, int amount, int x, int y) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool Inventory::AddItem(ItemDrop+ItemData item, int amount, int x, int y)
+[Info   :  HarmonyX] Patching void Hud::Awake() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Hud::Awake()
+[Info   :  HarmonyX] Patching void Hud::Update() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Hud::Update()
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool FogOfWarExploreRadius.BepInExPlugin+InputText_Patch::Prefix(Terminal __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
+[Info   :  HarmonyX] Patching void TerrainOp::Awake() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void TerrainOp::Awake()
+[Info   :  HarmonyX] Patching void EnvMan::Awake() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void EnvMan::Awake()
+[Info   :  HarmonyX] Patching void EnvMan::SetEnv(EnvSetup env, float dayInt, float nightInt, float morningInt, float eveningInt, float dt) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void EnvMan::SetEnv(EnvSetup env, float dayInt, float nightInt, float morningInt, float eveningInt, float dt)
+[Info   :  HarmonyX] Patching void Player::OnSkillLevelup(Skills+SkillType skill, float level) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::OnSkillLevelup(Skills+SkillType skill, float level)
+[Info   :  HarmonyX] Patching void Ship::OnTriggerEnter(UnityEngine.Collider collider) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Ship::OnTriggerEnter(UnityEngine.Collider collider)
+[Info   :  HarmonyX] Patching void Ship::OnTriggerExit(UnityEngine.Collider collider) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Ship::OnTriggerExit(UnityEngine.Collider collider)
+[Info   :  HarmonyX] Patching void Skills::Load(ZPackage pkg) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Skills::Load(ZPackage pkg)
+[Info   :  HarmonyX] Patching void Minimap::Explore(UnityEngine.Vector3 p, float radius) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Minimap::Explore(UnityEngine.Vector3 p, float radius)
+[Info   :  HarmonyX] Patching void Minimap::Awake() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Minimap::Awake()
+[Info   :  HarmonyX] Patching void Player::UpdateStats(float dt) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdateStats(float dt)
+[Info   :  HarmonyX] Patching virtual void Player::UseStamina(float v) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void UsefulPaths.PlayerUseStamina_Patch::Prefix(Single& v)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void Player::UseStamina(float v)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :Valheim Recycle] DESTROY
+[Info   :  HarmonyX] Patching void InventoryGui::Update() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::Update()
+[Info   :  HarmonyX] Patching void InventoryGui::UpdateRecipe(Player player, float dt) with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void ValheimMod.Patches.InventoryGuiPatch+UpdateRecipe_Patch::Prefix(InventoryGui __instance, Player player)
+1 postfixes:
+* static void ValheimMod.Patches.InventoryGuiPatch+UpdateRecipe_Patch::Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::UpdateRecipe(Player player, float dt)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InventoryGui::OnTabCraftPressed() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::OnTabCraftPressed()
+[Info   :  HarmonyX] Patching void InventoryGui::OnTabUpgradePressed() with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::OnTabUpgradePressed()
+[Info   :  HarmonyX] Patching static bool InventoryGui::SetupRequirement(UnityEngine.Transform elementRoot, Piece+Requirement req, Player player, bool craft, int quality) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on static bool InventoryGui::SetupRequirement(UnityEngine.Transform elementRoot, Piece+Requirement req, Player player, bool craft, int quality)
+[Info   :  HarmonyX] Patching void InventoryGui::UpdateCraftingPanel(bool focusView) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::UpdateCraftingPanel(bool focusView)
+[Info   :  HarmonyX] Patching void InventoryGui::UpdateRecipeList(System.Collections.Generic.List<Recipe> recipes) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::UpdateRecipeList(System.Collections.Generic.List<Recipe> recipes)
+[Info   :Valheim Recycle] Unpatched InventoryGui

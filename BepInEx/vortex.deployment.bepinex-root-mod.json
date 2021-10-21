@@ -1,0 +1,71 @@
+{
+  "instance": "7c0e739c-0b28-4bf7-a9c6-94a751361850",
+  "version": 1,
+  "deploymentMethod": "hardlink_activator",
+  "gameId": "valheim",
+  "deploymentTime": 1634837042737,
+  "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
+  "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx",
+  "files": [
+    {
+      "relPath": "plugins\\FarmGrid.dll",
+      "source": "FarmGrid BepInEx plugin-449-0-2-0-1615626159",
+      "target": "",
+      "time": 1615621808000
+    },
+    {
+      "relPath": "plugins\\HeightmapUnlimited\\HeightmapUnlimited.dll",
+      "source": "Heightmap Unlimited 1.2.0 (Rar)-359-1-2-0-1620581579",
+      "target": "",
+      "time": 1620577573000
+    },
+    {
+      "relPath": "plugins\\ImmersivePortals\\ImmersivePortals.dll",
+      "source": "Immersive Portals-268-0-2-7-7-1615582112",
+      "target": "",
+      "time": 1615578071000
+    },
+    {
+      "relPath": "plugins\\ImmersivePortals\\Assets\\AssetBundles\\immersiveportals.manifest",
+      "source": "Immersive Portals-268-0-2-7-7-1615582112",
+      "target": "",
+      "time": 1615307154000
+    },
+    {
+      "relPath": "plugins\\ImmersivePortals\\Assets\\AssetBundles\\immersiveportals",
+      "source": "Immersive Portals-268-0-2-7-7-1615582112",
+      "target": "",
+      "time": 1615307154000
+    },
+    {
+      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\MonoMod.dll",
+      "source": "HookGenPatcher-505-0-0-3-1632339616",
+      "target": "",
+      "time": 1628186248000
+    },
+    {
+      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\MonoMod.RuntimeDetour.HookGen.dll",
+      "source": "HookGenPatcher-505-0-0-3-1632339616",
+      "target": "",
+      "time": 1628186248000
+    },
+    {
+      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\BepInEx.MonoMod.HookGenPatcher.dll",
+      "source": "HookGenPatcher-505-0-0-3-1632339616",
+      "target": "",
+      "time": 1632326752000
+    },
+    {
+      "relPath": "config\\HookGenPatcher.cfg",
+      "source": "HookGenPatcher-505-0-0-3-1632339616",
+      "target": "",
+      "time": 1634835712000
+    },
+    {
+      "relPath": "config\\Menthus.bepinex.plugins.HeightmapUnlimited.cfg",
+      "source": "Heightmap Unlimited 1.2.0 (Rar)-359-1-2-0-1620581579",
+      "target": "",
+      "time": 1634835726000
+    }
+  ]
+}

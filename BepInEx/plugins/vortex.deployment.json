@@ -1,0 +1,137 @@
+{
+  "instance": "7c0e739c-0b28-4bf7-a9c6-94a751361850",
+  "version": 1,
+  "deploymentMethod": "hardlink_activator",
+  "gameId": "valheim",
+  "deploymentTime": 1634837042853,
+  "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
+  "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx\\plugins",
+  "files": [
+    {
+      "relPath": "GizmoReloaded.dll",
+      "source": "Gizmo Reloaded 1.1.5-1293-1-1-5-1626543872",
+      "target": "",
+      "time": 1626477282000
+    },
+    {
+      "relPath": "BetterStamina.dll",
+      "source": "Better Stamina-153-1-2-0-1614771878",
+      "target": "",
+      "time": 1614771729000
+    },
+    {
+      "relPath": "HoeRadius.dll",
+      "source": "Hoe Radius-1199-0-1-1-1621777490",
+      "target": "",
+      "time": 1621752242000
+    },
+    {
+      "relPath": "Advize_PlantEverything.dll",
+      "source": "Plant Everything-1042-1-8-4-1633057085",
+      "target": "",
+      "time": 1633027806000
+    },
+    {
+      "relPath": "Jotunn.dll",
+      "source": "Jotunn-1138-2-3-7-1633226667",
+      "target": "",
+      "time": 1633226627000
+    },
+    {
+      "relPath": "Jotunn.dll.mdb",
+      "source": "Jotunn-1138-2-3-7-1633226667",
+      "target": "",
+      "time": 1633226627000
+    },
+    {
+      "relPath": "Jotunn.pdb",
+      "source": "Jotunn-1138-2-3-7-1633226667",
+      "target": "",
+      "time": 1633226627000
+    },
+    {
+      "relPath": "README",
+      "source": "Jotunn-1138-2-3-7-1633226667",
+      "target": "",
+      "time": 1632946423000
+    },
+    {
+      "relPath": "Jotunn.xml",
+      "source": "Jotunn-1138-2-3-7-1633226667",
+      "target": "",
+      "time": 1633226627000
+    },
+    {
+      "relPath": "MovableChestInventory.dll",
+      "source": "Movable Chest Inventory-130-0-2-2-1616088790",
+      "target": "",
+      "time": 1616088767000
+    },
+    {
+      "relPath": "OreSupport.dll",
+      "source": "Ore Support-1525-1-0-0-1632643585",
+      "target": "",
+      "time": 1632642269000
+    },
+    {
+      "relPath": "RuneMagic.dll",
+      "source": "Rune Magic-1359-1-1-0-1631872335",
+      "target": "",
+      "time": 1631835966000
+    },
+    {
+      "relPath": "UseEquipmentInWater.dll",
+      "source": "UseEquipmentInWater.zip-121-0-2-2-1615747917",
+      "target": "",
+      "time": 1615743496000
+    },
+    {
+      "relPath": "ValheimRecycle.dll",
+      "source": "Valheim Recycle-425-2-0-0-1632163215",
+      "target": "",
+      "time": 1632162839000
+    },
+    {
+      "relPath": "Skills Give More Carry Weight.dll",
+      "source": "Skill Give More Carry Weight-462-1-0-3-1618130620.1",
+      "target": "",
+      "time": 1617837936000
+    },
+    {
+      "relPath": "UsefulPaths.dll",
+      "source": "Useful Paths 1.0.5-438-1-0-5-1615851601",
+      "target": "",
+      "time": 1615851322000
+    },
+    {
+      "relPath": "ExtendedPlayerInventory.dll",
+      "source": "Extended Player Inventory-1356-0-3-1-1632751179",
+      "target": "",
+      "time": 1632725948000
+    },
+    {
+      "relPath": "FogOfWarExploreRadius.dll",
+      "source": "Fog Of War Explore Radius-329-0-5-1-1624962508",
+      "target": "",
+      "time": 1633177320000
+    },
+    {
+      "relPath": "CartSupport.dll",
+      "source": "Cart Support-947-0-1-0-1617853434",
+      "target": "",
+      "time": 1617828210000
+    },
+    {
+      "relPath": "Clutter\\Clutter.dll",
+      "source": "Clutter 0.1.0-1350-0-1-0-1633737508",
+      "target": "",
+      "time": 1633734029000
+    },
+    {
+      "relPath": "Clutter\\Assets\\Translations\\English\\Clutter.json",
+      "source": "Clutter 0.1.0-1350-0-1-0-1633737508",
+      "target": "",
+      "time": 1633645145000
+    }
+  ]
+}
