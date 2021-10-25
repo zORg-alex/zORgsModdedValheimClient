@@ -2,4 +2,5 @@ AdvancedBuilder/
 MonoBleedingEdge/
 valheim_Data/
 *.exe
-BepInEx/config/
+BepInEx/*.log
+BepInEx/cache/
