@@ -5,3 +5,4 @@ valheim_Data/
 BepInEx/*.log
 BepInEx/cache/
 *.log
+BepInEx/cache/
