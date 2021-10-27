@@ -40,10 +40,10 @@
 [Info   :   BepInEx] Loading [PlantEverything 1.8.4]
 [Info   :  HarmonyX] ### Harmony id=advize.PlantEverything, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.06
-[Info   :  HarmonyX] ### Harmony id=harmony-auto-55bdfc97-6adc-4678-9dc5-9cef8e50e590, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+### At 2021-10-27 09.21.15
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-1b55d21c-dac8-4cc3-a444-2db990029e70, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.06
+### At 2021-10-27 09.21.15
 [Info   :  HarmonyX] Patching void Game::Start() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
 1 postfixes:
 * static void Advize_PlantEverything.Configuration.Config::RegisterSyncConfigRPC()
@@ -155,7 +155,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Vagon::SetMass(float mass)
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.CartSupport took 9ms
+[Info   :  HarmonyX] Patching aedenthorn.CartSupport took 16ms
 [Info   :  HarmonyX] Patching aedenthorn.CartSupport...
 [Info   :  HarmonyX] Patching System.Void Terminal::InputText()
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -165,7 +165,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.CartSupport took 4ms
+[Info   :  HarmonyX] Patching aedenthorn.CartSupport took 7ms
 [Info   :   BepInEx] Loading [Extended Player Inventory 0.3.1]
 [Info   :  HarmonyX] Created Harmony instance id=aedenthorn.ExtendedPlayerInventory, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
@@ -177,7 +177,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on virtual void Player::Awake()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 13ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 14ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Void TombStone::Awake()
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -187,7 +187,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void TombStone::Awake()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 5ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 8ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Boolean TombStone::Interact(Humanoid,System.Boolean,System.Boolean)
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -207,7 +207,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Inventory::MoveInventoryToGrave(Inventory original)
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 8ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 10ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Void Player::Update()
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -217,7 +217,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Player::Update()
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 15ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 21ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Void InventoryGui::Update()
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -227,7 +227,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::Update()
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 13ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 16ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Void InventoryGui::UpdateInventory(Player)
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -260,7 +260,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on int Inventory::GetEmptySlots()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 4ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 5ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Boolean Inventory::HaveEmptySlot()
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -270,7 +270,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on bool Inventory::HaveEmptySlot()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 3ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 6ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Boolean Inventory::AddItem(ItemDrop+ItemData)
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -280,7 +280,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on bool Inventory::AddItem(ItemDrop+ItemData item)
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 6ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 5ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Boolean Inventory::AddItem(ItemDrop+ItemData,System.Int32,System.Int32,System.Int32)
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -290,7 +290,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on bool Inventory::AddItem(ItemDrop+ItemData item, int amount, int x, int y)
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 6ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 8ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Void Hud::Awake()
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -310,7 +310,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Hud::Update()
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 8ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 12ms
 [Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory...
 [Info   :  HarmonyX] Patching System.Void Terminal::InputText()
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -320,12 +320,12 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 3ms
+[Info   :  HarmonyX] Patching aedenthorn.ExtendedPlayerInventory took 14ms
 [Info   :   BepInEx] Loading [Hoe Radius 0.1.1]
-[Info   :  HarmonyX] Created Harmony instance id=harmony-auto-09899d1a-053a-43fd-978a-f234c09d2c4a, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+[Info   :  HarmonyX] Created Harmony instance id=harmony-auto-85ba2cb5-9e27-400d-b93e-c4df029b0518, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
 [Warning:  HarmonyX] AccessTools.DeclaredMethod: Could not find method for type Console and name InputText and parameters 
 [Warning:  HarmonyX] Unknown patch - Could not find method InputText with 0 parameters in type Console, but it was found in base class of this type Terminal
-[Info   :  HarmonyX] Patching harmony-auto-09899d1a-053a-43fd-978a-f234c09d2c4a...
+[Info   :  HarmonyX] Patching harmony-auto-85ba2cb5-9e27-400d-b93e-c4df029b0518...
 [Info   :  HarmonyX] Patching System.Void TerrainOp::Awake()
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching void TerrainOp::Awake() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
@@ -334,8 +334,8 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void TerrainOp::Awake()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching harmony-auto-09899d1a-053a-43fd-978a-f234c09d2c4a took 6ms
-[Info   :  HarmonyX] Patching harmony-auto-09899d1a-053a-43fd-978a-f234c09d2c4a...
+[Info   :  HarmonyX] Patching harmony-auto-85ba2cb5-9e27-400d-b93e-c4df029b0518 took 9ms
+[Info   :  HarmonyX] Patching harmony-auto-85ba2cb5-9e27-400d-b93e-c4df029b0518...
 [Info   :  HarmonyX] Patching System.Void Terminal::InputText()
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 2 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
@@ -345,7 +345,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching harmony-auto-09899d1a-053a-43fd-978a-f234c09d2c4a took 5ms
+[Info   :  HarmonyX] Patching harmony-auto-85ba2cb5-9e27-400d-b93e-c4df029b0518 took 4ms
 [Info   :   BepInEx] Loading [Movable Chest Inventory 0.2.2]
 [Info   :  HarmonyX] Created Harmony instance id=aedenthorn.MovableChestInventory, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
 [Warning:  HarmonyX] AccessTools.DeclaredMethod: Could not find method for type Console and name InputText and parameters 
@@ -360,7 +360,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void InventoryGui::Update()
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching aedenthorn.MovableChestInventory took 8ms
+[Info   :  HarmonyX] Patching aedenthorn.MovableChestInventory took 13ms
 [Info   :  HarmonyX] Patching aedenthorn.MovableChestInventory...
 [Info   :  HarmonyX] Patching System.Void Terminal::InputText()
 [Info   :  HarmonyX] HarmonyPrepare result: True
@@ -372,11 +372,11 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching aedenthorn.MovableChestInventory took 4ms
+[Info   :  HarmonyX] Patching aedenthorn.MovableChestInventory took 8ms
 [Info   :   BepInEx] Loading [Better Stamina 1.2.0.0]
 [Info   :  HarmonyX] ### Harmony id=bakaSpaceman.BetterStamina, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.07
+### At 2021-10-27 09.21.15
 [Info   :  HarmonyX] Patching void Player::UpdateStats(float dt) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
 1 prefixes:
 * static void GeneralStaminaPatches::UpdateStats_Prefix(Player __instance, float dt, SEMan ___m_seman, bool ___m_wallRunning, float ___m_staminaRegen, float ___m_stamina, float ___m_staminaRegenTimer)
@@ -393,7 +393,7 @@
 [Info   :   BepInEx] Loading [FarmGrid 0.2.0]
 [Info   :  HarmonyX] ### Harmony id=Harmony.Sarcen.FarmGrid, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.07
+### At 2021-10-27 09.21.15
 [Info   :  HarmonyX] Patching void Player::UpdatePlacementGhost(bool flashGuardStone) with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
 1 transpilers:
 * static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> FarmGrid.Patches.FarmGrid_Patch::UpdatePlacementGhost(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
@@ -414,8 +414,8 @@
 [Info   :  HarmonyX] Running ILHook manipulator on virtual void Humanoid::SetupVisEquipment(VisEquipment visEq, bool isRagdoll)
 [Info   :  HarmonyX] Writing postfixes
 [Info   :   BepInEx] Loading [Fog Of War Explore Radius 0.7.1]
-[Info   :  HarmonyX] Created Harmony instance id=harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566...
+[Info   :  HarmonyX] Created Harmony instance id=harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2, version=2.0.0.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony20.dll - Started from System.Void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel,System.Func`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Boolean) location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2...
 [Info   :  HarmonyX] Patching System.Void EnvMan::Awake()
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching void EnvMan::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
@@ -424,8 +424,8 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void EnvMan::Awake()
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566 took 9ms
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566...
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2 took 13ms
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2...
 [Info   :  HarmonyX] Patching System.Void EnvMan::SetEnv(EnvSetup,System.Single,System.Single,System.Single,System.Single,System.Single)
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching void EnvMan::SetEnv(EnvSetup env, float dayInt, float nightInt, float morningInt, float eveningInt, float dt) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
@@ -434,8 +434,8 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void EnvMan::SetEnv(EnvSetup env, float dayInt, float nightInt, float morningInt, float eveningInt, float dt)
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566 took 21ms
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566...
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2 took 21ms
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2...
 [Info   :  HarmonyX] Patching System.Void Player::OnSkillLevelup(Skills+SkillType,System.Single)
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching void Player::OnSkillLevelup(Skills+SkillType skill, float level) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
@@ -444,8 +444,8 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Player::OnSkillLevelup(Skills+SkillType skill, float level)
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566 took 5ms
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566...
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2 took 7ms
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2...
 [Info   :  HarmonyX] Patching System.Void Ship::OnTriggerEnter(UnityEngine.Collider)
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching void Ship::OnTriggerEnter(UnityEngine.Collider collider) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
@@ -454,8 +454,8 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Ship::OnTriggerEnter(UnityEngine.Collider collider)
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566 took 5ms
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566...
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2 took 7ms
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2...
 [Info   :  HarmonyX] Patching System.Void Ship::OnTriggerExit(UnityEngine.Collider)
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching void Ship::OnTriggerExit(UnityEngine.Collider collider) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
@@ -464,8 +464,8 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Ship::OnTriggerExit(UnityEngine.Collider collider)
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566 took 7ms
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566...
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2 took 5ms
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2...
 [Info   :  HarmonyX] Patching System.Void Skills::Load(ZPackage)
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching void Skills::Load(ZPackage pkg) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
@@ -474,8 +474,8 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Skills::Load(ZPackage pkg)
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566 took 5ms
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566...
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2 took 9ms
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2...
 [Info   :  HarmonyX] Patching System.Void Minimap::Explore(UnityEngine.Vector3,System.Single)
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching void Minimap::Explore(UnityEngine.Vector3 p, float radius) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
@@ -484,8 +484,8 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Minimap::Explore(UnityEngine.Vector3 p, float radius)
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566 took 5ms
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566...
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2 took 10ms
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2...
 [Info   :  HarmonyX] Patching System.Void Minimap::Awake()
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching void Minimap::Awake() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
@@ -494,8 +494,8 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Minimap::Awake()
 [Info   :  HarmonyX] Writing postfixes
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566 took 6ms
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566...
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2 took 4ms
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2...
 [Info   :  HarmonyX] Patching System.Void Terminal::InputText()
 [Info   :  HarmonyX] HarmonyPrepare result: True
 [Info   :  HarmonyX] Patching virtual void Terminal::InputText() with 2 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
@@ -505,7 +505,7 @@
 
 [Info   :  HarmonyX] Running ILHook manipulator on virtual void Terminal::InputText()
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] Patching harmony-auto-48f6687c-3fce-45a3-ad25-6c73fa88f566 took 3ms
+[Info   :  HarmonyX] Patching harmony-auto-830cce8d-558f-4484-964e-89eb2d31cbb2 took 3ms
 [Info   :   BepInEx] Loading [Configuration Manager 16.3]
 [Info   :   BepInEx] Loading [Jotunn 2.3.7]
 [Info   :    Jotunn] Initializing LocalizationManager
@@ -553,7 +553,7 @@
 [Info   :Skills Give More Carry Weight] Succesfully loaded configuration
 [Info   :  HarmonyX] ### Harmony id=com.traktool.Skills_Give_More_Carry_Weight, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.12
+### At 2021-10-27 09.21.21
 [Info   :  HarmonyX] Patching float Player::GetMaxCarryWeight() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
 1 postfixes:
 * static void Skills_Give_More_Carry_Weight.PatchedPlayer::GetMaxCarryWeight(Player __instance, Single& __result)
@@ -564,7 +564,7 @@
 [Info   :   BepInEx] Loading [RuneMagic 1.1.0]
 [Info   :  HarmonyX] ### Harmony id=hyleanlegend.RuneMagic, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.12
+### At 2021-10-27 09.21.21
 [Info   :  HarmonyX] Patching void ZoneSystem::Start() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
 1 postfixes:
 * static void ValheimMod.ZoneSystem_Start_Patch::Postfix()
@@ -935,9 +935,9 @@
 [Info   :  HarmonyX] Running ILHook manipulator on void Minimap::UpdatePlayerMarker(Player player, UnityEngine.Quaternion playerRot)
 [Info   :  HarmonyX] Writing prefixes
 [Info   :   BepInEx] Loading [Gizmo Reloaded 1.1.5]
-[Info   :  HarmonyX] ### Harmony id=harmony-auto-1be85e4b-e39b-485a-8162-f387be0fe338, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-ef5a9347-c611-485f-a234-f1ede6d997c9, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.13
+### At 2021-10-27 09.21.22
 [Info   :  HarmonyX] Patching void Player::UpdatePlacementGhost(bool flashGuardStone) with 1 prefixes, 0 postfixes, 2 transpilers, 1 finalizers
 1 prefixes:
 * static void ValheimMod.PlayerPatch+UpdatePlacementGhost_Patch::Prefix(Player __instance)
@@ -953,9 +953,9 @@
 [Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> GizmoReloaded.UpdatePlacementGhost_Patch::Transpiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
 [Info   :  HarmonyX] Writing prefixes
 [Info   :  HarmonyX] Writing finalizers
-[Info   :  HarmonyX] ### Harmony id=harmony-auto-18739ee5-8be7-4423-8650-8ee9f2e675e1, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-036f1a41-7aac-44a3-98c5-77abcc3873d7, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.13
+### At 2021-10-27 09.21.22
 [Info   :  HarmonyX] Patching void Player::UpdatePlacement(bool takeInput, float dt) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
 1 postfixes:
 * static void GizmoReloaded.UpdatePlacement_Patch::Player_UpdatePlacement(Player __instance, UnityEngine.GameObject ___m_placementGhost, bool takeInput, float dt)
@@ -963,9 +963,9 @@
 [Info   :  HarmonyX] Running ILHook manipulator on void Player::UpdatePlacement(bool takeInput, float dt)
 [Info   :  HarmonyX] Writing postfixes
 [Info   :   BepInEx] Loading [HeightmapUnlimited 1.2.0.0]
-[Info   :  HarmonyX] ### Harmony id=harmony-auto-b4037d20-e7e6-4b30-85ea-81f733a94564, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-f932a361-a18b-4488-bfa4-978fdbc3e260, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.13
+### At 2021-10-27 09.21.22
 [Info   :  HarmonyX] Patching void Game::Start() with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
 1 prefixes:
 * static void HeightmapUnlimited.Game_Patches::StartPrefix()
@@ -1024,9 +1024,9 @@
 [Info   :  HarmonyX] Running ILHook manipulator on void ZRpc::Invoke(string method, object[] parameters)
 [Info   :  HarmonyX] Writing prefixes
 [Info   :   BepInEx] Loading [UsefulPaths 1.0.5.0]
-[Info   :  HarmonyX] ### Harmony id=harmony-auto-1830e6b9-60d2-47b8-b0ae-b1773774e03e, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-169879a7-f165-4029-aacf-8760c89ecfd0, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.13
+### At 2021-10-27 09.21.23
 [Info   :  HarmonyX] Patching void Character::UpdateWalking(float dt) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
 1 prefixes:
 * static void UsefulPaths.CharacterUpdateWalking_Patch::Prefix(Character __instance)
@@ -1055,12 +1055,12 @@
 [Info   :   BepInEx] Loading [ImmersivePortals 0.2.7.7]
 [Info   :  HarmonyX] ### Harmony id=Nekres_ImmersivePortals, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.13
+### At 2021-10-27 09.21.23
 [Info   :   BepInEx] Loading [Valheim Recycle 2.0.0]
 [Info   :Valheim Recycle] AWAKE
-[Info   :  HarmonyX] ### Harmony id=harmony-auto-be737e95-8e69-46e6-9933-84203574fcab, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-e93e9036-8f38-4136-9a56-cf88db9136c7, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.13
+### At 2021-10-27 09.21.23
 [Info   :  HarmonyX] Patching void InventoryGui::Update() with 0 prefixes, 3 postfixes, 0 transpilers, 0 finalizers
 3 postfixes:
 * static void ExtendedPlayerInventory.BepInExPlugin+InventoryGui_Update_Patch::Postfix(InventoryGui __instance, InventoryGrid ___m_playerGrid, UnityEngine.Animator ___m_animator)
@@ -1112,7 +1112,7 @@
 [Info   :   BepInEx] Loading [OreSupport 1.0.0.0]
 [Info   :  HarmonyX] ### Harmony id=valheim.jerekuusela.ore_support, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.14
+### At 2021-10-27 09.21.23
 [Info   :  HarmonyX] Patching void Player::UpdateHover() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
 1 postfixes:
 * static void OreSupport.Player_AddHoverForVisuals::Postfix(UnityEngine.GameObject& ___m_hovering, UnityEngine.GameObject& ___m_hoveringCreature)
@@ -1132,9 +1132,9 @@
 [Debug  :Jotunn.Main] Applying patches in ModCompatibility.InitPatch
 [Debug  :Jotunn.Main] Applying patches in InGameConfig.HookOnSettings
 [Debug  :Jotunn.Main] Applying patches in ModCompatibility.InitPatchEarly
-[Info   :  HarmonyX] ### Harmony id=harmony-auto-85631bad-eaac-49a3-9b61-8e5cecb9c231, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-ca377107-9614-4759-9880-3db5a035b0ea, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.14
+### At 2021-10-27 09.21.24
 [Info   :  HarmonyX] Patching bool Character::IsSwiming() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
 1 prefixes:
 * static bool Use_Equipment_in_Water.UseEquipmentInWater::patchIsSwim(Boolean& __result, Humanoid __instance, float ___m_swimTimer)
@@ -1200,18 +1200,18 @@
 [Info   :  HarmonyX] Transpiling void TeleportWorld::Teleport(Player player)
 [Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> ImmersivePortals.Patches.TeleportWorldPatch::ReplaceTeleportToWithImmersiveApproach(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] ### Harmony id=harmony-auto-879fae83-72a2-409c-8033-3d7bbabc5df3, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-6b2491fe-e9a3-4330-a212-175836a8f3e7, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.17
+### At 2021-10-27 09.21.27
 [Info   :  HarmonyX] Patching void BepInEx.Configuration.ConfigEntryBase::SetSerializedValue(string value) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
 1 prefixes:
 * static bool Jotunn.Managers.SynchronizationManager+ConfigEntryBase_SetSerializedValue::Prefix(BepInEx.Configuration.ConfigEntryBase __instance, string value)
 
 [Info   :  HarmonyX] Running ILHook manipulator on void BepInEx.Configuration.ConfigEntryBase::SetSerializedValue(string value)
 [Info   :  HarmonyX] Writing prefixes
-[Info   :  HarmonyX] ### Harmony id=harmony-auto-b0714fd7-2804-41c0-802a-f81c20fae33b, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
+[Info   :  HarmonyX] ### Harmony id=harmony-auto-cb435c37-931a-475d-878f-bef26c2058ab, version=2.4.2.0, location=C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT
 ### Started from static void HarmonyLib.Tools.Logger::Log(HarmonyLib.Tools.Logger+LogChannel channel, System.Func<string> message, bool forcePropagation), location C:\Program Files (x86)\Steam\steamapps\common\Valheim\BepInEx\core\0Harmony.dll
-### At 2021-10-21 08.56.17
+### At 2021-10-27 09.21.27
 [Info   :  HarmonyX] Patching string BepInEx.Configuration.ConfigEntryBase::GetSerializedValue() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
 1 prefixes:
 * static bool Jotunn.Managers.SynchronizationManager+ConfigEntryBase_GetSerializedValue::Prefix(BepInEx.Configuration.ConfigEntryBase __instance, String& __result)
@@ -1668,45 +1668,9 @@
 [Debug  :Jotunn.Managers.SynchronizationManager] Gathering config values
 [Info   :Valheim Recycle] CreateRecycleButton
 [Debug  :Jotunn.Utils.ModCompatibility] Received Version package from 76561199041578884
+[Info   :ImmersivePortals] Teleported 70 meters in 0.006 second
 [Debug  :Jotunn.Utils.ModCompatibility] Received Version package from 76561199041578884
-[Info   :ImmersivePortals] Teleported 0 meter in 1.010 second
-[Info   :ImmersivePortals] Teleported 0 meter in 1.026 second
-[Debug  :Jotunn.Utils.ModCompatibility] Received Version package from 76561199041578884
-[Debug  :Jotunn.Utils.ModCompatibility] Received Version package from 76561199041578884
-[Debug  :Jotunn.Utils.ModCompatibility] Received Version package from 76561199041578884
-[Debug  :Jotunn.Utils.ModCompatibility] Received Version package from 76561199041578884
-[Debug  :Jotunn.Utils.ModCompatibility] Received Version package from 76561199041578884
-[Debug  :Jotunn.Utils.ModCompatibility] Received Version package from 76561199041578884
-[Info   :ImmersivePortals] Teleported 71 meters in 0.005 second
-[Info   :ImmersivePortals] Teleported 2922 meters in 3.760 seconds
-[Info   :ImmersivePortals] Teleported 676 meters in 3.760 seconds
-[Info   :ImmersivePortals] Teleported 369 meters in 3.775 seconds
-[Info   :ImmersivePortals] Teleported 2556 meters in 3.764 seconds
-[Info   :ImmersivePortals] Teleported 2554 meters in 3.757 seconds
-[Info   :ImmersivePortals] Teleported 2556 meters in 3.784 seconds
-[Info   :ImmersivePortals] Teleported 2554 meters in 3.667 seconds
-[Info   :ImmersivePortals] Teleported 2548 meters in 3.760 seconds
-[Info   :ImmersivePortals] Teleported 2547 meters in 3.766 seconds
-[Info   :ImmersivePortals] Teleported 2923 meters in 3.754 seconds
-[Info   :ImmersivePortals] Teleported 71 meters in 0.004 second
-[Info   :ImmersivePortals] Teleported 70 meters in 0.035 second
-[Info   :ImmersivePortals] Teleported 71 meters in 0.007 second
-[Info   :ImmersivePortals] Teleported 70 meters in 0.058 second
-[Info   :ImmersivePortals] Teleported 52 meters in 0.034 second
-[Info   :ImmersivePortals] Teleported 70 meters in 0.004 second
-[Info   :ImmersivePortals] Teleported 71 meters in 0.039 second
-[Info   :ImmersivePortals] Teleported 70 meters in 0.005 second
-[Info   :ImmersivePortals] Teleported 71 meters in 0.056 second
-[Info   :ImmersivePortals] Teleported 70 meters in 0.008 second
-[Info   :ImmersivePortals] Teleported 2922 meters in 3.763 seconds
-[Info   :ImmersivePortals] Teleported 2923 meters in 3.754 seconds
-[Info   :ImmersivePortals] Teleported 2922 meters in 3.770 seconds
-[Info   :ImmersivePortals] Teleported 70 meters in 0.040 second
-[Info   :ImmersivePortals] Teleported 2922 meters in 3.768 seconds
-[Info   :ImmersivePortals] Teleported 70 meters in 0.054 second
-[Info   :ImmersivePortals] Teleported 2922 meters in 3.762 seconds
-[Info   :ImmersivePortals] Teleported 70 meters in 0.046 second
-[Info   :ImmersivePortals] Teleported 2922 meters in 3.754 seconds
+[Info   :ImmersivePortals] Teleported 70 meters in 0.036 second
 [Info   :  HarmonyX] Patching void Vagon::SetMass(float mass) with 0 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
 
 [Info   :  HarmonyX] Running ILHook manipulator on void Vagon::SetMass(float mass)

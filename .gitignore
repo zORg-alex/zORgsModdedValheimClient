@@ -4,3 +4,4 @@ valheim_Data/
 *.exe
 BepInEx/*.log
 BepInEx/cache/
+*.log

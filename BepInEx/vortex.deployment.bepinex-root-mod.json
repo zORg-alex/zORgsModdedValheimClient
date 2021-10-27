@@ -3,7 +3,7 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1634837042737,
+  "deploymentTime": 1635360477288,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx",
   "files": [
@@ -38,34 +38,10 @@
       "time": 1615307154000
     },
     {
-      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\MonoMod.dll",
-      "source": "HookGenPatcher-505-0-0-3-1632339616",
-      "target": "",
-      "time": 1628186248000
-    },
-    {
-      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\MonoMod.RuntimeDetour.HookGen.dll",
-      "source": "HookGenPatcher-505-0-0-3-1632339616",
-      "target": "",
-      "time": 1628186248000
-    },
-    {
-      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\BepInEx.MonoMod.HookGenPatcher.dll",
-      "source": "HookGenPatcher-505-0-0-3-1632339616",
-      "target": "",
-      "time": 1632326752000
-    },
-    {
-      "relPath": "config\\HookGenPatcher.cfg",
-      "source": "HookGenPatcher-505-0-0-3-1632339616",
-      "target": "",
-      "time": 1634835712000
-    },
-    {
       "relPath": "config\\Menthus.bepinex.plugins.HeightmapUnlimited.cfg",
       "source": "Heightmap Unlimited 1.2.0 (Rar)-359-1-2-0-1620581579",
       "target": "",
-      "time": 1634835726000
+      "time": 1635358882000
     }
   ]
 }
