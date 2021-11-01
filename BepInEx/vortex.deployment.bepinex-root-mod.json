@@ -3,7 +3,7 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1635523433148,
+  "deploymentTime": 1635795838336,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx",
   "files": [
@@ -14,34 +14,10 @@
       "time": 1615621808000
     },
     {
-      "relPath": "plugins\\HeightmapUnlimited\\HeightmapUnlimited.dll",
-      "source": "Heightmap Unlimited 1.2.0 (Rar)-359-1-2-0-1620581579",
-      "target": "",
-      "time": 1620577573000
-    },
-    {
-      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\BepInEx.MonoMod.HookGenPatcher.dll",
-      "source": "HookGenPatcher-505-0-0-3-1632339616",
-      "target": "",
-      "time": 1632326752000
-    },
-    {
       "relPath": "plugins\\ImmersivePortals\\ImmersivePortals.dll",
       "source": "Immersive Portals-268-0-2-7-7-1615582112",
       "target": "",
       "time": 1615578071000
-    },
-    {
-      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\MonoMod.RuntimeDetour.HookGen.dll",
-      "source": "HookGenPatcher-505-0-0-3-1632339616",
-      "target": "",
-      "time": 1628186248000
-    },
-    {
-      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\MonoMod.dll",
-      "source": "HookGenPatcher-505-0-0-3-1632339616",
-      "target": "",
-      "time": 1628186248000
     },
     {
       "relPath": "plugins\\ImmersivePortals\\Assets\\AssetBundles\\immersiveportals",
@@ -56,28 +32,28 @@
       "time": 1615307154000
     },
     {
-      "relPath": "plugins\\ValheimLib\\ValheimLib.dll",
-      "source": "ValheimLib-504-0-0-15-1616718013",
+      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\MonoMod.dll",
+      "source": "HookGenPatcher-505-0-0-3-1632339616",
       "target": "",
-      "time": 1616707204000
+      "time": 1628186248000
     },
     {
-      "relPath": "plugins\\ValheimLib\\ValheimLib.xml",
-      "source": "ValheimLib-504-0-0-15-1616718013",
+      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\MonoMod.RuntimeDetour.HookGen.dll",
+      "source": "HookGenPatcher-505-0-0-3-1632339616",
       "target": "",
-      "time": 1616707204000
+      "time": 1628186248000
     },
     {
-      "relPath": "config\\Menthus.bepinex.plugins.HeightmapUnlimited.cfg",
-      "source": "Heightmap Unlimited 1.2.0 (Rar)-359-1-2-0-1620581579",
+      "relPath": "patchers\\BepInEx.MonoMod.HookGenPatcher\\BepInEx.MonoMod.HookGenPatcher.dll",
+      "source": "HookGenPatcher-505-0-0-3-1632339616",
       "target": "",
-      "time": 1635522982000
+      "time": 1632326752000
     },
     {
       "relPath": "config\\HookGenPatcher.cfg",
       "source": "HookGenPatcher-505-0-0-3-1632339616",
       "target": "",
-      "time": 1635522969000
+      "time": 1635586701000
     }
   ]
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1635523433270,
+  "deploymentTime": 1635795838480,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx\\plugins",
   "files": [
@@ -26,12 +26,6 @@
       "time": 1632725948000
     },
     {
-      "relPath": "Clutter\\Clutter.dll",
-      "source": "Clutter 0.1.0-1350-0-1-0-1633737508",
-      "target": "",
-      "time": 1633734029000
-    },
-    {
       "relPath": "FogOfWarExploreRadius.dll",
       "source": "Fog Of War Explore Radius-329-0-5-1-1624962508",
       "target": "",
@@ -48,12 +42,6 @@
       "source": "Hoe Radius-1199-0-1-1-1621777490",
       "target": "",
       "time": 1621752242000
-    },
-    {
-      "relPath": "Clutter\\Assets\\Translations\\English\\Clutter.json",
-      "source": "Clutter 0.1.0-1350-0-1-0-1633737508",
-      "target": "",
-      "time": 1633645145000
     },
     {
       "relPath": "MovableChestInventory.dll",
@@ -110,6 +98,24 @@
       "time": 1631835966000
     },
     {
+      "relPath": "CraftyCarts.dll",
+      "source": "CraftyCarts1.1.0-1116-1-1-0-1619644427",
+      "target": "",
+      "time": 1619644263000
+    },
+    {
+      "relPath": "Clutter\\Clutter.dll",
+      "source": "Clutter 0.1.0-1350-0-1-0-1633737508",
+      "target": "",
+      "time": 1633734029000
+    },
+    {
+      "relPath": "Clutter\\Assets\\Translations\\English\\Clutter.json",
+      "source": "Clutter 0.1.0-1350-0-1-0-1633737508",
+      "target": "",
+      "time": 1633645145000
+    },
+    {
       "relPath": "Jotunn.dll",
       "source": "Jotunn-1138-2-3-7-1633226667",
       "target": "",
@@ -122,10 +128,10 @@
       "time": 1635376693000
     },
     {
-      "relPath": "Jotunn.xml",
+      "relPath": "README",
       "source": "Jotunn-1138-2-3-7-1633226667",
       "target": "",
-      "time": 1635376693000
+      "time": 1635108305000
     },
     {
       "relPath": "Jotunn.pdb",
@@ -134,10 +140,10 @@
       "time": 1635376693000
     },
     {
-      "relPath": "README",
+      "relPath": "Jotunn.xml",
       "source": "Jotunn-1138-2-3-7-1633226667",
       "target": "",
-      "time": 1635108305000
+      "time": 1635376693000
     }
   ]
 }
