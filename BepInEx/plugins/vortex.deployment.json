@@ -3,7 +3,7 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1654205993846,
+  "deploymentTime": 1654688636534,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx\\plugins",
   "files": [
@@ -48,12 +48,6 @@
       "source": "Fog Of War Explore Radius-329-0-5-1-1624962508",
       "target": "",
       "time": 1633177320000
-    },
-    {
-      "relPath": "GizmoReloaded.dll",
-      "source": "Gizmo Reloaded 1.1.5-1293-1-1-5-1626543872",
-      "target": "",
-      "time": 1626477282000
     },
     {
       "relPath": "Jotunn.dll.mdb",
@@ -176,12 +170,6 @@
       "time": 1652313504000
     },
     {
-      "relPath": "BuildRestrictionTweaks.dll",
-      "source": "Build Restriction Tweaks-1606-0-2-1-1638467442",
-      "target": "",
-      "time": 1638438590000
-    },
-    {
       "relPath": "OdinHorse.dll",
       "source": "Odin Horse 0.3.3-1724-0-3-3-1652621023",
       "target": "",
@@ -234,6 +222,42 @@
       "source": "ESP-1318-1-10-1653385709.1",
       "target": "",
       "time": 1653385345000
+    },
+    {
+      "relPath": "BuildRestrictionTweaks.dll",
+      "source": "Build Restriction Tweaks-1606-0-2-1-1638467442",
+      "target": "",
+      "time": 1638438590000
+    },
+    {
+      "relPath": "AnyPortal.dll",
+      "source": "AnyPortal.zip-170-1-0-4-1615037044",
+      "target": "",
+      "time": 1615036986000
+    },
+    {
+      "relPath": "CraftFromContainers.dll",
+      "source": "Craft From Containers-40-2-2-2-1654014244",
+      "target": "",
+      "time": 1653988908000
+    },
+    {
+      "relPath": "GizmoReloaded.dll",
+      "source": "GizmoReloaded-TempFix",
+      "target": "",
+      "time": 1646646908000
+    },
+    {
+      "relPath": "Build Camera.dll",
+      "source": "Valheim Build Camera.zip-226-1-6-1-1632114845",
+      "target": "",
+      "time": 1632114551000
+    },
+    {
+      "relPath": "TeleportEverythingVer1.6.1.dll",
+      "source": "TeleportEverythingVer1.6.1.zip-1806-1-6-1-1649894381",
+      "target": "",
+      "time": 1649858262000
     }
   ]
 }
