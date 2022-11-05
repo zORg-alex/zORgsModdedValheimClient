@@ -55,6 +55,7 @@
   "$message_runemagic_unlocknewrune": "{0} Discovered",
   "$message_runemagic_runealreadyknown": "{0} already known",
   "$message_runemagic_onlyonground": "Only placeable on ground",
+  "$message_runemagic_onlyonstandingstone": "Only placeable on natural or constructed standing stones",
   "$message_runemagic_runestone_extractedrunicenergy": "Extracted {0} runic energy",
   "$message_runemagic_runestone_exhaustedenergy": "Runestone energy exhausted",
   "$message_runemagic_runefocus_fullenergy": "Your Rune Focus can't hold any more energy",

@@ -3,15 +3,15 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1654688636399,
+  "deploymentTime": 1667657363065,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx",
   "files": [
     {
       "relPath": "plugins\\ConfigurationManager\\ConfigurationManager.dll",
-      "source": "BepInEx.ConfigurationManager_v17.0",
+      "source": "TJzilla-BepInEx_ConfigurationManager-16.1.2",
       "target": "",
-      "time": 1654381701000
+      "time": 1602168356000
     }
   ]
 }

@@ -85,6 +85,11 @@
                 Interval in which the check timer for the repeat delay is decremented.
             </summary>
         </member>
+        <member name="P:Jotunn.Configs.ButtonConfig.Hint">
+            <summary>
+                Key hint text, overrides HintToken when set
+            </summary>
+        </member>
         <member name="P:Jotunn.Configs.ButtonConfig.HintToken">
             <summary>
                 Token for translating the key hint text.
@@ -111,6 +116,157 @@
             <summary>
                 Internal flag if this button config is backed by any BepInEx ConfigEntry
             </summary>
+        </member>
+        <member name="T:Jotunn.Configs.ClutterConfig">
+            <summary>
+                Configuration class for adding custom clutter.<br />
+                Use this in a constructor of <see cref="T:Jotunn.Entities.CustomClutter"/>
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.Enabled">
+            <summary>
+                Whether this clutter gets spawned in the world. Defaults to <c>true</c>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.Biome">
+            <summary>
+                Biome to spawn in, multiple Biomes can be allowed with <see cref="M:Jotunn.Managers.ZoneManager.AnyBiomeOf(Heightmap.Biome[])"/>.<br />
+                Default to all biomes.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.Instanced">
+            <summary>
+                Whether this clutter has an <see cref="T:InstanceRenderer"/> attached that should be used.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.Amount">
+            <summary>
+                The amount of displayed clutter prefabs per patch.
+                For high values an <see cref="T:InstanceRenderer"/> should be used to lower the amount of overall prefabs.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.OnUncleared">
+            <summary>
+                Whether this clutter should be shown on unmodified ground.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.OnCleared">
+            <summary>
+                Whether this clutter should be shown on modified ground.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.ScaleMin">
+            <summary>
+                Minimum random size of the prefab, only active when <see cref="P:Jotunn.Configs.ClutterConfig.Instanced"/> is used.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.ScaleMax">
+            <summary>
+                Maximum random size of the prefab, only active when <see cref="P:Jotunn.Configs.ClutterConfig.Instanced"/> is used.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MaxTilt">
+            <summary>
+                Maximum terrain tilt in degrees this clutter will be placed on.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MinAltitude">
+            <summary>
+                Minimum terrain height this clutter will be placed on.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MaxAltitude">
+            <summary>
+                Maximum terrain height this clutter will be placed on.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.SnapToWater">
+            <summary>
+                Whether the y position will always be at water level.
+                Used before <see cref="P:Jotunn.Configs.ClutterConfig.RandomOffset"/>
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.RandomOffset">
+            <summary>
+                Random y offset of every individual prefab.
+                Calculated after <see cref="P:Jotunn.Configs.ClutterConfig.SnapToWater"/>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.TerrainTilt">
+            <summary>
+                Whether this clutter will be rotated with the underlying terrain.
+                Otherwise it will always point straight up.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.OceanDepthCheck">
+            <summary>
+                Whether the clutter should check for ocean height.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MinOceanDepth">
+            <summary>
+                Minimum ocean depth that is needed to place this clutter.
+                Needs <see cref="P:Jotunn.Configs.ClutterConfig.OceanDepthCheck"/> to be <c>true</c>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.MaxOceanDepth">
+            <summary>
+                Maximum ocean depth to place this clutter.
+                Needs <see cref="P:Jotunn.Configs.ClutterConfig.OceanDepthCheck"/> to be <c>true</c>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.InForest">
+            <summary>
+                Whether the clutter should check for forest thresholds.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.ForestThresholdMin">
+            <summary>
+                Minimum value of the forest fractal:<br/>
+                    0 - 1: inside the forest<br/>
+                    1: forest edge<br/>
+                    1 - infinity: outside the forest
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.ForestThresholdMax">
+            <summary>
+                Maximum value of the forest fractal:<br/>
+                    0 - 1: inside the forest<br/>
+                    1: forest edge<br/>
+                    1 - infinity: outside the forest
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.FractalScale">
+            <summary>
+                Size of a noise map used to determine if the clutter should be placed.
+                Set to 0 to disable and place it everywhere.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.FractalOffset">
+            <summary>
+                Offset of the noise map.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.FractalThresholdMin">
+            <summary>
+                Minimum value of the noise map that is needed to place the clutter.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Configs.ClutterConfig.FractalThresholdMax">
+            <summary>
+                Maximum value of the noise map to place the clutter.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Configs.ClutterConfig.#ctor">
+            <summary>
+                Create a new <see cref="T:Jotunn.Configs.ClutterConfig"/>
+            </summary>
+        </member>
+        <member name="M:Jotunn.Configs.ClutterConfig.#ctor(ClutterSystem.Clutter)">
+            <summary>
+                Create a copy of the <see cref="T:ClutterSystem.Clutter"/>
+            </summary>
+            <param name="clutter"></param>
         </member>
         <member name="T:Jotunn.Configs.ConversionConfig">
             <summary>
@@ -238,6 +394,24 @@
                 Creates an array of <see cref="T:ItemDrop"/> mocks for the consumeItem list of the creature.
             </summary>
             <returns>An array of <see cref="T:ItemDrop"/> mocks</returns>
+        </member>
+        <member name="M:Jotunn.Configs.CreatureConfig.AddDropConfig(Jotunn.Configs.DropConfig)">
+            <summary>
+                Appends a new <see cref="T:Jotunn.Configs.DropConfig"/> to the array of existing ones.
+            </summary>
+            <param name="dropConfig"></param>
+        </member>
+        <member name="M:Jotunn.Configs.CreatureConfig.AddSpawnConfig(Jotunn.Configs.SpawnConfig)">
+            <summary>
+                Appends a new <see cref="T:Jotunn.Configs.SpawnConfig"/> to the array of existing ones.
+            </summary>
+            <param name="spawnConfig"></param>
+        </member>
+        <member name="M:Jotunn.Configs.CreatureConfig.AddConsumable(System.String)">
+            <summary>
+                Appends a new consumable to the array of existing ones.
+            </summary>
+            <param name="consumable"></param>
         </member>
         <member name="T:Jotunn.Configs.DropConfig">
             <summary>
@@ -383,6 +557,18 @@
                 Amount that is needed to fulfill the requirement. Defaults to 1.
             </summary>
         </member>
+        <member name="M:Jotunn.Configs.IncineratorRequirementConfig.#ctor">
+            <summary>
+                Creates a new incinerator requirement config with default values.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Configs.IncineratorRequirementConfig.#ctor(System.String,System.Int32)">
+            <summary>
+                Creates a new incinerator requirement config with the given values.
+            </summary>
+            <param name="item"></param>
+            <param name="amount"></param>
+        </member>
         <member name="M:Jotunn.Configs.IncineratorRequirementConfig.GetRequirement">
             <summary>
                 Creates a Valheim Piece.Requirement from this config. 
@@ -489,6 +675,12 @@
             </summary>
             <param name="json">JSON text</param>
             <returns>Loaded list of ItemConfigs</returns>
+        </member>
+        <member name="M:Jotunn.Configs.ItemConfig.AddRequirement(Jotunn.Configs.RequirementConfig)">
+            <summary>
+                Appends a new <see cref="T:Jotunn.Configs.RequirementConfig"/> to the array of existing ones.
+            </summary>
+            <param name="requirementConfig"></param>
         </member>
         <member name="T:Jotunn.Configs.KeyHintConfig">
             <summary>
@@ -876,6 +1068,12 @@
             <param name="json">JSON text</param>
             <returns>Loaded list of PieceConfigs</returns>
         </member>
+        <member name="M:Jotunn.Configs.PieceConfig.AddRequirement(Jotunn.Configs.RequirementConfig)">
+            <summary>
+                Appends a new <see cref="T:Jotunn.Configs.RequirementConfig"/> to the array of existing ones.
+            </summary>
+            <param name="requirementConfig"></param>
+        </member>
         <member name="T:Jotunn.Configs.PieceTableConfig">
             <summary>
                 Configuration class for adding custom piece tables.
@@ -991,6 +1189,12 @@
             <param name="json">JSON text</param>
             <returns>Loaded list of RecipeConfigs</returns>
         </member>
+        <member name="M:Jotunn.Configs.RecipeConfig.AddRequirement(Jotunn.Configs.RequirementConfig)">
+            <summary>
+                Appends a new <see cref="T:Jotunn.Configs.RequirementConfig"/> to the array of existing ones.
+            </summary>
+            <param name="requirementConfig"></param>
+        </member>
         <member name="T:Jotunn.Configs.RequirementConfig">
             <summary>
                 Configuration class for requirements needed to craft items or build pieces.
@@ -1015,6 +1219,20 @@
             <summary>
                 Determines if the used requirement will be rewarded again after dismanteling a piece. Defaults to false.
             </summary>
+        </member>
+        <member name="M:Jotunn.Configs.RequirementConfig.#ctor">
+            <summary>
+                Creates a new requirement config with default values.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Configs.RequirementConfig.#ctor(System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+                Creates a new requirement config with the given values.
+            </summary>
+            <param name="item"></param>
+            <param name="amount"></param>
+            <param name="amountPerLevel"></param>
+            <param name="recover"></param>
         </member>
         <member name="M:Jotunn.Configs.RequirementConfig.GetRequirement">
             <summary>
@@ -1318,7 +1536,7 @@
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.Biome">
             <summary>
-                Biome to spawn in, can be bitwise or'ed toghether to allow multiple Biomes (Heightmap.Biome.Meadows | Heightmap.Biome.Forest)
+                Biome to spawn in, multiple Biomes can be allowed with <see cref="M:Jotunn.Managers.ZoneManager.AnyBiomeOf(Heightmap.Biome[])"/>
             </summary>
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.BiomeArea">
@@ -1333,7 +1551,7 @@
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.ForcePlacement">
             <summary>
-                Unlike what the name suggets, Valheim will attempt 50 times the normal amount of placements, almost guaranteeing that everything will be placed
+                Unlike what the name suggests, Valheim will attempt 50 times the normal amount of placements, almost guaranteeing that everything will be placed
             </summary>
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.Min">
@@ -1394,17 +1612,17 @@
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.ForestThresholdMin">
             <summary>
-                Minimum value of the forest fractal:
-                    0 - 1: inside the forest
-                    1: forest edge
+                Minimum value of the forest fractal:<br/>
+                    0 - 1: inside the forest<br/>
+                    1: forest edge<br/>
                     1 - infinity: outside the forest
             </summary>
         </member>
         <member name="P:Jotunn.Configs.VegetationConfig.ForestThresholdMax">
             <summary>
-                Maximum value of the forest fractal:
-                    0 - 1: inside the forest
-                    1: forest edge
+                Maximum value of the forest fractal:<br/>
+                    0 - 1: inside the forest<br/>
+                    1: forest edge<br/>
                     1 - infinity: outside the forest
             </summary>
         </member>
@@ -1454,16 +1672,6 @@
             </summary>
             <param name="zoneVegetation">ZoneVegetation to copy</param>
         </member>
-        <member name="M:Jotunn.DebugUtils.DebugHelper.ZoneSystem_SpawnLocation(ZoneSystem.ZoneLocation,ZoneSystem.SpawnMode)">
-            <summary>
-                Output custom location spawns
-            </summary>
-        </member>
-        <member name="T:Jotunn.DebugUtils.DebugHelper.Debug_isDebugBuild">
-            <summary>
-                Pretend to be a debugBuild :)
-            </summary>
-        </member>
         <member name="T:Jotunn.Entities.ConsoleCommand">
             <summary>
                 A custom console command.
@@ -1512,6 +1720,55 @@
             <returns>List of valid command options</returns>
         </member>
         <member name="M:Jotunn.Entities.ConsoleCommand.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Jotunn.Entities.CustomClutter">
+            <summary>
+                Main interface for adding custom clutter to the game.<br />
+                Clutter are client side only objects scattered on the ground.<br />
+                All custom clutter have to be wrapped inside this class to add it to Jötunns <see cref="T:Jotunn.Managers.ZoneManager"/>.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.CustomClutter.Prefab">
+            <summary>
+                The prefab for this custom clutter.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.CustomClutter.Clutter">
+            <summary>
+                Associated <see cref="T:ClutterSystem.Clutter"/> class.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.CustomClutter.Name">
+            <summary>
+                Name of this custom clutter.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.CustomClutter.FixReference">
+            <summary>
+                Indicator if references from <see cref="T:Jotunn.Entities.Mock`1"/>s will be replaced at runtime.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Entities.CustomClutter.#ctor(UnityEngine.GameObject,System.Boolean,Jotunn.Configs.ClutterConfig)">
+            <summary>
+                Custom clutter from a prefab.<br />
+                Can fix references for mocks.
+            </summary>
+            <param name="prefab">The prefab for this custom clutter.</param>
+            <param name="fixReference">If true references for <see cref="T:Jotunn.Entities.Mock`1"/> objects get resolved at runtime by Jötunn.</param>
+            <param name="config">The <see cref="T:Jotunn.Configs.ClutterConfig"/> for this custom vegation.</param>
+        </member>
+        <member name="M:Jotunn.Entities.CustomClutter.#ctor(UnityEngine.AssetBundle,System.String,System.Boolean,Jotunn.Configs.ClutterConfig)">
+            <summary>
+                Custom clutter from a prefab loaded from an <see cref="T:UnityEngine.AssetBundle"/>.<br />
+                Can fix references for mocks.
+            </summary>
+            <param name="assetBundle">A preloaded <see cref="T:UnityEngine.AssetBundle"/></param>
+            <param name="assetName">Name of the prefab in the bundle.</param>
+            <param name="fixReference">If true references for <see cref="T:Jotunn.Entities.Mock`1"/> objects get resolved at runtime by Jötunn.</param>
+            <param name="config">The <see cref="T:Jotunn.Configs.ClutterConfig"/> for this custom clutter.</param>
+        </member>
+        <member name="M:Jotunn.Entities.CustomClutter.ToString">
             <inheritdoc/>
         </member>
         <member name="T:Jotunn.Entities.CustomCreature">
@@ -1691,6 +1948,16 @@
             </summary>
             <param name="name">The new name of the prefab after cloning.</param>
             <param name="basePrefabName">The name of the base prefab the custom item is cloned from.</param>
+            <param name="itemConfig">The item config for this custom item.</param>
+        </member>
+        <member name="M:Jotunn.Entities.CustomItem.#ctor(UnityEngine.AssetBundle,System.String,System.Boolean,Jotunn.Configs.ItemConfig)">
+            <summary>
+                Custom item from a prefab loaded from an <see cref="T:UnityEngine.AssetBundle"/> with a <see cref="T:Recipe"/> made from a <see cref="T:Jotunn.Configs.ItemConfig"/>.<br />
+                Can fix references for <see cref="T:Jotunn.Entities.Mock`1"/>s.
+            </summary>
+            <param name="assetBundle">A preloaded <see cref="T:UnityEngine.AssetBundle"/></param>
+            <param name="assetName">Name of the prefab in the bundle.</param>
+            <param name="fixReference">If true references for <see cref="T:Jotunn.Entities.Mock`1"/> objects get resolved at runtime by Jötunn.</param>
             <param name="itemConfig">The item config for this custom item.</param>
         </member>
         <member name="M:Jotunn.Entities.CustomItem.IsValid">
@@ -2141,13 +2408,13 @@
             <summary>
                 Custom piece table from a prefab.
             </summary>
-            <param name="pieceTablePrefab">The prefab for this custom piece table.</param>
+            <param name="pieceTablePrefab">The prefab for this custom piece table. It has to have a <see cref="P:Jotunn.Entities.CustomPieceTable.PieceTable"/> component attached</param>
         </member>
         <member name="M:Jotunn.Entities.CustomPieceTable.#ctor(UnityEngine.GameObject,Jotunn.Configs.PieceTableConfig)">
             <summary>
                 Custom piece table from a prefab with a <see cref="T:Jotunn.Configs.PieceTableConfig"/> attached.
             </summary>
-            <param name="pieceTablePrefab">The prefab for this custom piece table.</param>
+            <param name="pieceTablePrefab">The prefab for this custom piece table. It has to have a <see cref="P:Jotunn.Entities.CustomPieceTable.PieceTable"/> component attached.</param>
             <param name="config">The <see cref="T:Jotunn.Configs.PieceTableConfig"/> for this custom piece table.</param>
         </member>
         <member name="M:Jotunn.Entities.CustomPieceTable.#ctor(System.String,Jotunn.Configs.PieceTableConfig)">
@@ -2155,6 +2422,14 @@
                 "Empty" custom piece table with a <see cref="T:Jotunn.Configs.PieceTableConfig"/> attached.
             </summary>
             <param name="name">The name of the custom piece table.</param>
+            <param name="config">The <see cref="T:Jotunn.Configs.PieceTableConfig"/> for this custom piece table.</param>
+        </member>
+        <member name="M:Jotunn.Entities.CustomPieceTable.#ctor(UnityEngine.AssetBundle,System.String,Jotunn.Configs.PieceTableConfig)">
+            <summary>
+                Custom piece table from a prefab loaded from an <see cref="T:UnityEngine.AssetBundle"/> with a <see cref="T:Jotunn.Configs.PieceTableConfig"/> attached.
+            </summary>
+            <param name="assetBundle">A preloaded <see cref="T:UnityEngine.AssetBundle"/></param>
+            <param name="assetName">Name of the prefab in the bundle. It has to have a <see cref="P:Jotunn.Entities.CustomPieceTable.PieceTable"/> component attached.</param>
             <param name="config">The <see cref="T:Jotunn.Configs.PieceTableConfig"/> for this custom piece table.</param>
         </member>
         <member name="M:Jotunn.Entities.CustomPieceTable.IsValid">
@@ -2201,6 +2476,15 @@
                 Can fix references for <see cref="T:Jotunn.Entities.Mock`1"/>s.
             </summary>
             <param name="prefab">The prefab for this custom item.</param>
+            <param name="fixReference">If true references for <see cref="T:Jotunn.Entities.Mock`1"/> objects get resolved at runtime by Jötunn.</param>
+        </member>
+        <member name="M:Jotunn.Entities.CustomPrefab.#ctor(UnityEngine.AssetBundle,System.String,System.Boolean)">
+            <summary>
+                Custom prefab loaded from an <see cref="T:UnityEngine.AssetBundle"/>.<br />
+                Can fix references for <see cref="T:Jotunn.Entities.Mock`1"/>s.
+            </summary>
+            <param name="assetBundle">A preloaded <see cref="T:UnityEngine.AssetBundle"/></param>
+            <param name="assetName">Name of the prefab in the bundle.</param>
             <param name="fixReference">If true references for <see cref="T:Jotunn.Entities.Mock`1"/> objects get resolved at runtime by Jötunn.</param>
         </member>
         <member name="M:Jotunn.Entities.CustomPrefab.IsValid">
@@ -2459,7 +2743,17 @@
             </summary>
             <param name="prefab">The prefab for this custom vegetation.</param>
             <param name="fixReference">If true references for <see cref="T:Jotunn.Entities.Mock`1"/> objects get resolved at runtime by Jötunn.</param>
-            <param name="config">The vegetation config for this custom vegation.</param> 
+            <param name="config">The <see cref="T:Jotunn.Configs.VegetationConfig"/> for this custom vegation.</param>
+        </member>
+        <member name="M:Jotunn.Entities.CustomVegetation.#ctor(UnityEngine.AssetBundle,System.String,System.Boolean,Jotunn.Configs.VegetationConfig)">
+            <summary>
+                Custom vegetation from a prefab loaded from an <see cref="T:UnityEngine.AssetBundle"/>.<br />
+                Can fix references for mocks.
+            </summary>
+            <param name="assetBundle">A preloaded <see cref="T:UnityEngine.AssetBundle"/></param>
+            <param name="assetName">Name of the prefab in the bundle.</param>
+            <param name="fixReference">If true references for <see cref="T:Jotunn.Entities.Mock`1"/> objects get resolved at runtime by Jötunn.</param>
+            <param name="config">The <see cref="T:Jotunn.Configs.VegetationConfig"/> for this custom vegation.</param>
         </member>
         <member name="M:Jotunn.Entities.CustomVegetation.IsCustomVegetation(System.String)">
             <summary>
@@ -2562,28 +2856,6 @@
             <param name="configurationEntry"></param>
             <returns></returns>
         </member>
-        <member name="M:Jotunn.ConfigEntryBaseExtension.IsWritable(BepInEx.Configuration.ConfigEntryBase)">
-            <summary>
-                Check, if this config entry is "writable"
-            </summary>
-            <param name="configurationEntry"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Jotunn.ConfigEntryBaseExtension.GetLocalValue(BepInEx.Configuration.ConfigEntryBase)">
-            <summary>
-                Get the local value of an admin config
-            </summary>
-            <param name="configurationEntry"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Jotunn.ConfigEntryBaseExtension.SetLocalValue(BepInEx.Configuration.ConfigEntryBase,System.Object)">
-            <summary>
-                Set the local value of an admin config
-            </summary>
-            <param name="configurationEntry"></param>
-            <param name="value"></param>
-            <returns></returns>
-        </member>
         <member name="M:Jotunn.ConfigEntryBaseExtension.GetBoundButtonName(BepInEx.Configuration.ConfigEntryBase)">
             <summary>
                 Get bound button's name
@@ -2599,6 +2871,21 @@
             <param name="configurationEntry"></param>
             <returns></returns>
             <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Jotunn.ConfigEntryBaseExtension.GetLocalValue(BepInEx.Configuration.ConfigEntryBase)">
+            <summary>
+                Get the local value of an admin config
+            </summary>
+            <param name="configurationEntry"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.ConfigEntryBaseExtension.SetLocalValue(BepInEx.Configuration.ConfigEntryBase,System.Object)">
+            <summary>
+                Set the local value of an admin config
+            </summary>
+            <param name="configurationEntry"></param>
+            <param name="value"></param>
+            <returns></returns>
         </member>
         <member name="T:Jotunn.EventExtensions">
             <summary>
@@ -2882,587 +3169,10 @@
         </member>
         <member name="M:Jotunn.ZNetExtension.IsAdmin(ZNet,System.Int64)">
             <summary>
-                Determine if a peer uid is in the admin list on the current <see cref="T:ZNet"/>
+                Determine if a peer uid is in the admin list on the current <see cref="T:ZNet"/>. Only works on the server instance
             </summary>
             <param name="znet"></param>
             <param name="uid"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig">
-            <summary>
-                An ingame GUI for BepInEx config files
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.InGameConfig.MenuToken">
-            <summary>
-                Name of the menu entry
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.InGameConfig.CancelToken">
-            <summary>
-                Text of the Cancel button
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.InGameConfig.OKToken">
-            <summary>
-                Text of the OK button
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.InGameConfig.KeybindToken">
-            <summary>
-                Text of the keybind dialogue
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.InGameConfig.SettingsPrefab">
-            <summary>
-                Mod settings Prefab
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.InGameConfig.SettingsRoot">
-            <summary>
-                Current mod settings instance
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.Init">
-            <summary>
-                Load and init hooks on client instances
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.LoadDefaultLocalization">
-            <summary>
-                Register Jötunn's default localization
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.LoadModSettingsPrefab">
-            <summary>
-                Load the mod settings prefab and apply Valheim style to it
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.CloseBehaviour">
-            <summary>
-                Adding a MonoBehaviour to close the mod settings here.
-                The Unity project does not know about BepInEx...
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.FejdStartup_SetupGui(FejdStartup)">
-            <summary>
-                Add default localization and instantiate the mod settings button in Fejd.
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.Menu_Start(Menu)">
-            <summary>
-                Cache current configuration values for possible sync and instantiate
-                the mod settings button on first in-game menu start.
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.CreateMenu(UnityEngine.Transform)">
-            <summary>
-                Create our own menu list entry when mod config is available
-            </summary>
-            <param name="menuList"></param>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.CreateWindow(UnityEngine.Transform)">
-            <summary>
-                Create custom configuration window
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.CreatePlugin(Jotunn.GUI.ModSettings,System.Collections.Generic.KeyValuePair{System.String,BepInEx.BaseUnityPlugin})">
-            <summary>
-                Create settings for a plugin
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.GetConfigurationEntries(System.String)">
-            <summary>
-                Get all config entries of a module by GUID
-            </summary>
-            <param name="guid"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.GetConfigurationEntries(BepInEx.BaseUnityPlugin)">
-            <summary>
-                Get all config entries of a module
-            </summary>
-            <param name="module"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Jotunn.GUI.InGameConfig.SaveConfiguration">
-            <summary>
-                Write all displayed values back to the config files
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.IConfigBound">
-            <summary>
-                Interface for the generic config bind class used in <see cref="M:Jotunn.GUI.InGameConfig.SaveConfiguration"/>
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBound`1">
-            <summary>
-                Generic abstract version of the config binding class
-            </summary>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundBoolean">
-            <summary>
-                Boolean Binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundInt">
-            <summary>
-                Integer binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundFloat">
-            <summary>
-                Float binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundDouble">
-            <summary>
-                Double binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundString">
-            <summary>
-                String binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundKeyCode">
-            <summary>
-                KeyCode binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundKeyboardShortcut">
-            <summary>
-                KeyboardShortcut binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundGamepadButton">
-            <summary>
-                GamepadButton binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundVector2">
-            <summary>
-                Vector2 binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.InGameConfig.ConfigBoundEnum">
-            <summary>
-                GamepadButton binding
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.ColorPicker">
-            <summary>
-                Custom MonoBehaviour for the ColorPicker
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.ColorPicker.ColorEvent">
-            <summary>
-            Event that gets called by the ColorPicker
-            </summary>
-            <param name="c">received Color</param>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.instance">
-            <summary>
-                Singeleton instance
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.done">
-            <returns>
-                True when the ColorPicker is closed
-            </returns>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.onCC">
-            <summary>
-                OnColorChanged event
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.onCS">
-            <summary>
-                OnColorSelected event
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.originalColor">
-            <summary>
-                Color before editing
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.modifiedColor">
-            <summary>
-                Current Color
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.useA">
-            <summary>
-                UseAlpha bool
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.interact">
-            <summary>
-                Interact bool
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.positionIndicator">
-            <summary>
-                Component ref
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.mainComponent">
-            <summary>
-                Component ref
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.rComponent">
-            <summary>
-                Component ref
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.gComponent">
-            <summary>
-                Component ref
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.bComponent">
-            <summary>
-                Component ref
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.aComponent">
-            <summary>
-                Component ref
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.hexaComponent">
-            <summary>
-                Component ref
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.ColorPicker.colorComponent">
-            <summary>
-                Component ref
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.Create(UnityEngine.Color,System.String,Jotunn.GUI.ColorPicker.ColorEvent,Jotunn.GUI.ColorPicker.ColorEvent,System.Boolean)">
-            <summary>
-                Creates a new Colorpicker
-            </summary>
-            <param name="original">Color before editing</param>
-            <param name="message">Display message</param>
-            <param name="onColorChanged">Event that gets called when the color gets modified</param>
-            <param name="onColorSelected">Event that gets called when one of the buttons done or cancel get pressed</param>
-            <param name="useAlpha">When set to false the colors used don't have an alpha channel</param>
-            <returns>
-                False if the instance is already running
-            </returns>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.RecalculateMenu(System.Boolean)">
-            <summary>
-                Called when color is modified, to update other UI components
-            </summary>
-            <param name="recalculateHSV"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetChooser">
-            <summary>
-                Used by EventTrigger to calculate the chosen value in color box
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetMain(System.Single)">
-            <summary>
-                Gets main Slider value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetR(System.Single)">
-            <summary>
-                Gets r Slider value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetR(System.String)">
-            <summary>
-                Gets r InputField value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetG(System.Single)">
-            <summary>
-                Gets g Slider value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetG(System.String)">
-            <summary>
-                Gets g InputField value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetB(System.Single)">
-            <summary>
-                Gets b Slider value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetB(System.String)">
-            <summary>
-                Gets b InputField value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetA(System.Single)">
-            <summary>
-                Gets a Slider value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetA(System.String)">
-            <summary>
-                Gets a InputField value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.SetHexa(System.String)">
-            <summary>
-                Gets hexa InputField value
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.CCancel">
-            <summary>
-                Cancel button call
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.Cancel">
-            <summary>
-                Manually cancel the ColorPicker and recover the default value
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.CDone">
-            <summary>
-                Done button call
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.ColorPicker.Done">
-            <summary>
-                Manually close the ColorPicker and apply the selected color
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.ColorPicker.HSV">
-            <summary>
-                HSV helper class
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.DragWindowCntrl">
-            <summary>
-                Simple dragging <see cref="T:UnityEngine.MonoBehaviour"/>
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.DragWindowCntrl.ApplyDragWindowCntrl(UnityEngine.GameObject)">
-            <summary>
-                Add this MonoBehaviour to a GameObject
-            </summary>
-            <param name="go"></param>
-        </member>
-        <member name="M:Jotunn.GUI.DragWindowCntrl.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)">
-            <summary>
-                BeginDrag event trigger
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.DragWindowCntrl.OnDrag(UnityEngine.EventSystems.PointerEventData)">
-            <summary>
-                Drag event trigger
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.GradientPicker">
-            <summary>
-                Custom MonoBehaviour for the GradientPicker
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.GradientPicker.GradientEvent">
-            <summary>
-                Event that gets called by the GradientPicker.
-            </summary>
-            <param name="g">received Gradient</param>
-        </member>
-        <member name="F:Jotunn.GUI.GradientPicker.instance">
-            <summary>
-                Singeleton instance
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.GradientPicker.done">
-            <summary>
-                True when the GradientPicker is closed
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.GradientPicker.onGC">
-            <summary>
-                OnGradientChanged Event
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.GradientPicker.onGS">
-            <summary>
-                OnGradientSelected Event
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.GradientPicker.originalGradient">
-            <summary>
-                Gradient before editing
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.GradientPicker.modifiedGradient">
-            <summary>
-                Current Gradient
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.GradientPicker.key">
-            <summary>
-                Key template
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.GradientPicker.interact">
-            <summary>
-                Interact bool
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.Create(UnityEngine.Gradient,System.String,Jotunn.GUI.GradientPicker.GradientEvent,Jotunn.GUI.GradientPicker.GradientEvent)">
-            <summary>
-                Creates a new GradiantPicker
-            </summary>
-            <param name="original">Color before editing</param>
-            <param name="message">Display message</param>
-            <param name="onGradientChanged">Event that gets called when the gradient gets modified</param>
-            <param name="onGradientSelected">Event that gets called when one of the buttons done or cancel gets pressed</param>
-            <returns>False if the instance is already running</returns>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.Setup">
-            <summary>
-                Setup new GradientPicker
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.CreateColorKey(UnityEngine.GradientColorKey)">
-            <summary>
-                Creates a ColorKey UI object
-            </summary>
-            <param name="k"></param>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.CreateNewColorKey(System.Single)">
-            <summary>
-                Checks if new ColorKey should be created
-            </summary>
-            <param name="time"></param>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.CreateAlphaKey(UnityEngine.GradientAlphaKey)">
-            <summary>
-                Creates a AlphaKey UI object
-            </summary>
-            <param name="k"></param>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.CreateNewAlphaKey(System.Single)">
-            <summary>
-                Checks if new AlphaKey should be created
-            </summary>
-            <param name="time"></param>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.SetAlpha(System.Single)">
-            <summary>
-                Accessed by alpha Slider
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.SetAlpha(System.String)">
-            <summary>
-                Accessed by alpha InputField
-            </summary>
-            <param name="value"></param>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.CheckDeleteKey(UnityEngine.UI.Slider)">
-            <summary>
-                Checks if Key can be deleted
-            </summary>
-            <param name="s"></param>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.Select">
-            <summary>
-                Changes Selected Key
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.SetTime(System.Single)">
-            <summary>
-                Accessed by position Slider
-            </summary>
-            <param name="time"></param>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.SetTime(System.String)">
-            <summary>
-                Accessed by position InputField
-            </summary>
-            <param name="time"></param>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.ChooseColor">
-            <summary>
-                Choose color button call
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.CCancel">
-            <summary>
-                Cancel button call
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.Cancel">
-            <summary>
-                Manually cancel the GradientPicker and recovers the default value
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.CDone">
-            <summary>
-                Done button call
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.GradientPicker.Done">
-            <summary>
-                Manually close the GradientPicker and apply the selected color
-            </summary>
-        </member>
-        <member name="T:Jotunn.GUI.MinimapOverlayPanel">
-            <summary>
-                Panel for displaying and toggling custom map overlays
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.MinimapOverlayPanel.OverlayGroup">
-            <summary>
-                
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.MinimapOverlayPanel.Button">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.MinimapOverlayPanel.BaseMod">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.MinimapOverlayPanel.BaseModText">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="F:Jotunn.GUI.MinimapOverlayPanel.BaseToggle">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.MinimapOverlayPanel.ToggleOverlayGroup">
-            <summary>
-                Toggle the overlay list
-            </summary>
-        </member>
-        <member name="M:Jotunn.GUI.MinimapOverlayPanel.AddOverlayToggle(System.String,System.String)">
-            <summary>
-                Add a new toggle for a map overlay
-            </summary>
-            <param name="modName"></param>
-            <param name="overlayName"></param>
             <returns></returns>
         </member>
         <member name="T:Jotunn.IManager">
@@ -3508,10 +3218,26 @@
             </summary>
             <param name="data">Data to log</param>
         </member>
-        <member name="M:Jotunn.Logger.LogError(System.Object)">
+        <member name="M:Jotunn.Logger.LogFatal(BepInEx.BepInPlugin,System.Object)">
             <summary>
                 Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Fatal"/> level.
+                This is used when the responsible mod is different from mod logging this message.
             </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
+            <param name="data">Data to log</param>
+        </member>
+        <member name="M:Jotunn.Logger.LogError(System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Error"/> level.
+            </summary>
+            <param name="data">Data to log</param>
+        </member>
+        <member name="M:Jotunn.Logger.LogError(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Error"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
             <param name="data">Data to log</param>
         </member>
         <member name="M:Jotunn.Logger.LogWarning(System.Object)">
@@ -3520,10 +3246,26 @@
             </summary>
             <param name="data">Data to log</param>
         </member>
+        <member name="M:Jotunn.Logger.LogWarning(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Warning"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
+            <param name="data">Data to log</param>
+        </member>
         <member name="M:Jotunn.Logger.LogMessage(System.Object)">
             <summary>
                 Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Message"/> level.
             </summary>
+            <param name="data">Data to log</param>
+        </member>
+        <member name="M:Jotunn.Logger.LogMessage(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Message"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
             <param name="data">Data to log</param>
         </member>
         <member name="M:Jotunn.Logger.LogInfo(System.Object)">
@@ -3532,10 +3274,26 @@
             </summary>
             <param name="data">Data to log</param>
         </member>
+        <member name="M:Jotunn.Logger.LogInfo(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Info"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
+            <param name="data">Data to log</param>
+        </member>
         <member name="M:Jotunn.Logger.LogDebug(System.Object)">
             <summary>
                 Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Debug"/> level.
             </summary>
+            <param name="data">Data to log</param>
+        </member>
+        <member name="M:Jotunn.Logger.LogDebug(BepInEx.BepInPlugin,System.Object)">
+            <summary>
+                Logs a message with <see cref="F:BepInEx.Logging.LogLevel.Debug"/> level.
+                This is used when the responsible mod is different from mod logging this message.
+            </summary>
+            <param name="sourceMod">Known mod that is responsible for this log</param>
             <param name="data">Data to log</param>
         </member>
         <member name="T:Jotunn.Main">
@@ -4240,6 +3998,31 @@
         <member name="F:Jotunn.Managers.InputManager.GamepadButton.RightStickButton">
             <summary>
                 Right Joystick press
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadKeyCode(Jotunn.Managers.InputManager.GamepadButton)">
+            <summary>
+                Translate a <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> to its <see cref="T:UnityEngine.KeyCode"/> value
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadAxis(Jotunn.Managers.InputManager.GamepadButton)">
+            <summary>
+                Translate a <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> to its axis string value
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadString(Jotunn.Managers.InputManager.GamepadButton)">
+            <summary>
+                Translate a <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> to its printable string value
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadButton(System.String)">
+            <summary>
+                Translate an axis string to its <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> value
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.InputManager.GetGamepadButton(UnityEngine.KeyCode)">
+            <summary>
+                Translate a <see cref="T:UnityEngine.KeyCode"/> to its <see cref="T:Jotunn.Managers.InputManager.GamepadButton"/> value
             </summary>
         </member>
         <member name="P:Jotunn.Managers.InputManager.Instance">
@@ -5089,6 +4872,50 @@
             <param name="mockObjectType"></param>
             <returns>the real prefab</returns>
         </member>
+        <member name="M:Jotunn.Managers.MockManager.FixTextures(UnityEngine.Material)">
+            <summary>
+                Replaces all mock Textures with the real Texture
+            </summary>
+            <param name="material"></param>
+            <returns>true if no mocks were found or all mock could be resolved</returns>
+        </member>
+        <member name="M:Jotunn.Managers.MockManager.FixShader(UnityEngine.Material)">
+            <summary>
+                Replaces a potential mock Shader with the real Shader
+            </summary>
+            <param name="material"></param>
+            <returns>true if no mock was found or the mock could be resolved</returns>
+        </member>
+        <member name="T:Jotunn.Managers.MockSystem.MockResolveException">
+            <summary>
+                Exception that is thrown for a mock prefab, that could not be resolved to a real prefab.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.MockSystem.MockResolveException.FailedMockName">
+            <summary>
+                Name of the prefab that could not be resolved. Mock prefix is already removed.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.MockSystem.MockResolveException.MockType">
+            <summary>
+                Type of the prefab that could not be resolved.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.MockSystem.MockResolveException.#ctor(System.String,System.String)">
+            <summary>
+                Creates a new instance of the <see cref="T:Jotunn.Managers.MockSystem.MockResolveException" /> class.
+            </summary>
+            <param name="message"></param>
+            <param name="failedMockName"></param>
+        </member>
+        <member name="M:Jotunn.Managers.MockSystem.MockResolveException.#ctor(System.String,System.String,System.Type)">
+            <summary>
+                Creates a new instance of the <see cref="T:Jotunn.Managers.MockSystem.MockResolveException" /> class.
+            </summary>
+            <param name="message"></param>
+            <param name="failedMockName"></param>
+            <param name="mockType"></param>
+        </member>
         <member name="T:Jotunn.Managers.NetworkManager">
             <summary>
                 Manager handling all network related code
@@ -5374,12 +5201,12 @@
                 If you want to execute just once you will need to unregister from the event after execution.
             </summary>
         </member>
-        <member name="F:Jotunn.Managers.PrefabManager.PrefabContainer">
+        <member name="P:Jotunn.Managers.PrefabManager.PrefabContainer">
             <summary>
                 Container for custom prefabs in the DontDestroyOnLoad scene.
             </summary>
         </member>
-        <member name="F:Jotunn.Managers.PrefabManager.Prefabs">
+        <member name="P:Jotunn.Managers.PrefabManager.Prefabs">
             <summary>
                 Dictionary of all added custom prefabs by name hash.
             </summary>
@@ -5509,6 +5336,16 @@
                 Get all instances of an Unity Object from the current scene by type.
             </summary>
             <param name="type"><see cref="T:System.Type"/> to search for.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Managers.PrefabManager.Cache.FindBestAsset(System.Collections.Generic.IDictionary{System.String,UnityEngine.Object},UnityEngine.Object,System.String)">
+            <summary>
+                Determines the best matching asset for a given name.
+                Only one asset can be associated with a name, this ties to find the best match if there is already a cached one present.
+            </summary>
+            <param name="map"></param>
+            <param name="unityObject"></param>
+            <param name="name"></param>
             <returns></returns>
         </member>
         <member name="T:Jotunn.Managers.RenderManager">
@@ -5655,11 +5492,6 @@
                 Create a new RenderRequest
             </summary>
             <param name="target">Object to be rendered. A copy of the provided GameObject will be created for rendering</param> 
-        </member>
-        <member name="M:Jotunn.Managers.SaveManager.#ctor">
-            <summary>
-                Hide .ctor
-            </summary>
         </member>
         <member name="T:Jotunn.Managers.SkillManager">
             <summary>
@@ -5906,6 +5738,158 @@
                 stop the client from completing the login handshake with the server until ready.
             </summary>
         </member>
+        <member name="T:Jotunn.Managers.UndoManager">
+            <summary>
+                Manager for handling undo and redo actions in mods. Can handle multiple undo queues.<br/>
+                Mods can make their own UndoActions using the provided <see cref="T:Jotunn.Managers.UndoManager.IUndoAction">interface</see>
+                or use the default ones Jötunn provides in <see cref="T:Jotunn.Utils.UndoActions"/>.<br />
+                Undo queues get automatically reset on every login and logout.
+            </summary>
+        </member>
+        <member name="T:Jotunn.Managers.UndoManager.IUndoAction">
+            <summary>
+                Interface for actions which can be added to the undo queue.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.Description">
+            <summary>
+                Description of this action to show on the queue's history.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.Undo">
+            <summary>
+                Code to revert whatever was executed.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.Redo">
+            <summary>
+                Code to replay whatever was executed.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.UndoMessage">
+            <summary>
+                Message being displayed after a successful undo.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.IUndoAction.RedoMessage">
+            <summary>
+                Message being displayed after a successful redo.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.UndoManager.Instance">
+            <summary>
+                The singleton instance of this manager.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.#ctor">
+            <summary>
+                Hide .ctor
+            </summary>
+        </member>
+        <member name="F:Jotunn.Managers.UndoManager.Queues">
+            <summary>
+                Container to hold all Queues.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.Init">
+            <summary>
+                Registers all hooks.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.AddMessage(System.String,System.Boolean)">
+            <summary>
+                Add a message to the console or in the player HUD
+            </summary>
+            <param name="message"></param>
+            <param name="priority"></param>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.CreateQueue(System.String,System.Int32)">
+            <summary>
+                Manually create a new queue by name and return it. If the queue already exists
+                no new queue is created but the existing is returned.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <param name="maxSteps">Optionally define the max history capacity of a newly generated queue</param>
+            <returns>The <see cref="T:Jotunn.Managers.UndoManager.UndoQueue"/> with the given name</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.GetQueueNames">
+            <summary>
+                Get a list of all current undo queues.
+            </summary>
+            <returns>List of all registered queue names</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.GetQueue(System.String)">
+            <summary>
+                Get a queue by name. Creates a new queue if it does not exist.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <returns>The <see cref="T:Jotunn.Managers.UndoManager.UndoQueue"/> with the given name</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.Add(System.String,Jotunn.Managers.UndoManager.IUndoAction)">
+            <summary>
+                Add a new action to a queue.<br/>
+                If a queue with the provided name does not exist it is automatically created.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <param name="action">Mod provided action which can undo and redo whatever was executed</param>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.Undo(System.String)">
+            <summary>
+                Execute the undo action of the item at the queue's current position and decrease the position pointer.<br/>
+                If a queue with the provided name does not exist it is automatically created.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <returns>true if an action was undone, false if no actions exist or the action failed</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.Redo(System.String)">
+            <summary>
+                Execute the redo action of the item after the queue's current position and increase the position pointer.<br/>
+                If a queue with the provided name does not exist it is automatically created.
+            </summary>
+            <param name="queueName">Global name of the queue</param>
+            <returns>true if an action was redone, false if no actions exist or the action failed</returns>
+        </member>
+        <member name="T:Jotunn.Managers.UndoManager.UndoQueue">
+            <summary>
+                Undo queue implementation.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.Add(Jotunn.Managers.UndoManager.IUndoAction)">
+            <summary>
+                Add a new action to this queue.
+            </summary>
+            <param name="action">Mod provided action which can undo and redo whatever was executed</param>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.Undo">
+            <summary>
+                Execute the undo action of the item at the queue's current position and decrease the position pointer.
+            </summary>
+            <returns>true if an action was undone, false if no actions exist or the action failed</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.Redo">
+            <summary>
+                Execute the redo action of the item after the queue's current position and increase the position pointer.
+            </summary>
+            <returns>true if an action was redone, false if no actions exist or the action failed</returns>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.Reset">
+            <summary>
+                Reset the queue's history and position pointer to its initial state.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.GetIndex">
+            <summary>
+                Get this queue's current position index, -1 when empty.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.GetHistory">
+            <summary>
+                Get a string array of this queue's current history.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.UndoManager.UndoQueue.ToString">
+            <inheritdoc/>
+        </member>
         <member name="T:Jotunn.Managers.ZoneManager">
             <summary>
                 Manager for adding custom Locations and Vegetation.
@@ -5925,6 +5909,13 @@
             <summary>
                 Event that gets fired after the vanilla locations are in memory and available for cloning or editing.
                 Your code will execute every time before a new <see cref="T:ObjectDB"/> is copied (on every menu start).
+                If you want to execute just once you will need to unregister from the event after execution.
+            </summary>
+        </member>
+        <member name="E:Jotunn.Managers.ZoneManager.OnVanillaClutterAvailable">
+            <summary>
+                Event that gets fired after the vanilla clutter is in memory and available obtain.
+                Your code will execute every time before a new <see cref="T:ClutterSystem"/> is instantiated.
                 If you want to execute just once you will need to unregister from the event after execution.
             </summary>
         </member>
@@ -6028,10 +6019,448 @@
             <param name="name">Name of the ZoneVegetation to search for.</param>
             <returns>The existing ZoneVegetation, or null if none exists with given name</returns>
         </member>
+        <member name="M:Jotunn.Managers.ZoneManager.AddCustomClutter(Jotunn.Entities.CustomClutter)">
+            <summary>
+                Register a CustomClutter to be added to the ClutterSystem
+            </summary>
+            <param name="customClutter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Managers.ZoneManager.GetClutter(System.String)">
+            <summary>
+                Get a Clutter by its name.<br /><br />
+                Search hierarchy:
+                <list type="number">
+                    <item>Custom Clutter with the exact name</item>
+                    <item>Vanilla Clutter with the exact name from <see cref="T:ClutterSystem"/></item>
+                </list>
+            </summary>
+            <param name="name">Name of the Clutter to search for.</param>
+            <returns>The existing Clutter, or null if none exists with given name</returns>
+        </member>
         <member name="M:Jotunn.Managers.ZoneManager.InvokeOnVanillaLocationsAvailable">
             <summary>
                 Safely invoke OnVanillaLocationsAvailable
             </summary>
+        </member>
+        <member name="M:Jotunn.Managers.ZoneManager.InvokeOnVanillaClutterAvailable">
+            <summary>
+                Safely invoke OnVanillaClutterAvailable
+            </summary>
+        </member>
+        <member name="T:Jotunn.GUI.ColorPicker">
+            <summary>
+                Custom MonoBehaviour for the ColorPicker
+            </summary>
+        </member>
+        <member name="T:Jotunn.GUI.ColorPicker.ColorEvent">
+            <summary>
+            Event that gets called by the ColorPicker
+            </summary>
+            <param name="c">received Color</param>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.instance">
+            <summary>
+                Singeleton instance
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.done">
+            <returns>
+                True when the ColorPicker is closed
+            </returns>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.onCC">
+            <summary>
+                OnColorChanged event
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.onCS">
+            <summary>
+                OnColorSelected event
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.originalColor">
+            <summary>
+                Color before editing
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.modifiedColor">
+            <summary>
+                Current Color
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.useA">
+            <summary>
+                UseAlpha bool
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.interact">
+            <summary>
+                Interact bool
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.positionIndicator">
+            <summary>
+                Component ref
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.mainComponent">
+            <summary>
+                Component ref
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.rComponent">
+            <summary>
+                Component ref
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.gComponent">
+            <summary>
+                Component ref
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.bComponent">
+            <summary>
+                Component ref
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.aComponent">
+            <summary>
+                Component ref
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.hexaComponent">
+            <summary>
+                Component ref
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.ColorPicker.colorComponent">
+            <summary>
+                Component ref
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.Create(UnityEngine.Color,System.String,Jotunn.GUI.ColorPicker.ColorEvent,Jotunn.GUI.ColorPicker.ColorEvent,System.Boolean)">
+            <summary>
+                Creates a new Colorpicker
+            </summary>
+            <param name="original">Color before editing</param>
+            <param name="message">Display message</param>
+            <param name="onColorChanged">Event that gets called when the color gets modified</param>
+            <param name="onColorSelected">Event that gets called when one of the buttons done or cancel get pressed</param>
+            <param name="useAlpha">When set to false the colors used don't have an alpha channel</param>
+            <returns>
+                False if the instance is already running
+            </returns>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.RecalculateMenu(System.Boolean)">
+            <summary>
+                Called when color is modified, to update other UI components
+            </summary>
+            <param name="recalculateHSV"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetChooser">
+            <summary>
+                Used by EventTrigger to calculate the chosen value in color box
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetMain(System.Single)">
+            <summary>
+                Gets main Slider value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetR(System.Single)">
+            <summary>
+                Gets r Slider value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetR(System.String)">
+            <summary>
+                Gets r InputField value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetG(System.Single)">
+            <summary>
+                Gets g Slider value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetG(System.String)">
+            <summary>
+                Gets g InputField value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetB(System.Single)">
+            <summary>
+                Gets b Slider value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetB(System.String)">
+            <summary>
+                Gets b InputField value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetA(System.Single)">
+            <summary>
+                Gets a Slider value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetA(System.String)">
+            <summary>
+                Gets a InputField value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.SetHexa(System.String)">
+            <summary>
+                Gets hexa InputField value
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.CCancel">
+            <summary>
+                Cancel button call
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.Cancel">
+            <summary>
+                Manually cancel the ColorPicker and recover the default value
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.CDone">
+            <summary>
+                Done button call
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.ColorPicker.Done">
+            <summary>
+                Manually close the ColorPicker and apply the selected color
+            </summary>
+        </member>
+        <member name="T:Jotunn.GUI.ColorPicker.HSV">
+            <summary>
+                HSV helper class
+            </summary>
+        </member>
+        <member name="T:Jotunn.GUI.DragWindowCntrl">
+            <summary>
+                Simple dragging <see cref="T:UnityEngine.MonoBehaviour"/>
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.DragWindowCntrl.ApplyDragWindowCntrl(UnityEngine.GameObject)">
+            <summary>
+                Add this MonoBehaviour to a GameObject
+            </summary>
+            <param name="go"></param>
+        </member>
+        <member name="M:Jotunn.GUI.DragWindowCntrl.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)">
+            <summary>
+                BeginDrag event trigger
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.DragWindowCntrl.OnDrag(UnityEngine.EventSystems.PointerEventData)">
+            <summary>
+                Drag event trigger
+            </summary>
+        </member>
+        <member name="T:Jotunn.GUI.GradientPicker">
+            <summary>
+                Custom MonoBehaviour for the GradientPicker
+            </summary>
+        </member>
+        <member name="T:Jotunn.GUI.GradientPicker.GradientEvent">
+            <summary>
+                Event that gets called by the GradientPicker.
+            </summary>
+            <param name="g">received Gradient</param>
+        </member>
+        <member name="F:Jotunn.GUI.GradientPicker.instance">
+            <summary>
+                Singeleton instance
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.GradientPicker.done">
+            <summary>
+                True when the GradientPicker is closed
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.GradientPicker.onGC">
+            <summary>
+                OnGradientChanged Event
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.GradientPicker.onGS">
+            <summary>
+                OnGradientSelected Event
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.GradientPicker.originalGradient">
+            <summary>
+                Gradient before editing
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.GradientPicker.modifiedGradient">
+            <summary>
+                Current Gradient
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.GradientPicker.key">
+            <summary>
+                Key template
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.GradientPicker.interact">
+            <summary>
+                Interact bool
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.Create(UnityEngine.Gradient,System.String,Jotunn.GUI.GradientPicker.GradientEvent,Jotunn.GUI.GradientPicker.GradientEvent)">
+            <summary>
+                Creates a new GradiantPicker
+            </summary>
+            <param name="original">Color before editing</param>
+            <param name="message">Display message</param>
+            <param name="onGradientChanged">Event that gets called when the gradient gets modified</param>
+            <param name="onGradientSelected">Event that gets called when one of the buttons done or cancel gets pressed</param>
+            <returns>False if the instance is already running</returns>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.Setup">
+            <summary>
+                Setup new GradientPicker
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.CreateColorKey(UnityEngine.GradientColorKey)">
+            <summary>
+                Creates a ColorKey UI object
+            </summary>
+            <param name="k"></param>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.CreateNewColorKey(System.Single)">
+            <summary>
+                Checks if new ColorKey should be created
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.CreateAlphaKey(UnityEngine.GradientAlphaKey)">
+            <summary>
+                Creates a AlphaKey UI object
+            </summary>
+            <param name="k"></param>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.CreateNewAlphaKey(System.Single)">
+            <summary>
+                Checks if new AlphaKey should be created
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.SetAlpha(System.Single)">
+            <summary>
+                Accessed by alpha Slider
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.SetAlpha(System.String)">
+            <summary>
+                Accessed by alpha InputField
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.CheckDeleteKey(UnityEngine.UI.Slider)">
+            <summary>
+                Checks if Key can be deleted
+            </summary>
+            <param name="s"></param>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.Select">
+            <summary>
+                Changes Selected Key
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.SetTime(System.Single)">
+            <summary>
+                Accessed by position Slider
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.SetTime(System.String)">
+            <summary>
+                Accessed by position InputField
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.ChooseColor">
+            <summary>
+                Choose color button call
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.CCancel">
+            <summary>
+                Cancel button call
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.Cancel">
+            <summary>
+                Manually cancel the GradientPicker and recovers the default value
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.CDone">
+            <summary>
+                Done button call
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.GradientPicker.Done">
+            <summary>
+                Manually close the GradientPicker and apply the selected color
+            </summary>
+        </member>
+        <member name="T:Jotunn.GUI.MinimapOverlayPanel">
+            <summary>
+                Panel for displaying and toggling custom map overlays
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.MinimapOverlayPanel.OverlayGroup">
+            <summary>
+                
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.MinimapOverlayPanel.Button">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.MinimapOverlayPanel.BaseMod">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.MinimapOverlayPanel.BaseModText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Jotunn.GUI.MinimapOverlayPanel.BaseToggle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.MinimapOverlayPanel.ToggleOverlayGroup">
+            <summary>
+                Toggle the overlay list
+            </summary>
+        </member>
+        <member name="M:Jotunn.GUI.MinimapOverlayPanel.AddOverlayToggle(System.String,System.String)">
+            <summary>
+                Add a new toggle for a map overlay
+            </summary>
+            <param name="modName"></param>
+            <param name="overlayName"></param>
+            <returns></returns>
         </member>
         <member name="T:Jotunn.Utils.AssetUtils">
             <summary>
@@ -6082,10 +6511,17 @@
         </member>
         <member name="M:Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources(System.String,System.Reflection.Assembly)">
             <summary>
-                Load an assembly-embedded <see cref="T:UnityEngine.AssetBundle" />
+                Load an assembly-embedded <see cref="T:UnityEngine.AssetBundle" />. Use this if the automatic detection of the assembly fails.
             </summary>
             <param name="bundleName">Name of the bundle. Folders are point-seperated e.g. folder/bundle becomes folder.bundle</param>
             <param name="resourceAssembly">Executing assembly</param>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources(System.String)">
+            <summary>
+                Load an assembly-embedded <see cref="T:UnityEngine.AssetBundle" />. The calling assembly is automatically detected.
+            </summary>
+            <param name="bundleName">Name of the bundle. Folders are point-seperated e.g. folder/bundle becomes folder.bundle</param>
             <returns></returns>
         </member>
         <member name="M:Jotunn.Utils.AssetUtils.LoadTextFromResources(System.String,System.Reflection.Assembly)">
@@ -6110,6 +6546,11 @@
             <param name="assetPath"></param>
             <returns></returns>
         </member>
+        <member name="T:Jotunn.Utils.BepInExUtils">
+            <summary>
+                Helper methods to access BepInEx plugin information
+            </summary>
+        </member>
         <member name="F:Jotunn.Utils.BepInExUtils.Plugins">
             <summary>
                 Cached plugin list
@@ -6124,6 +6565,12 @@
         <member name="M:Jotunn.Utils.BepInExUtils.GetDependentPlugins(System.Boolean)">
             <summary>
                 Get a dictionary of loaded plugins which depend on Jotunn.
+            </summary>
+            <returns>Dictionary of plugin GUID and <see cref="T:BepInEx.BaseUnityPlugin"/></returns>
+        </member>
+        <member name="M:Jotunn.Utils.BepInExUtils.GetPlugins(System.Boolean)">
+            <summary>
+                Get a dictionary of all plugins loaded by BepInEx
             </summary>
             <returns>Dictionary of plugin GUID and <see cref="T:BepInEx.BaseUnityPlugin"/></returns>
         </member>
@@ -6463,7 +6910,7 @@
             <param name="sender"></param>
             <param name="data"></param>
         </member>
-        <member name="M:Jotunn.Utils.ModCompatibility.ShowModCompatibilityErrorMessage">
+        <member name="M:Jotunn.Utils.ModCompatibility.ShowModCompatibilityErrorMessage(System.String)">
             <summary>
                 Create and show mod compatibility error message
             </summary>
@@ -6476,25 +6923,43 @@
             <param name="clientData">client data</param>
             <returns></returns>
         </member>
-        <member name="M:Jotunn.Utils.ModCompatibility.ClientVersionLowerMessage(Jotunn.Utils.ModModule)">
-            <summary>
-                Generate message for client's mod version lower than server's version
-            </summary>
-            <param name="module">Module version data</param>
-            <returns></returns>
-        </member>
-        <member name="M:Jotunn.Utils.ModCompatibility.ServerVersionLowerMessage(Jotunn.Utils.ModModule,Jotunn.Utils.ModModule)">
-            <summary>
-                Generate message for server's mod version lower than client's version
-            </summary>
-            <param name="module">server module data</param>
-            <param name="clientModule">client module data</param>
-            <returns></returns>
-        </member>
         <member name="M:Jotunn.Utils.ModCompatibility.GetEnforcableMods">
             <summary>
                 Get module.
             </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.IsNeededOnServer">
+            <summary>
+                Module must at least be loaded on the server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.IsNeededOnClient">
+            <summary>
+                Module must at least be loaded on the client
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.IsNotEnforced">
+            <summary>
+               Module is not enforced by the server or client
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.OnlyVersionCheck">
+            <summary>
+                Module is not enforced, only version check if both client and server have it
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Jotunn.Utils.ModModule.IsLowerVersion(Jotunn.Utils.ModModule,Jotunn.Utils.ModModule,Jotunn.Utils.VersionStrictness)">
+            <summary>
+                Checks if the compare module has a lower version then the other base module
+            </summary>
+            <param name="baseModule"></param>
+            <param name="compareModule"></param>
+            <param name="strictness"></param>
             <returns></returns>
         </member>
         <member name="T:Jotunn.Utils.ModuleVersionData">
@@ -6793,6 +7258,13 @@
             <param name="modGuid">GUID of the mod</param>
             <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Jotunn.Entities.CustomVegetation"/> from a specific mod</returns>
         </member>
+        <member name="M:Jotunn.Utils.ModRegistry.GetClutter(System.String)">
+            <summary>
+                Get all added <see cref="T:Jotunn.Entities.CustomClutter">CustomClutter</see> of a mod by GUID
+            </summary>
+            <param name="modGuid">GUID of the mod</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Jotunn.Entities.CustomClutter"/> from a specific mod</returns>
+        </member>
         <member name="M:Jotunn.Utils.ModRegistry.GetCreatures">
             <summary>
                 Get all added <see cref="T:Jotunn.Entities.CustomCreature">CustomCreatures</see>
@@ -6895,6 +7367,11 @@
         <member name="P:Jotunn.Utils.ModRegistry.ModInfo.Vegetation">
             <summary>
                 Custom Vegetation added by that mod
+            </summary>
+        </member>
+        <member name="P:Jotunn.Utils.ModRegistry.ModInfo.Clutter">
+            <summary>
+                Custom Clutter added by that mod
             </summary>
         </member>
         <member name="P:Jotunn.Utils.ModRegistry.ModInfo.Creatures">
@@ -7131,6 +7608,198 @@
             </summary>
             <param name="gameObject"></param>
         </member>
+        <member name="T:Jotunn.Utils.UndoActions">
+            <summary>
+                Pre-defined actions to use with the <see cref="T:Jotunn.Managers.UndoManager"/>.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoHelper.IsValid(ZNetView)">
+            <summary>Helper to check object validity.</summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoHelper.IsValid(ZDO)">
+            <summary>Helper to check object validity.</summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.UndoCreate">
+            <summary>
+                "Create" action for the <see cref="T:Jotunn.Managers.UndoManager"/>. Can undo and redo ZDO creation.
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.UndoCreate.Data">
+            <summary>
+                Current ZDO data of this action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.#ctor(System.Collections.Generic.IEnumerable{ZDO})">
+            <summary>
+                Create new undo data for ZDO creation operations. Clones all ZDO data to prevent NREs.
+            </summary>
+            <param name="data">Enumerable of ZDOs which were created.</param>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.Description">
+            <summary>
+                Description of the executed action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.Undo">
+            <summary>
+                Remove stored ZDOs again.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.UndoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.Redo">
+            <summary>
+                Recreate stored ZDOs again.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoCreate.RedoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.UndoRemove">
+            <summary>
+                "Remove" action for the <see cref="T:Jotunn.Managers.UndoManager"/>. Can undo and redo ZDO removal.
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.UndoRemove.Data">
+            <summary>
+                Current ZDO data of this action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.#ctor(System.Collections.Generic.IEnumerable{ZDO})">
+            <summary>
+                Create new undo data for ZDO removal operations. Clones all ZDO data to prevent NREs.
+            </summary>
+            <param name="data">Enumerable of ZDOs which were removed.</param>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.Description">
+            <summary>
+                Description of the executed action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.Undo">
+            <summary>
+                Recreate stored ZDOs again.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.UndoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.Redo">
+            <summary>
+                Remove stored ZDOs again.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoRemove.RedoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.HeightUndoData">
+            <summary>
+                Heightmap data wrapper
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.HeightUndoData.Smooth">
+            <summary>
+                "Smooth" member of the heightmap
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.HeightUndoData.Level">
+            <summary>
+                "Level" member of the heightmap
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.HeightUndoData.Index">
+            <summary>
+                "Index" member of the heightmap
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.HeightUndoData.HeightModified">
+            <summary>
+                "HeightModified" member of the heightmap
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.PaintUndoData">
+            <summary>
+                Paint data wrapper
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.PaintUndoData.PaintModified">
+            <summary>
+                "PaintModified" member of the heightmap paint
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.PaintUndoData.Paint">
+            <summary>
+                "Paint" member of the heightmap paint
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.PaintUndoData.Index">
+            <summary>
+                "Index" member of the heightmap paint
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.TerrainUndoData">
+            <summary>
+                Heightmap and Paint data collection
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.TerrainUndoData.Heights">
+            <summary>
+                Collection of <see cref="T:Jotunn.Utils.UndoActions.HeightUndoData"/>
+            </summary>
+        </member>
+        <member name="F:Jotunn.Utils.UndoActions.TerrainUndoData.Paints">
+            <summary>
+                Collection of <see cref="T:Jotunn.Utils.UndoActions.PaintUndoData"/>
+            </summary>
+        </member>
+        <member name="T:Jotunn.Utils.UndoActions.UndoTerrain">
+            <summary>
+                "Terrain" action for the <see cref="T:Jotunn.Managers.UndoManager"/>. Can undo and redo terrain modifications.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.#ctor(System.Collections.Generic.Dictionary{UnityEngine.Vector3,Jotunn.Utils.UndoActions.TerrainUndoData},System.Collections.Generic.Dictionary{UnityEngine.Vector3,Jotunn.Utils.UndoActions.TerrainUndoData},UnityEngine.Vector3,System.Single)">
+            <summary>
+                Create new undo data for terrain modifications.
+            </summary>
+            <param name="before">Terrain state before modification</param>
+            <param name="after">Terrain state after modification</param>
+            <param name="position">Position of the terrain modification center</param>
+            <param name="radius">Radius of the terrain modification</param>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.Description">
+            <summary>
+                Description of the executed action.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.Undo">
+            <summary>
+                Sets terrain data to the stored values of the "before" state.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.UndoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.Redo">
+            <summary>
+                Sets terrain data to the stored values of the "after" state.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Utils.UndoActions.UndoTerrain.RedoMessage">
+            <summary>
+                Success message.
+            </summary>
+        </member>
         <member name="T:Jotunn.Utils.WeightedList`2">
             <summary>
                 Like a list but stores elements in the order specified by the weight.
@@ -7232,6 +7901,12 @@
             <summary>
                 When a config is locked, cache the local value
             </summary>
+        </member>
+        <member name="M:ConfigurationManagerAttributes.SetFromAttributes(System.Object[])">
+            <summary>
+                Set config values from an attribute array
+            </summary>
+            <param name="attribs">Array of attribute values</param>
         </member>
         <member name="T:SimpleJson.JsonArray">
             <summary>
