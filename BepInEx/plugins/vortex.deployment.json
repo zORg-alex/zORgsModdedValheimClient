@@ -3,7 +3,7 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1667657363374,
+  "deploymentTime": 1667837072855,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx\\plugins",
   "files": [
@@ -44,10 +44,10 @@
       "time": 1652313504000
     },
     {
-      "relPath": "LightController.dll",
-      "source": "BalrondLightControl-1875-1-0-1-1652317915",
+      "relPath": "BalrondTrough.dll",
+      "source": "BalrondTrough-1877-1-0-0-1652313201",
       "target": "",
-      "time": 1652317857000
+      "time": 1652312749000
     },
     {
       "relPath": "BalrondShipyard.dll",
@@ -56,10 +56,16 @@
       "time": 1653853653000
     },
     {
-      "relPath": "BalrondTrough.dll",
-      "source": "BalrondTrough-1877-1-0-0-1652313201",
+      "relPath": "LightController.dll",
+      "source": "BalrondLightControl-1875-1-0-1-1652317915",
       "target": "",
-      "time": 1652312749000
+      "time": 1652317857000
+    },
+    {
+      "relPath": "CartSupport.dll",
+      "source": "Cart Support-947-0-1-0-1617853434",
+      "target": "",
+      "time": 1617828210000
     },
     {
       "relPath": "BalrondMetalLocker.dll",
@@ -68,16 +74,34 @@
       "time": 1652051931000
     },
     {
+      "relPath": "CraftFromContainers.dll",
+      "source": "Craft From Containers-40-2-2-2-1654014244",
+      "target": "",
+      "time": 1663694026000
+    },
+    {
       "relPath": "BetterStamina.dll",
       "source": "Better Stamina-153-1-2-0-1614771878",
       "target": "",
       "time": 1614771729000
     },
     {
-      "relPath": "CartSupport.dll",
-      "source": "Cart Support-947-0-1-0-1617853434",
+      "relPath": "BuildRestrictionTweaks.dll",
+      "source": "Build Restriction Tweaks-1606-0-2-2-1663116359",
       "target": "",
-      "time": 1617828210000
+      "time": 1663094538000
+    },
+    {
+      "relPath": "ExtendedItemDataFramework.dll",
+      "source": "Extended Item Data Framework-281-1-0-7-1643155370",
+      "target": "",
+      "time": 1667051521000
+    },
+    {
+      "relPath": "ESP.dll",
+      "source": "ESP-1318-1-12-1666796212",
+      "target": "",
+      "time": 1666779311000
     },
     {
       "relPath": "CraftyCartsRemake.dll",
@@ -92,10 +116,46 @@
       "time": 1646646908000
     },
     {
+      "relPath": "ValheimFastTeleport.dll",
+      "source": "FastTeleport-1774-1-0-0-1645298999",
+      "target": "",
+      "time": 1645292225000
+    },
+    {
       "relPath": "ExtendedPlayerInventory.dll",
       "source": "Extended Player Inventory-1356-0-3-3-1646152991",
       "target": "",
       "time": 1646116772000
+    },
+    {
+      "relPath": "FogOfWarExploreRadius.dll",
+      "source": "Fog Of War Explore Radius-329-0-7-3-1633324918",
+      "target": "",
+      "time": 1633350046000
+    },
+    {
+      "relPath": "Jotunn.dll",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1667323581000
+    },
+    {
+      "relPath": "Jotunn.xml",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1667323581000
+    },
+    {
+      "relPath": "Jotunn.pdb",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1667323581000
+    },
+    {
+      "relPath": "Jotunn.dll.mdb",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1667323582000
     },
     {
       "relPath": "HoeRadius.dll",
@@ -104,28 +164,28 @@
       "time": 1638099856000
     },
     {
+      "relPath": "README",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1662321398000
+    },
+    {
       "relPath": "MovableInventoryWindows.dll",
       "source": "Movable Inventory Windows-577-0-2-2-1616096366",
       "target": "",
       "time": 1616096189000
     },
     {
-      "relPath": "UseEquipmentInWater.dll",
-      "source": "UseEquipmentInWater.zip-121-0-2-2-1615747917",
+      "relPath": "OdinHorse.dll",
+      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
       "target": "",
-      "time": 1655921995000
+      "time": 1667285077000
     },
     {
-      "relPath": "CarryWeight\\Assets\\weight_icon_32.png",
-      "source": "CarryWeightSkill-1067-2-0-0-1636329947",
+      "relPath": "OdinHorse.English.yml",
+      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
       "target": "",
-      "time": 1636291598000
-    },
-    {
-      "relPath": "CarryWeight\\CarryWeight.dll",
-      "source": "CarryWeightSkill-1067-2-0-0-1636329947",
-      "target": "",
-      "time": 1636296580000
+      "time": 1658055659000
     },
     {
       "relPath": "Clutter\\Clutter.dll",
@@ -134,10 +194,28 @@
       "time": 1648772204000
     },
     {
+      "relPath": "OreSupport.dll",
+      "source": "Ore Support-1525-1-6-1655763776",
+      "target": "",
+      "time": 1655763408000
+    },
+    {
       "relPath": "HeightmapUnlimited\\HeightmapUnlimited.dll",
       "source": "Heightmap Unlimited-359-1-3-3-1641798751",
       "target": "",
       "time": 1641759074000
+    },
+    {
+      "relPath": "CarryWeight\\CarryWeight.dll",
+      "source": "CarryWeightSkill-1067-2-0-0-1636329947",
+      "target": "",
+      "time": 1636296580000
+    },
+    {
+      "relPath": "CarryWeight\\Assets\\weight_icon_32.png",
+      "source": "CarryWeightSkill-1067-2-0-0-1636329947",
+      "target": "",
+      "time": 1636291598000
     },
     {
       "relPath": "Advize_PlantEverything.dll",
@@ -146,28 +224,22 @@
       "time": 1666974702000
     },
     {
-      "relPath": "UsefulPaths.dll",
-      "source": "Useful Paths 1.0.5-438-1-0-5-1615851601",
-      "target": "",
-      "time": 1615851322000
-    },
-    {
-      "relPath": "Build Camera.dll",
-      "source": "Valheim Build Camera.zip-226-1-6-1-1632114845",
-      "target": "",
-      "time": 1632114551000
-    },
-    {
       "relPath": "RuneMagic.dll",
       "source": "Rune Magic-1359-1-1-9-1652860380",
       "target": "",
       "time": 1667510588000
     },
     {
-      "relPath": "ValheimRecycle.dll",
-      "source": "Valheim Recycle-425-2-1-0-1652109294",
+      "relPath": "OdinHorse.Polish.yml",
+      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
       "target": "",
-      "time": 1652108117000
+      "time": 1658070702000
+    },
+    {
+      "relPath": "OdinHorse.German.yml",
+      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
+      "target": "",
+      "time": 1658343448000
     },
     {
       "relPath": "TeleportEverything.dll",
@@ -182,106 +254,34 @@
       "time": 1618765024000
     },
     {
+      "relPath": "UseEquipmentInWater.dll",
+      "source": "UseEquipmentInWater.zip-121-0-2-2-1615747917",
+      "target": "",
+      "time": 1655921995000
+    },
+    {
+      "relPath": "Build Camera.dll",
+      "source": "Valheim Build Camera.zip-226-1-6-1-1632114845",
+      "target": "",
+      "time": 1632114551000
+    },
+    {
+      "relPath": "ValheimRecycle.dll",
+      "source": "Valheim Recycle-425-2-1-0-1652109294",
+      "target": "",
+      "time": 1652108117000
+    },
+    {
+      "relPath": "UsefulPaths.dll",
+      "source": "Useful Paths 1.0.5-438-1-0-5-1615851601",
+      "target": "",
+      "time": 1615851322000
+    },
+    {
       "relPath": "Clutter\\Assets\\Translations\\English\\Clutter.json",
       "source": "Clutter 0.1.2-1350-0-1-2-1648774740",
       "target": "",
       "time": 1648772856000
-    },
-    {
-      "relPath": "ExtendedItemDataFramework.dll",
-      "source": "Extended Item Data Framework-281-1-0-7-1643155370",
-      "target": "",
-      "time": 1667051521000
-    },
-    {
-      "relPath": "Jotunn.xml",
-      "source": "Jotunn-1138-2-6-7-1653426359",
-      "target": "",
-      "time": 1667323581000
-    },
-    {
-      "relPath": "Jotunn.dll",
-      "source": "Jotunn-1138-2-6-7-1653426359",
-      "target": "",
-      "time": 1667323581000
-    },
-    {
-      "relPath": "Jotunn.dll.mdb",
-      "source": "Jotunn-1138-2-6-7-1653426359",
-      "target": "",
-      "time": 1667323582000
-    },
-    {
-      "relPath": "Jotunn.pdb",
-      "source": "Jotunn-1138-2-6-7-1653426359",
-      "target": "",
-      "time": 1667323581000
-    },
-    {
-      "relPath": "README",
-      "source": "Jotunn-1138-2-6-7-1653426359",
-      "target": "",
-      "time": 1662321398000
-    },
-    {
-      "relPath": "ESP.dll",
-      "source": "ESP-1318-1-12-1666796212",
-      "target": "",
-      "time": 1666779311000
-    },
-    {
-      "relPath": "FogOfWarExploreRadius.dll",
-      "source": "Fog Of War Explore Radius-329-0-7-3-1633324918",
-      "target": "",
-      "time": 1633350046000
-    },
-    {
-      "relPath": "OreSupport.dll",
-      "source": "Ore Support-1525-1-6-1655763776",
-      "target": "",
-      "time": 1655763408000
-    },
-    {
-      "relPath": "CraftFromContainers.dll",
-      "source": "Craft From Containers-40-2-2-2-1654014244",
-      "target": "",
-      "time": 1663694026000
-    },
-    {
-      "relPath": "OdinHorse.German.yml",
-      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
-      "target": "",
-      "time": 1658343448000
-    },
-    {
-      "relPath": "OdinHorse.English.yml",
-      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
-      "target": "",
-      "time": 1658055659000
-    },
-    {
-      "relPath": "OdinHorse.Polish.yml",
-      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
-      "target": "",
-      "time": 1658070702000
-    },
-    {
-      "relPath": "OdinHorse.dll",
-      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
-      "target": "",
-      "time": 1667285077000
-    },
-    {
-      "relPath": "ValheimFastTeleport.dll",
-      "source": "FastTeleport-1774-1-0-0-1645298999",
-      "target": "",
-      "time": 1645292225000
-    },
-    {
-      "relPath": "BuildRestrictionTweaks.dll",
-      "source": "Build Restriction Tweaks-1606-0-2-2-1663116359",
-      "target": "",
-      "time": 1663094538000
     }
   ]
 }
