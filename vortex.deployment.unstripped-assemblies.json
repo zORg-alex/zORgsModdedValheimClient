@@ -3,12 +3,24 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1667837072530,
+  "deploymentTime": 1672251687668,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim",
   "files": [
     {
+      "relPath": "unstripped_corlib\\Mono.Security.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376393000
+    },
+    {
       "relPath": "unstripped_corlib\\Mono.Posix.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376393000
+    },
+    {
+      "relPath": "unstripped_corlib\\System.Configuration.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376393000
@@ -20,10 +32,16 @@
       "time": 1654376392000
     },
     {
-      "relPath": "unstripped_corlib\\Microsoft.CSharp.dll",
+      "relPath": "unstripped_corlib\\System.Core.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
-      "time": 1654376392000
+      "time": 1654376393000
+    },
+    {
+      "relPath": "unstripped_corlib\\System.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376393000
     },
     {
       "relPath": "unstripped_corlib\\netstandard.dll",
@@ -32,16 +50,10 @@
       "time": 1654376391000
     },
     {
-      "relPath": "unstripped_corlib\\System.Configuration.dll",
+      "relPath": "unstripped_corlib\\System.Data.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
-      "time": 1654376393000
-    },
-    {
-      "relPath": "unstripped_corlib\\System.Core.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376393000
+      "time": 1654376391000
     },
     {
       "relPath": "unstripped_corlib\\System.Net.Http.dll",
@@ -62,16 +74,16 @@
       "time": 1654376391000
     },
     {
-      "relPath": "unstripped_corlib\\System.Data.dll",
+      "relPath": "unstripped_corlib\\System.Security.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
-      "time": 1654376391000
+      "time": 1654376393000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.AccessibilityModule.dll",
+      "relPath": "unstripped_corlib\\System.Xml.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
-      "time": 1654376339000
+      "time": 1654376393000
     },
     {
       "relPath": "unstripped_corlib\\System.Xml.Linq.dll",
@@ -80,16 +92,16 @@
       "time": 1654376392000
     },
     {
-      "relPath": "unstripped_corlib\\System.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376393000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.AssetBundleModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.AccessibilityModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376339000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.ARModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376263000
     },
     {
       "relPath": "unstripped_corlib\\UnityEngine.AIModule.dll",
@@ -104,28 +116,16 @@
       "time": 1654376339000
     },
     {
-      "relPath": "unstripped_corlib\\System.Security.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376393000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.AnimationModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.AssetBundleModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376339000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.AudioModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.ClothModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376339000
-    },
-    {
-      "relPath": "unstripped_corlib\\System.Xml.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376393000
     },
     {
       "relPath": "unstripped_corlib\\UnityEngine.ClusterRendererModule.dll",
@@ -140,31 +140,7 @@
       "time": 1654376339000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.ARModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376263000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.ClothModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376339000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.CoreModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376339000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.GIModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376338000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.AudioModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376339000
@@ -176,7 +152,19 @@
       "time": 1654376339000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.DSPGraphModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.AnimationModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376339000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.CoreModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376339000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376339000
@@ -188,7 +176,7 @@
       "time": 1654376339000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.HotReloadModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.DSPGraphModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376339000
@@ -206,10 +194,10 @@
       "time": 1654376339000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.IMGUIModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.GIModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
-      "time": 1654376339000
+      "time": 1654376338000
     },
     {
       "relPath": "unstripped_corlib\\UnityEngine.InputLegacyModule.dll",
@@ -218,13 +206,7 @@
       "time": 1654376339000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.ImageConversionModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376339000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.LocalizationModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.HotReloadModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376339000
@@ -236,16 +218,10 @@
       "time": 1654376339000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.PerformanceReportingModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.ImageConversionModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
-      "time": 1654376340000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.ProfilerModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376340000
+      "time": 1654376339000
     },
     {
       "relPath": "unstripped_corlib\\UnityEngine.JSONSerializeModule.dll",
@@ -254,7 +230,25 @@
       "time": 1654376339000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.PhysicsModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.IMGUIModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376339000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.LocalizationModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376339000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.ParticleSystemModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376340000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.PerformanceReportingModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376340000
@@ -266,16 +260,16 @@
       "time": 1654376340000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.ParticleSystemModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.PhysicsModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376340000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.ProfilerModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
-      "time": 1654376338000
+      "time": 1654376340000
     },
     {
       "relPath": "unstripped_corlib\\UnityEngine.ScreenCaptureModule.dll",
@@ -296,6 +290,12 @@
       "time": 1654376340000
     },
     {
+      "relPath": "unstripped_corlib\\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376338000
+    },
+    {
       "relPath": "unstripped_corlib\\UnityEngine.SpriteShapeModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
@@ -314,25 +314,13 @@
       "time": 1654376340000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.SubstanceModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376340000
-    },
-    {
       "relPath": "unstripped_corlib\\UnityEngine.TerrainModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376340000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.TextCoreModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376340000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.TilemapModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.SubstanceModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376340000
@@ -344,7 +332,7 @@
       "time": 1654376340000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.TextRenderingModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.TextCoreModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376340000
@@ -356,10 +344,16 @@
       "time": 1654376281000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.UIElementsNativeModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.TilemapModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
-      "time": 1654376338000
+      "time": 1654376340000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.TextRenderingModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376340000
     },
     {
       "relPath": "unstripped_corlib\\UnityEngine.TLSModule.dll",
@@ -378,6 +372,12 @@
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376340000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.UIElementsNativeModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376338000
     },
     {
       "relPath": "unstripped_corlib\\UnityEngine.UmbraModule.dll",
@@ -404,10 +404,22 @@
       "time": 1654376340000
     },
     {
+      "relPath": "unstripped_corlib\\UnityEngine.UnityWebRequestAudioModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376341000
+    },
+    {
       "relPath": "unstripped_corlib\\UnityEngine.UnityCurlModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376338000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376341000
     },
     {
       "relPath": "unstripped_corlib\\UnityEngine.UnityTestProtocolModule.dll",
@@ -416,19 +428,7 @@
       "time": 1654376340000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.UnityWebRequestAudioModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376341000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.UnityWebRequestModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376341000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.UnityWebRequestAssetBundleModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.UnityWebRequestWWWModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376341000
@@ -440,7 +440,19 @@
       "time": 1654376341000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.UnityWebRequestWWWModule.dll",
+      "relPath": "unstripped_corlib\\UnityEngine.VideoModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376341000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.VirtualTexturingModule.dll",
+      "source": "denikson-BepInExPack_Valheim-5.4.1901",
+      "target": "",
+      "time": 1654376338000
+    },
+    {
+      "relPath": "unstripped_corlib\\UnityEngine.UnityWebRequestModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
       "time": 1654376341000
@@ -458,18 +470,6 @@
       "time": 1654376341000
     },
     {
-      "relPath": "unstripped_corlib\\UnityEngine.VirtualTexturingModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376338000
-    },
-    {
-      "relPath": "unstripped_corlib\\UnityEngine.VideoModule.dll",
-      "source": "denikson-BepInExPack_Valheim-5.4.1901",
-      "target": "",
-      "time": 1654376341000
-    },
-    {
       "relPath": "unstripped_corlib\\UnityEngine.VRModule.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
@@ -482,10 +482,10 @@
       "time": 1654376341000
     },
     {
-      "relPath": "unstripped_corlib\\Mono.Security.dll",
+      "relPath": "unstripped_corlib\\Microsoft.CSharp.dll",
       "source": "denikson-BepInExPack_Valheim-5.4.1901",
       "target": "",
-      "time": 1654376393000
+      "time": 1654376392000
     },
     {
       "relPath": "unstripped_corlib\\UnityEngine.XRModule.dll",

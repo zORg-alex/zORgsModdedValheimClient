@@ -16,6 +16,8 @@ trophy_horse_desc: "Trofeum"
 # Items
 ## Item names and descriptions
 
+item_horse_saddle: "Siodło na konia"
+
 horse_saddle: "Siodło na konia"
 horse_saddle_desc: "Będziesz go potrzebował aby wsiąść na konia"
 

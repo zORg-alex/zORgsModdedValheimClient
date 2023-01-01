@@ -16,6 +16,8 @@ trophy_horse_desc: "Trophy from Horse hunting"
 # Items
 ## Item names and descriptions
 
+item_horse_saddle: "Horse Saddle"
+
 horse_saddle: "Horse Saddle"
 horse_saddle_desc: "You will need this saddle to mount-up tamed horse"
 

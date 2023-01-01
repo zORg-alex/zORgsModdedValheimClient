@@ -3,16 +3,10 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1667837072855,
+  "deploymentTime": 1672251687959,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx\\plugins",
   "files": [
-    {
-      "relPath": "BalrondOreBasket.dll",
-      "source": "Balrond Ore Basket-1866-1-0-1-1652032326",
-      "target": "",
-      "time": 1652032093000
-    },
     {
       "relPath": "BalrondShelfPotionPlus.dll",
       "source": "Balrond Shelf Potion Plus-1817-1-0-3-1652032590",
@@ -20,16 +14,16 @@
       "time": 1652032535000
     },
     {
-      "relPath": "HeightmapUnlimited\\LICENSE",
-      "source": "Heightmap Unlimited-359-1-3-3-1641798751",
+      "relPath": "BalrondOreBasket.dll",
+      "source": "Balrond Ore Basket-1866-1-0-1-1652032326",
       "target": "",
-      "time": 1641750102000
+      "time": 1652032093000
     },
     {
-      "relPath": "BalrondHearths.dll",
-      "source": "BalrondHearths-1896-1-0-0-1653508985",
+      "relPath": "BalrondBarrell.dll",
+      "source": "BalrondBarrel-1816-1-0-5-1652313691",
       "target": "",
-      "time": 1653508942000
+      "time": 1652313504000
     },
     {
       "relPath": "BalrondWoodshed.dll",
@@ -38,10 +32,22 @@
       "time": 1652032755000
     },
     {
-      "relPath": "BalrondBarrell.dll",
-      "source": "BalrondBarrel-1816-1-0-5-1652313691",
+      "relPath": "BalrondHearths.dll",
+      "source": "BalrondHearths-1896-1-0-0-1653508985",
       "target": "",
-      "time": 1652313504000
+      "time": 1653508942000
+    },
+    {
+      "relPath": "LightController.dll",
+      "source": "BalrondLightControl-1875-1-0-1-1652317915",
+      "target": "",
+      "time": 1652317857000
+    },
+    {
+      "relPath": "BalrondMetalLocker.dll",
+      "source": "BalrondMetalShelf-1873-1-0-1-1652052031",
+      "target": "",
+      "time": 1652051931000
     },
     {
       "relPath": "BalrondTrough.dll",
@@ -56,28 +62,10 @@
       "time": 1653853653000
     },
     {
-      "relPath": "LightController.dll",
-      "source": "BalrondLightControl-1875-1-0-1-1652317915",
-      "target": "",
-      "time": 1652317857000
-    },
-    {
       "relPath": "CartSupport.dll",
       "source": "Cart Support-947-0-1-0-1617853434",
       "target": "",
       "time": 1617828210000
-    },
-    {
-      "relPath": "BalrondMetalLocker.dll",
-      "source": "BalrondMetalShelf-1873-1-0-1-1652052031",
-      "target": "",
-      "time": 1652051931000
-    },
-    {
-      "relPath": "CraftFromContainers.dll",
-      "source": "Craft From Containers-40-2-2-2-1654014244",
-      "target": "",
-      "time": 1663694026000
     },
     {
       "relPath": "BetterStamina.dll",
@@ -86,22 +74,10 @@
       "time": 1614771729000
     },
     {
-      "relPath": "BuildRestrictionTweaks.dll",
-      "source": "Build Restriction Tweaks-1606-0-2-2-1663116359",
+      "relPath": "ValheimFastTeleport.dll",
+      "source": "FastTeleport-1774-1-0-0-1645298999",
       "target": "",
-      "time": 1663094538000
-    },
-    {
-      "relPath": "ExtendedItemDataFramework.dll",
-      "source": "Extended Item Data Framework-281-1-0-7-1643155370",
-      "target": "",
-      "time": 1667051521000
-    },
-    {
-      "relPath": "ESP.dll",
-      "source": "ESP-1318-1-12-1666796212",
-      "target": "",
-      "time": 1666779311000
+      "time": 1645292225000
     },
     {
       "relPath": "CraftyCartsRemake.dll",
@@ -110,52 +86,16 @@
       "time": 1654465826000
     },
     {
-      "relPath": "GizmoReloaded.dll",
-      "source": "GizmoReloaded-TempFix",
-      "target": "",
-      "time": 1646646908000
-    },
-    {
-      "relPath": "ValheimFastTeleport.dll",
-      "source": "FastTeleport-1774-1-0-0-1645298999",
-      "target": "",
-      "time": 1645292225000
-    },
-    {
-      "relPath": "ExtendedPlayerInventory.dll",
-      "source": "Extended Player Inventory-1356-0-3-3-1646152991",
-      "target": "",
-      "time": 1646116772000
-    },
-    {
       "relPath": "FogOfWarExploreRadius.dll",
       "source": "Fog Of War Explore Radius-329-0-7-3-1633324918",
       "target": "",
       "time": 1633350046000
     },
     {
-      "relPath": "Jotunn.dll",
-      "source": "Jotunn-1138-2-6-7-1653426359",
+      "relPath": "HeightmapUnlimited\\LICENSE",
+      "source": "Heightmap Unlimited-359-1-3-3-1641798751",
       "target": "",
-      "time": 1667323581000
-    },
-    {
-      "relPath": "Jotunn.xml",
-      "source": "Jotunn-1138-2-6-7-1653426359",
-      "target": "",
-      "time": 1667323581000
-    },
-    {
-      "relPath": "Jotunn.pdb",
-      "source": "Jotunn-1138-2-6-7-1653426359",
-      "target": "",
-      "time": 1667323581000
-    },
-    {
-      "relPath": "Jotunn.dll.mdb",
-      "source": "Jotunn-1138-2-6-7-1653426359",
-      "target": "",
-      "time": 1667323582000
+      "time": 1641753702000
     },
     {
       "relPath": "HoeRadius.dll",
@@ -164,82 +104,10 @@
       "time": 1638099856000
     },
     {
-      "relPath": "README",
-      "source": "Jotunn-1138-2-6-7-1653426359",
-      "target": "",
-      "time": 1662321398000
-    },
-    {
       "relPath": "MovableInventoryWindows.dll",
       "source": "Movable Inventory Windows-577-0-2-2-1616096366",
       "target": "",
       "time": 1616096189000
-    },
-    {
-      "relPath": "OdinHorse.dll",
-      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
-      "target": "",
-      "time": 1667285077000
-    },
-    {
-      "relPath": "OdinHorse.English.yml",
-      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
-      "target": "",
-      "time": 1658055659000
-    },
-    {
-      "relPath": "Clutter\\Clutter.dll",
-      "source": "Clutter 0.1.2-1350-0-1-2-1648774740",
-      "target": "",
-      "time": 1648772204000
-    },
-    {
-      "relPath": "OreSupport.dll",
-      "source": "Ore Support-1525-1-6-1655763776",
-      "target": "",
-      "time": 1655763408000
-    },
-    {
-      "relPath": "HeightmapUnlimited\\HeightmapUnlimited.dll",
-      "source": "Heightmap Unlimited-359-1-3-3-1641798751",
-      "target": "",
-      "time": 1641759074000
-    },
-    {
-      "relPath": "CarryWeight\\CarryWeight.dll",
-      "source": "CarryWeightSkill-1067-2-0-0-1636329947",
-      "target": "",
-      "time": 1636296580000
-    },
-    {
-      "relPath": "CarryWeight\\Assets\\weight_icon_32.png",
-      "source": "CarryWeightSkill-1067-2-0-0-1636329947",
-      "target": "",
-      "time": 1636291598000
-    },
-    {
-      "relPath": "Advize_PlantEverything.dll",
-      "source": "Plant Everything-1042-1-8-4-1633057085",
-      "target": "",
-      "time": 1666974702000
-    },
-    {
-      "relPath": "RuneMagic.dll",
-      "source": "Rune Magic-1359-1-1-9-1652860380",
-      "target": "",
-      "time": 1667510588000
-    },
-    {
-      "relPath": "OdinHorse.Polish.yml",
-      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
-      "target": "",
-      "time": 1658070702000
-    },
-    {
-      "relPath": "OdinHorse.German.yml",
-      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
-      "target": "",
-      "time": 1658343448000
     },
     {
       "relPath": "TeleportEverything.dll",
@@ -248,16 +116,22 @@
       "time": 1667429660000
     },
     {
-      "relPath": "TeleportableWagon.dll",
-      "source": "TeleportableWagon.dll-249-1-4-0-1618761961",
-      "target": "",
-      "time": 1618765024000
-    },
-    {
       "relPath": "UseEquipmentInWater.dll",
       "source": "UseEquipmentInWater.zip-121-0-2-2-1615747917",
       "target": "",
       "time": 1655921995000
+    },
+    {
+      "relPath": "OreSupport.dll",
+      "source": "Ore Support-1525-1-6-1655763776",
+      "target": "",
+      "time": 1655763408000
+    },
+    {
+      "relPath": "TeleportableWagon.dll",
+      "source": "TeleportableWagon.dll-249-1-4-0-1618761961",
+      "target": "",
+      "time": 1618765024000
     },
     {
       "relPath": "Build Camera.dll",
@@ -278,10 +152,136 @@
       "time": 1615851322000
     },
     {
+      "relPath": "BuildRestrictionTweaks.dll",
+      "source": "Build Restriction Tweaks-1606-0-2-2-1663116359",
+      "target": "",
+      "time": 1670649754000
+    },
+    {
+      "relPath": "CraftFromContainers.dll",
+      "source": "Craft From Containers-40-2-2-2-1654014244",
+      "target": "",
+      "time": 1672141648000
+    },
+    {
+      "relPath": "OdinHorse.English.yml",
+      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
+      "target": "",
+      "time": 1671129548000
+    },
+    {
+      "relPath": "OdinHorse.dll",
+      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
+      "target": "",
+      "time": 1671129502000
+    },
+    {
+      "relPath": "OdinHorse.German.yml",
+      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
+      "target": "",
+      "time": 1671129543000
+    },
+    {
+      "relPath": "Advize_PlantEverything.dll",
+      "source": "Plant Everything-1042-1-8-4-1633057085",
+      "target": "",
+      "time": 1670363114000
+    },
+    {
+      "relPath": "OdinHorse.Polish.yml",
+      "source": "OdinHorse 0.5.5-1724-0-5-5-1667291957",
+      "target": "",
+      "time": 1671129562000
+    },
+    {
+      "relPath": "Jotunn.pdb",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1671534691000
+    },
+    {
+      "relPath": "RuneMagic.dll",
+      "source": "Rune Magic-1359-1-1-9-1652860380",
+      "target": "",
+      "time": 1671937636000
+    },
+    {
+      "relPath": "ExtendedPlayerInventory.dll",
+      "source": "Extended Player Inventory-1356-0-3-3-1646152991",
+      "target": "",
+      "time": 1670520516000
+    },
+    {
+      "relPath": "Jotunn.xml",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1671534691000
+    },
+    {
+      "relPath": "ESP.dll",
+      "source": "ESP-1318-1-12-1666796212",
+      "target": "",
+      "time": 1671001751000
+    },
+    {
+      "relPath": "Jotunn.dll.mdb",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1671534693000
+    },
+    {
+      "relPath": "CarryWeight\\CarryWeight.dll",
+      "source": "CarryWeightSkill-1067-2-0-0-1636329947",
+      "target": "",
+      "time": 1636296580000
+    },
+    {
+      "relPath": "Jotunn.dll",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1671534691000
+    },
+    {
+      "relPath": "README",
+      "source": "Jotunn-1138-2-6-7-1653426359",
+      "target": "",
+      "time": 1671484136000
+    },
+    {
+      "relPath": "CarryWeight\\Assets\\weight_icon_32.png",
+      "source": "CarryWeightSkill-1067-2-0-0-1636329947",
+      "target": "",
+      "time": 1636291598000
+    },
+    {
+      "relPath": "ExtendedItemDataFramework.dll",
+      "source": "Extended Item Data Framework-281-1-0-7-1643155370",
+      "target": "",
+      "time": 1671117318000
+    },
+    {
+      "relPath": "Clutter\\Clutter.dll",
+      "source": "Clutter 0.1.2-1350-0-1-2-1648774740",
+      "target": "",
+      "time": 1648772204000
+    },
+    {
+      "relPath": "HeightmapUnlimited\\HeightmapUnlimited.dll",
+      "source": "Heightmap Unlimited-359-1-3-3-1641798751",
+      "target": "",
+      "time": 1669650130000
+    },
+    {
       "relPath": "Clutter\\Assets\\Translations\\English\\Clutter.json",
       "source": "Clutter 0.1.2-1350-0-1-2-1648774740",
       "target": "",
       "time": 1648772856000
+    },
+    {
+      "relPath": "GizmoReloaded.dll",
+      "source": "GizmoReloaded-TempFix",
+      "target": "",
+      "time": 1646646908000
     }
   ]
 }

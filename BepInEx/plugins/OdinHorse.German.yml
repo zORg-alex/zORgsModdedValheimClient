@@ -18,6 +18,8 @@ trophy_horse_desc: "Trophäe von der Pferdejagd"
 # Items
 ## Item names and descriptions
 
+item_horse_saddle: "Sattel"
+
 horse_saddle: "Sattel"
 horse_saddle_desc: "Wird gebraucht um ein gezähmtes Pferd zu reiten"
 
