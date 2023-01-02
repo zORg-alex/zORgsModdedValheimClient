@@ -3,7 +3,7 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1672251687959,
+  "deploymentTime": 1672606075102,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx\\plugins",
   "files": [
@@ -108,12 +108,6 @@
       "source": "Movable Inventory Windows-577-0-2-2-1616096366",
       "target": "",
       "time": 1616096189000
-    },
-    {
-      "relPath": "TeleportEverything.dll",
-      "source": "TeleportEverything-1806-1-7-0-1657995267",
-      "target": "",
-      "time": 1667429660000
     },
     {
       "relPath": "UseEquipmentInWater.dll",
@@ -282,6 +276,18 @@
       "source": "GizmoReloaded-TempFix",
       "target": "",
       "time": 1646646908000
+    },
+    {
+      "relPath": "TeleportEverything.dll",
+      "source": "TeleportEverything-1806-2-1-0-1670469770",
+      "target": "",
+      "time": 1670450908000
+    },
+    {
+      "relPath": "RepairAll.dll",
+      "source": "RepairAll-26-0-1-1-1-1637252214",
+      "target": "",
+      "time": 1637251775000
     }
   ]
 }
