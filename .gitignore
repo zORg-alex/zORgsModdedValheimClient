@@ -5,3 +5,9 @@ valheim_Data/
 BepInEx/*.log
 BepInEx/cache/
 *.log
+Valheim Dedicated Server Manual.pdf
+tier0*
+steamclient*
+start_headless_server.bat
+valheim_server_Data/*
+vstdlib_s*
