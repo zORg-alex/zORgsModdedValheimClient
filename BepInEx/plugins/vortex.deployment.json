@@ -3,7 +3,7 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1672606075102,
+  "deploymentTime": 1673173782244,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx\\plugins",
   "files": [
@@ -288,6 +288,12 @@
       "source": "RepairAll-26-0-1-1-1-1637252214",
       "target": "",
       "time": 1637251775000
+    },
+    {
+      "relPath": "ServerSyncFix.dll",
+      "source": "Server Sync Fix-2019-1-2-1667562013",
+      "target": "",
+      "time": 1667561940000
     }
   ]
 }
