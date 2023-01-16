@@ -3,7 +3,7 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1673827135318,
+  "deploymentTime": 1673885928138,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx\\plugins",
   "files": [
@@ -222,12 +222,6 @@
       "source": "Server Sync Fix-2019-1-2-1667562013",
       "target": "",
       "time": 1667561940000
-    },
-    {
-      "relPath": "MapDetails.dll",
-      "source": "Show Buildings on Map-1332-0-3-2-1663115828",
-      "target": "",
-      "time": 1663094160000
     },
     {
       "relPath": "OdinArchitect\\OdinArchitect.dll",
