@@ -3,7 +3,7 @@
   "version": 1,
   "deploymentMethod": "hardlink_activator",
   "gameId": "valheim",
-  "deploymentTime": 1673885928138,
+  "deploymentTime": 1674060591376,
   "stagingPath": "C:\\Users\\zorg-\\AppData\\Roaming\\Vortex\\valheim\\mods",
   "targetPath": "c:\\program files (x86)\\steam\\steamapps\\common\\Valheim\\BepInEx\\plugins",
   "files": [
@@ -224,90 +224,6 @@
       "time": 1667561940000
     },
     {
-      "relPath": "OdinArchitect\\OdinArchitect.dll",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672879790000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\English\\big.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672787113000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\English\\doors.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672875154000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\Polish\\doors.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672871872000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\Polish\\decors.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672871872000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\English\\misc.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672875154000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\Polish\\misc.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672871872000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\English\\pieces.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672875154000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\English\\translations.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1632076446000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\Polish\\pieces.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672875795000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\Polish\\dvergr.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672875154000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\English\\decors.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1641780384000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\English\\dvergr.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672875864000
-    },
-    {
-      "relPath": "OdinArchitect\\Assets\\Translations\\Polish\\big.json",
-      "source": "OdinArchitect 1.1.0-1174-1-1-0-1672881303",
-      "target": "",
-      "time": 1672875154000
-    },
-    {
       "relPath": "CartSupport.dll",
       "source": "Cart Support-947-0-1-0-1617853434",
       "target": "",
@@ -344,12 +260,6 @@
       "time": 1673063646000
     },
     {
-      "relPath": "ExtendedItemDataFramework.dll",
-      "source": "Extended Item Data Framework-281-1-0-7-1643155370",
-      "target": "",
-      "time": 1673376500000
-    },
-    {
       "relPath": "Jotunn\\Jotunn.dll.mdb",
       "source": "Jotunn-1138-2-6-7-1653426359",
       "target": "",
@@ -384,6 +294,24 @@
       "source": "Jotunn-1138-2-6-7-1653426359",
       "target": "",
       "time": 1673455083000
+    },
+    {
+      "relPath": "CheaperStonePieces.dll",
+      "source": "Cheaper Stone Pieces-929-1-0-0-1617754528",
+      "target": "",
+      "time": 1617749007000
+    },
+    {
+      "relPath": "BaraphorSharedLibs.dll",
+      "source": "Cheaper Stone Pieces-929-1-0-0-1617754528",
+      "target": "",
+      "time": 1617749007000
+    },
+    {
+      "relPath": "ExtendedItemDataFramework.dll",
+      "source": "Extended Item Data Framework-281-1-0-7-1643155370",
+      "target": "",
+      "time": 1673376500000
     }
   ]
 }
